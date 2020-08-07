@@ -12,9 +12,7 @@ docker image build -t tudelft/exrunner $(pwd)
 # Execution
 # After building the the image, we run the container
 docker run -dit --name exrunner-container  \
---mount type=bind,source="$(pwd)/$experiment/consoleLog",target=/reproduction/$experiment/consoleLog \
---mount type=bind,source="$(pwd)/$experiment/logs",target=/reproduction/$experiment/logs \
---mount type=bind,source="$(pwd)/$experiment/results",target=/reproduction/$experiment/results \
+--mount type=bind,source="$(pwd)/$experiment",target=/reproduction/$experiment \
 --mount type=bind,source="$(pwd)/crashes",target=/reproduction/crashes \
 --mount type=bind,source="$(pwd)/bins",target=/reproduction/bins \
 tudelft/exrunner
