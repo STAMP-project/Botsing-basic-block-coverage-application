@@ -1,7 +1,7 @@
 ARG experiment
 
 
-FROM	  	  fedora:latest
+FROM	  	  multiarch/fedora:31-x86_64
 
 RUN         dnf upgrade --assumeyes
 RUN         dnf install python2 --assumeyes
