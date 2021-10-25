@@ -76,7 +76,7 @@ csv_result = {"execution_idx": execution_idx,
               "time_spent":0,
               "search_algorithm": search_algorithm,
               "objectives": objectives,
-              "secondary_objective": secondary_objective}
+              "secondary_objective": secondary_objective+"-opt"}
 
 with open(log_dir, "r") as ins:
     for stdout_line in ins:

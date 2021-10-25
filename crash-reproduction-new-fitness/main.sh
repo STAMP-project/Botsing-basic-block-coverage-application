@@ -40,7 +40,7 @@ for t in ${job_list[@]}; do
   ## Start the search process:
   outFile="logs/$case-$frame-$execution_idx-$search_algorithm-$objectives-$secondary_objective-out.txt"
   errFile="logs/$case-$frame-$execution_idx-$search_algorithm-$objectives-$secondary_objective-err.txt"
-  resultDir="results/$case-$frame-$execution_idx-$search_algorithm-$objectives-$secondary_objective"
+  resultDir="results/$case-$frame-$execution_idx-$search_algorithm-$objectives-$secondary_objective-opt"
 
 
   if [[ "$objectives"  == *"Integration"* ]]; then
