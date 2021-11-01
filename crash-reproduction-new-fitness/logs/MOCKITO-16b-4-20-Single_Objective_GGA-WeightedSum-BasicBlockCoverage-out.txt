@@ -1,0 +1,77 @@
+23:06:25.958 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.mockito.exceptions.misusing.MissingMethodInvocationException
+23:06:25.961 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.Mockito.when(Mockito:994)
+23:06:25.961 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.Mockito
+23:06:25.962 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+23:06:26.267 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+23:06:27.492 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+23:06:27.502 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+23:06:27.511 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+23:06:27.518 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+23:06:27.819 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: null
+23:06:27.841 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+23:06:27.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+23:06:27.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 0 seconds
+23:06:27.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+23:06:27.960 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 0 second: 3.0
+23:06:28.860 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+23:06:28.861 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 1 seconds
+23:06:28.871 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 55 fitness evolutions and 1 second: 0.0
+23:06:29.576 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+23:06:29.577 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+23:06:29.578 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+23:06:29.578 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+23:06:29.578 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: PriorityQueue<Matcher<Character>> priorityQueue0 = new PriorityQueue<Matcher<Character>>();
+char char0 = 'i';
+Character character0 = Character.valueOf(char0);
+IsEqual<Character> isEqual0 = new IsEqual<Character>(character0);
+Is<Character> is0 = new Is<Character>(isEqual0);
+priorityQueue0.add(is0);
+HashSet<Matcher<Character>> hashSet0 = new HashSet<Matcher<Character>>(priorityQueue0);
+Mockito.when(priorityQueue0);
+char char1 = '@';
+Character.valueOf(char1);
+char char2 = 'z';
+Character character1 = new Character(char2);
+VerificationMode verificationMode0 = Mockito.only();
+Mockito.verify(character1, verificationMode0);
+String string0 = "CGLIB$findMethodProxy";
+SQLTransientException sQLTransientException0 = new SQLTransientException(string0, string0);
+SQLSyntaxErrorException sQLSyntaxErrorException0 = new SQLSyntaxErrorException(string0, string0, sQLTransientException0);
+Mockito.doThrow(sQLSyntaxErrorException0);
+int int0 = (-1281);
+Mockito.times(int0);
+
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.misusing.MissingMethodInvocationException: 
+when() requires an argument which has to be a method call on a mock.
+For example:
+    when(mock.getArticles()).thenReturn(articles);
+
+Also, this error might show up because you stub final/private/equals() or hashCode() method.
+Those methods *cannot* be stubbed/verified.
+
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.Reporter.missingMethodInvocation(Reporter.java:77)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.MockitoCore.stub(MockitoCore.java:43)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.MockitoCore.when(MockitoCore.java:56)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.Mockito.when(Mockito.java:994)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+23:06:29.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+23:06:29.580 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+23:06:29.582 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+23:06:29.586 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+23:06:29.587 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+23:06:29.587 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+23:06:30.415 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Mockito_ESTest' to results/MOCKITO-16b-4-20-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+23:06:30.422 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

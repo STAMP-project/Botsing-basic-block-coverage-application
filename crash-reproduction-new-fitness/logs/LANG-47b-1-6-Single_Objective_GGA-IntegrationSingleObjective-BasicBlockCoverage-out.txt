@@ -1,0 +1,69 @@
+03:36:26.509 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+03:36:26.513 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadLeft(StrBuilder:1186)
+03:36:26.513 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.text.StrBuilder
+03:36:26.533 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+03:36:28.661 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.lang.text.StrBuilder
+03:36:28.688 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+03:36:30.111 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:36:30.137 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+03:36:30.168 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+03:36:30.177 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+03:36:31.056 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.5
+03:36:31.167 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 1.0
+03:36:33.673 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+03:36:33.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+03:36:33.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+03:36:33.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+03:36:33.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+03:36:33.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: StrBuilder strBuilder0 = new StrBuilder();
+String string0 = null;
+StrBuilder strBuilder1 = strBuilder0.append((Object) string0);
+Object object0 = null;
+int int0 = 1403;
+char char0 = 'O';
+StrBuilder strBuilder2 = strBuilder1.appendFixedWidthPadLeft(object0, int0, char0);
+StrBuilder strBuilder3 = strBuilder2.trim();
+strBuilder1.contains(char0);
+char char1 = '\"';
+StrBuilder strBuilder4 = strBuilder3.appendSeparator(char1);
+char char2 = '/';
+StrBuilder strBuilder5 = strBuilder0.appendln(char2);
+int int1 = 4292;
+StrBuilder strBuilder6 = strBuilder2.appendFixedWidthPadLeft((Object) strBuilder3, int1, char0);
+strBuilder1.length();
+strBuilder1.endsWith(string0);
+int int2 = 328;
+strBuilder3.midString(int2, int0);
+int int3 = strBuilder6.capacity();
+StrBuilder strBuilder7 = strBuilder5.appendNull();
+strBuilder0.equalsIgnoreCase(strBuilder7);
+strBuilder3.asReader();
+StringBuffer stringBuffer0 = null;
+strBuilder5.appendln(stringBuffer0, int3, int2);
+Collection<String> collection0 = null;
+String string1 = "";
+strBuilder4.appendWithSeparators(collection0, string1);
+
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadLeft(StrBuilder.java:1186)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+03:36:33.675 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+03:36:33.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+03:36:33.677 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+03:36:33.681 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+03:36:33.681 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+03:36:33.681 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+03:36:34.948 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'StrBuilder_ESTest' to results/LANG-47b-1-6-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+03:36:34.987 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

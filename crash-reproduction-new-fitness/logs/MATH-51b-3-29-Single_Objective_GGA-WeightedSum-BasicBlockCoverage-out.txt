@@ -1,0 +1,75 @@
+21:43:10.497 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.exception.TooManyEvaluationsException
+21:43:10.500 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve(BaseSecantSolver:161)
+21:43:10.500 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.solvers.BaseSecantSolver
+21:43:10.500 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:43:11.181 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:43:14.010 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:43:14.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:43:14.052 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:43:14.060 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:43:14.676 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.0
+21:43:15.545 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.0
+21:43:15.546 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.0. PT: 1 seconds
+21:43:15.546 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:43:15.958 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 89 fitness evolutions and 1 second: 4.5
+21:43:16.390 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 100
+21:43:16.390 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 2 seconds
+21:43:16.989 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 150
+21:43:17.463 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 200
+21:43:17.596 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 237 fitness evolutions and 3 second: 3.0
+21:43:17.833 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 250
+21:43:17.833 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 3 seconds
+21:43:18.160 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 300
+21:43:18.202 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 320 fitness evolutions and 4 second: 0.0
+21:43:18.513 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+21:43:18.513 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+21:43:18.536 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:43:18.537 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:43:18.537 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+21:43:18.537 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: PegasusSolver pegasusSolver0 = new PegasusSolver();
+int int0 = (-13);
+double double0 = 1.0;
+int int1 = 4;
+SinFunction sinFunction0 = new SinFunction();
+UnivariateRealFunction univariateRealFunction0 = sinFunction0.derivative();
+double double1 = pegasusSolver0.solve(int1, (UnivariateRealFunction) sinFunction0, (double) int0, double0);
+int int2 = (-669);
+AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
+String string0 = "";
+BaseSecantSolver.Method.valueOf(string0);
+pegasusSolver0.doSolve();
+double double2 = pegasusSolver0.doSolve();
+pegasusSolver0.computeObjectiveValue(int0);
+int int3 = 5;
+double double3 = 0.5;
+int int4 = 4;
+pegasusSolver0.solve(int4, univariateRealFunction0, double2, double1, (double) int4);
+
+21:43:18.537 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:43:18.537 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (4) exceeded: evaluations
+21:43:18.537 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.incrementEvaluationCount(BaseAbstractUnivariateRealSolver.java:296)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.computeObjectiveValue(BaseAbstractUnivariateRealSolver.java:153)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve(BaseSecantSolver.java:161)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:190)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve(BaseSecantSolver.java:117)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve(BaseSecantSolver.java:124)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:195)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:43:18.538 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:43:18.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:43:18.555 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:43:18.558 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:43:18.558 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:43:18.558 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:43:20.533 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseSecantSolver_ESTest' to results/MATH-51b-3-29-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:43:20.550 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

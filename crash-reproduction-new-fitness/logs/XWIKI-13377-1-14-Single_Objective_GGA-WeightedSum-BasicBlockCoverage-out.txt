@@ -1,0 +1,44 @@
+11:36:53.291 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+11:36:53.295 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty:45)
+11:36:53.295 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.objects.BaseStringProperty
+11:36:53.295 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:36:54.401 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 566.
+11:37:06.973 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:37:06.981 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:37:06.987 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:37:06.992 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:37:07.807 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.0
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:37:08.368 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:37:08.368 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseStringProperty baseStringProperty0 = new BaseStringProperty();
+LargeStringProperty largeStringProperty0 = new LargeStringProperty();
+LargeStringProperty largeStringProperty1 = (LargeStringProperty)largeStringProperty0.clone();
+baseStringProperty0.setValue(largeStringProperty1);
+
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: com.xpn.xwiki.objects.LargeStringProperty cannot be cast to java.lang.String
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty.java:45)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:37:08.369 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:37:08.370 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:37:08.372 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:37:08.373 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:37:08.373 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:37:11.251 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseStringProperty_ESTest' to results/XWIKI-13377-1-14-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+11:37:11.258 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,79 @@
+01:54:28.993 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+01:54:28.998 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory:294)
+01:54:28.998 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rest.internal.DomainObjectFactory
+01:54:28.999 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+01:54:30.140 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 576.
+01:54:55.707 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+01:54:55.716 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+01:54:55.723 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+01:54:55.729 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+01:55:13.903 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 18 second: 4.5
+01:55:15.176 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+01:55:15.176 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+01:55:15.897 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+01:55:15.933 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 20 seconds
+01:55:15.934 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+01:55:20.352 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 100
+01:55:23.076 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 150
+01:55:24.391 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 200
+01:55:26.176 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 250
+01:55:27.478 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 300
+01:55:34.164 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 350
+01:55:37.869 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 400
+01:55:40.634 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 450
+01:55:45.683 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 500
+01:55:49.958 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 550
+01:55:56.099 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 600
+01:56:00.680 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 650
+01:56:04.650 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 700
+01:56:11.638 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 750
+01:56:15.270 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 800
+01:56:20.393 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 850
+01:56:20.884 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 870 fitness evolutions and 85 second: 0.0
+01:56:26.246 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 900
+01:56:26.247 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 90 seconds
+01:56:26.247 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+01:56:26.247 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+01:56:26.247 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 90 seconds
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: AllEvent allEvent0 = (AllEvent)AllEvent.ALLEVENT;
+BaseObject baseObject0 = new BaseObject();
+ObjectFactory objectFactory0 = new ObjectFactory();
+String string0 = "date";
+String string1 = "";
+String string2 = "";
+URI uRI0 = new URI(string0, string0, string1, string1, string2);
+DefaultRequest defaultRequest0 = new DefaultRequest();
+JobStatus jobStatus0 = mock(JobStatus.class, new ViolatedAssumptionAnswer());
+DefaultObservationManager defaultObservationManager0 = new DefaultObservationManager();
+ComponentManager componentManager0 = mock(ComponentManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "componentManager", (Object) componentManager0);
+Logger logger0 = (Logger)URLStreamHandlerFactory.log;
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "logger", (Object) logger0);
+Injector.validateBean(defaultObservationManager0, (Class<?>) DefaultObservationManager.class);
+LoggerManager loggerManager0 = null;
+DefaultJobStatus<DefaultRequest> defaultJobStatus0 = new DefaultJobStatus<DefaultRequest>(defaultRequest0, jobStatus0, defaultObservationManager0, loggerManager0);
+DomainObjectFactory.createJobStatus(objectFactory0, uRI0, defaultJobStatus0);
+
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.Calendar.setTime(Calendar.java:1770)
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory.java:294)
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor35.invoke(Unknown Source)
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+01:56:26.248 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+01:56:26.250 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+01:56:26.251 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+01:56:26.263 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+01:56:26.264 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+01:56:26.264 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+01:56:29.147 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DomainObjectFactory_ESTest' to results/XWIKI-12889-1-8-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+01:56:29.197 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

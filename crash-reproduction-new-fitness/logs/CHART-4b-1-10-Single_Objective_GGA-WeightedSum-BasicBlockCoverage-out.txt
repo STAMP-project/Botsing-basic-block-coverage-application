@@ -1,0 +1,62 @@
+15:20:21.892 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+15:20:21.895 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.jfree.chart.plot.XYPlot.getDataRange(XYPlot:4493)
+15:20:21.895 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.jfree.chart.plot.XYPlot
+15:20:21.895 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:20:35.888 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 7.
+15:20:53.136 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:20:53.161 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:20:53.201 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:20:53.240 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:21:01.439 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 8 second: 3.0
+15:21:06.400 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+15:21:06.400 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 13 seconds
+15:21:06.401 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:21:09.705 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+15:21:12.806 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 152 fitness evolutions and 19 second: 0.0
+15:21:13.770 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+15:21:13.770 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 20 seconds
+15:21:13.773 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:21:13.774 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:21:13.774 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 20 seconds
+15:21:13.774 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DefaultXYZDataset defaultXYZDataset0 = new DefaultXYZDataset();
+XYItemRenderer xYItemRenderer0 = null;
+double double0 = (-962.1072573264116);
+CyclicNumberAxis cyclicNumberAxis0 = new CyclicNumberAxis(double0, double0);
+XYPlot xYPlot0 = new XYPlot(defaultXYZDataset0, cyclicNumberAxis0, cyclicNumberAxis0, xYItemRenderer0);
+PlotChangeEvent plotChangeEvent0 = new PlotChangeEvent(xYPlot0);
+xYPlot0.notifyListeners(plotChangeEvent0);
+XYDataset xYDataset0 = xYPlot0.getDataset();
+int int0 = (-1);
+xYPlot0.clearDomainMarkers(int0);
+xYPlot0.getDataRange(cyclicNumberAxis0);
+xYPlot0.getLegendItems();
+xYPlot0.setDataset(xYDataset0);
+CombinedDomainXYPlot combinedDomainXYPlot0 = new CombinedDomainXYPlot();
+combinedDomainXYPlot0.isRangeGridlinesVisible();
+
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.jfree.chart.plot.XYPlot.getDataRange(XYPlot.java:4493)
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.jfree.chart.axis.NumberAxis.autoAdjustRange(NumberAxis.java:434)
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.jfree.chart.axis.NumberAxis.configure(NumberAxis.java:417)
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.jfree.chart.axis.Axis.setPlot(Axis.java:1044)
+15:21:13.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.jfree.chart.plot.XYPlot.<init>(XYPlot.java:660)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:21:13.777 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:21:13.778 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:21:13.780 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:21:13.780 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:21:13.781 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:21:13.781 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:21:13.782 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:21:13.789 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:21:13.789 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:21:13.789 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:21:18.452 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XYPlot_ESTest' to results/CHART-4b-1-10-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:21:18.538 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

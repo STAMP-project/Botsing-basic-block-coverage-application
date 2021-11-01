@@ -1,0 +1,58 @@
+05:12:42.682 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.xwiki.query.jpql.parser.ParserException
+05:12:42.685 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.query.xwql.internal.hql.XWQLtoHQLTranslator.translate(XWQLtoHQLTranslator:55)
+05:12:42.686 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.query.xwql.internal.hql.XWQLtoHQLTranslator
+05:12:42.686 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+05:12:44.262 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 569.
+05:12:56.890 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+05:12:56.901 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+05:12:56.907 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+05:12:56.913 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+05:12:57.576 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+05:12:57.579 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 0.0
+05:12:58.084 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+05:12:58.085 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+05:12:58.085 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+05:12:58.085 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+05:12:58.085 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+05:12:58.085 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: XWQLtoHQLTranslator xWQLtoHQLTranslator0 = new XWQLtoHQLTranslator();
+DocumentAccessBridge documentAccessBridge0 = mock(DocumentAccessBridge.class, new ViolatedAssumptionAnswer());
+Injector.inject(xWQLtoHQLTranslator0, (Class<?>) XWQLtoHQLTranslator.class, "documentAccessBridge", (Object) documentAccessBridge0);
+Injector.validateBean(xWQLtoHQLTranslator0, (Class<?>) XWQLtoHQLTranslator.class);
+String string0 = "Failed to get the default edit mode for [{}]";
+String string1 = xWQLtoHQLTranslator0.translate(string0);
+Object.registerNatives();
+String string2 = xWQLtoHQLTranslator0.translate(string1);
+XWQLtoHQLTranslator xWQLtoHQLTranslator1 = new XWQLtoHQLTranslator();
+DocumentAccessBridge documentAccessBridge1 = mock(DocumentAccessBridge.class, new ViolatedAssumptionAnswer());
+Injector.inject(xWQLtoHQLTranslator1, (Class<?>) XWQLtoHQLTranslator.class, "documentAccessBridge", (Object) documentAccessBridge1);
+Injector.validateBean(xWQLtoHQLTranslator1, (Class<?>) XWQLtoHQLTranslator.class);
+QueryContext queryContext0 = mock(QueryContext.class, new ViolatedAssumptionAnswer());
+xWQLtoHQLTranslator1.getPrinter(queryContext0);
+xWQLtoHQLTranslator1.translate(string2);
+
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.parser.ParserException: [1,1] expecting: select
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.parser.Parser.parse(Parser.java:1385)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.internal.JPQLParser.parse(JPQLParser.java:46)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.xwql.internal.hql.XWQLtoHQLTranslator.translate(XWQLtoHQLTranslator.java:55)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05:12:58.086 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+05:12:58.088 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+05:12:58.092 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+05:12:58.092 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+05:12:58.092 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+05:13:00.271 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XWQLtoHQLTranslator_ESTest' to results/XWIKI-12919-3-6-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+05:13:00.337 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,76 @@
+22:24:05.604 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.MathRuntimeException$4
+22:24:05.607 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.PoissonDistributionImpl.<init>(PoissonDistributionImpl:80)
+22:24:05.608 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.PoissonDistributionImpl
+22:24:05.608 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:24:06.211 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+22:24:09.206 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:24:09.238 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:24:09.245 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:24:09.251 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:24:09.484 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+22:24:09.648 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 12 fitness evolutions and 0 second: 0.32558139534883723
+22:24:09.674 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 21 fitness evolutions and 0 second: 0.0
+22:24:10.169 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+22:24:10.170 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+22:24:10.170 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:24:10.170 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:24:10.170 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:24:10.171 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+22:24:10.172 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double double0 = 1.0;
+PoissonDistributionImpl poissonDistributionImpl0 = new PoissonDistributionImpl(double0);
+double double1 = (-206.5673226290735);
+PoissonDistributionImpl poissonDistributionImpl1 = new PoissonDistributionImpl(double1);
+int int0 = 396;
+poissonDistributionImpl1.cumulativeProbability(int0, int0);
+poissonDistributionImpl0.probability(int0);
+double double2 = 1.0E-12;
+poissonDistributionImpl1.cumulativeProbability(double2, double1);
+int int1 = poissonDistributionImpl0.getDomainLowerBound(double1);
+double double3 = poissonDistributionImpl0.getMean();
+int int2 = Integer.MAX_VALUE;
+double double4 = poissonDistributionImpl0.probability(int2);
+double double5 = (-1316.6699618);
+int int3 = poissonDistributionImpl1.inverseCumulativeProbability(double5);
+PoissonDistributionImpl poissonDistributionImpl2 = new PoissonDistributionImpl(int0, double4);
+double double6 = 0.0;
+poissonDistributionImpl1.cumulativeProbability((double) int2, double6);
+double double7 = 0.0;
+poissonDistributionImpl0.inverseCumulativeProbability(double7);
+poissonDistributionImpl0.sample(int1);
+PoissonDistributionImpl poissonDistributionImpl3 = new PoissonDistributionImpl(double0);
+double double8 = Double.POSITIVE_INFINITY;
+poissonDistributionImpl1.cumulativeProbability(double8, double7);
+double double9 = (-1116.895);
+poissonDistributionImpl2.cumulativeProbability(double3, double9);
+double double10 = (-2016.7833265405);
+PoissonDistributionImpl poissonDistributionImpl4 = new PoissonDistributionImpl(double1, double10);
+poissonDistributionImpl1.normalApproximateProbability(int2);
+poissonDistributionImpl4.probability(int3);
+int int4 = 0;
+PoissonDistributionImpl poissonDistributionImpl5 = new PoissonDistributionImpl(double2, int4);
+poissonDistributionImpl2.getMean();
+
+22:24:10.172 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:24:10.175 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException$4: the Poisson mean must be positive (-206.567)
+22:24:10.176 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:387)
+22:24:10.177 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.PoissonDistributionImpl.<init>(PoissonDistributionImpl.java:94)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.PoissonDistributionImpl.<init>(PoissonDistributionImpl.java:80)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:24:10.178 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:24:10.179 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:24:10.186 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:24:10.187 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:24:10.187 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:24:11.507 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'PoissonDistributionImpl_ESTest' to results/MATH-61b-3-30-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:24:11.525 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

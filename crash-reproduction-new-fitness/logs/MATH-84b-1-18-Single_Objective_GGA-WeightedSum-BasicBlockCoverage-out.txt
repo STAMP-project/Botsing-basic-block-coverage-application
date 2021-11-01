@@ -1,0 +1,76 @@
+22:29:01.323 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.optimization.OptimizationException
+22:29:01.326 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.optimization.direct.DirectSearchOptimizer.incrementIterationsCounter(DirectSearchOptimizer:320)
+22:29:01.326 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.optimization.direct.DirectSearchOptimizer
+22:29:01.326 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:29:01.796 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+22:29:03.012 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:29:03.023 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:29:03.033 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:29:03.039 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:29:03.408 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.499999999650754
+22:29:03.798 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.499999999650754
+22:29:03.799 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.499999999650754. PT: 0 seconds
+22:29:03.799 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:29:04.858 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.499999999650754 | 100
+22:29:05.631 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.499999999650754 | 150
+22:29:05.709 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 166 fitness evolutions and 2 second: 4.499717141240807
+22:29:05.752 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 179 fitness evolutions and 2 second: 4.473684210526316
+22:29:05.810 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 193 fitness evolutions and 2 second: 4.465116279069767
+22:29:06.007 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.465116279069767 | 200
+22:29:06.007 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.465116279069767. PT: 2 seconds
+22:29:06.363 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.465116279069767 | 250
+22:29:06.398 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 269 fitness evolutions and 3 second: 0.0
+22:29:06.609 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 300
+22:29:06.610 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+22:29:06.610 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:29:06.610 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:29:06.610 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Comparator<RealPointValuePair> comparator0 = (Comparator<RealPointValuePair>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+double double0 = 2565.06;
+double double1 = 3.411110980326148;
+int int0 = 1111;
+MultivariateVectorialFunction multivariateVectorialFunction0 = mock(MultivariateVectorialFunction.class, new ViolatedAssumptionAnswer());
+GoalType goalType0 = GoalType.MINIMIZE;
+double[][] doubleArray0 = new double[12][1];
+doubleArray0[4] = doubleArray0[0];
+NelderMead nelderMead0 = new NelderMead();
+SimpleScalarValueChecker simpleScalarValueChecker0 = (SimpleScalarValueChecker)nelderMead0.getConvergenceChecker();
+nelderMead0.setConvergenceChecker(simpleScalarValueChecker0);
+GoalType goalType1 = GoalType.MINIMIZE;
+int int1 = 2652;
+int int2 = (-407);
+nelderMead0.setMaxIterations(int2);
+nelderMead0.incrementIterationsCounter();
+nelderMead0.incrementIterationsCounter();
+DirectSearchOptimizer directSearchOptimizer0 = new DirectSearchOptimizer();
+nelderMead0.evaluateSimplex(comparator0);
+directSearchOptimizer0.incrementIterationsCounter();
+int int3 = 1327;
+int int4 = 121;
+nelderMead0.setMaxEvaluations(int3);
+nelderMead0.incrementIterationsCounter();
+directSearchOptimizer0.getEvaluations();
+nelderMead0.evaluate(doubleArray0[4]);
+
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.OptimizationException: org.apache.commons.math.MaxIterationsExceededException: Maximal number of iterations (-407) exceeded
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.DirectSearchOptimizer.incrementIterationsCounter(DirectSearchOptimizer.java:320)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:29:06.611 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:29:06.612 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:29:06.612 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:29:06.613 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:29:06.618 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:29:06.618 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:29:06.618 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:29:07.607 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DirectSearchOptimizer_ESTest' to results/MATH-84b-1-18-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:29:07.618 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

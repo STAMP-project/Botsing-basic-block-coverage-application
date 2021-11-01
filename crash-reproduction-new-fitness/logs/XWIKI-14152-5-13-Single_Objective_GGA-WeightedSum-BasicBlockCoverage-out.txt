@@ -1,0 +1,90 @@
+10:19:57.181 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+10:19:57.185 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor:230)
+10:19:57.185 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+10:19:57.185 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:19:58.981 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 560.
+10:20:25.501 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:20:25.559 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:20:25.657 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:20:25.667 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:20:26.423 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.8
+10:20:27.034 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 1 second: 5.0
+10:20:27.753 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.0
+10:20:27.753 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.0. PT: 2 seconds
+10:20:27.753 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:20:34.441 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.0 | 100
+10:20:40.183 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.0 | 150
+10:20:46.697 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.0 | 200
+10:20:48.950 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+10:20:51.152 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.0 | 250
+10:20:52.021 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.0 | 300
+10:20:53.536 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 315 fitness evolutions and 27 second: 4.0
+10:20:56.788 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 350
+10:20:56.788 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.0. PT: 31 seconds
+10:20:59.589 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 400
+10:21:02.630 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 450
+10:21:04.569 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 500
+10:21:07.769 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 550
+10:21:09.879 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 600
+10:21:10.336 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 637 fitness evolutions and 44 second: 0.0
+10:21:10.518 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 650
+10:21:10.518 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 44 seconds
+10:21:10.519 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:21:10.519 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:21:10.519 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 44 seconds
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+JobProgressManager jobProgressManager0 = mock(JobProgressManager.class, new ViolatedAssumptionAnswer());
+HibernateSessionFactory hibernateSessionFactory0 = mock(HibernateSessionFactory.class, new ViolatedAssumptionAnswer());
+Session session0 = null;
+int int0 = (-1216);
+HqlQueryExecutor hqlQueryExecutor0 = new HqlQueryExecutor();
+ContextualAuthorizationManager contextualAuthorizationManager0 = mock(ContextualAuthorizationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "authorization", (Object) contextualAuthorizationManager0);
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "execution", (Object) execution1);
+JobProgressManager jobProgressManager1 = mock(JobProgressManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "progress", (Object) jobProgressManager1);
+HibernateSessionFactory hibernateSessionFactory1 = mock(HibernateSessionFactory.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "sessionFactory", (Object) hibernateSessionFactory1);
+Injector.validateBean(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class);
+Session session1 = null;
+String string0 = "og#";
+String string1 = null;
+DefaultQuery defaultQuery0 = new DefaultQuery(string0, string1, hqlQueryExecutor0);
+boolean boolean0 = true;
+CountDocumentFilter countDocumentFilter0 = new CountDocumentFilter();
+Logger logger0 = (Logger)SQLCustomQuery.log;
+Injector.inject(countDocumentFilter0, (Class<?>) CountDocumentFilter.class, "logger", (Object) logger0);
+Injector.validateBean(countDocumentFilter0, (Class<?>) CountDocumentFilter.class);
+defaultQuery0.addFilter(countDocumentFilter0);
+DefaultQuery defaultQuery1 = (DefaultQuery)defaultQuery0.checkCurrentAuthor(boolean0);
+hqlQueryExecutor0.createHibernateQuery(session1, defaultQuery1);
+hqlQueryExecutor0.getContext();
+
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.StringIndexOutOfBoundsException: String index out of range: -8
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.String.substring(String.java:1967)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.AbstractQueryFilter.getSelectColumns(AbstractQueryFilter.java:80)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.isFilterable(CountDocumentFilter.java:60)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter.java:70)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor.java:230)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:21:10.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:21:10.521 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:21:10.521 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:21:10.522 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:21:10.528 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:21:10.528 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:21:10.528 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:21:12.445 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+10:21:12.776 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'HqlQueryExecutor_ESTest' to results/XWIKI-14152-5-13-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+10:21:12.796 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

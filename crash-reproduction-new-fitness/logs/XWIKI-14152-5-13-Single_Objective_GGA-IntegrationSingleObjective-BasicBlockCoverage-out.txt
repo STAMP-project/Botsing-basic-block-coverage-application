@@ -1,0 +1,77 @@
+11:47:01.196 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+11:47:01.200 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor:230)
+11:47:01.200 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+11:47:01.200 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:47:03.840 [main] WARN  e.s.botsing.graphs.cfg.CFGGenerator - The generated control flow graphs for class class java.lang.String was empty.
+11:47:03.841 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing java.lang.String
+11:47:03.841 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - [frame 1]Cannot load class java.lang.String. We do not count it in the InterProcedural graph
+11:47:03.841 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.AbstractQueryFilter
+11:47:03.841 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+11:47:03.842 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.internal.CountDocumentFilter
+11:47:03.842 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+11:47:03.867 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 560.
+11:47:29.372 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:47:29.382 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:47:29.389 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:47:29.396 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:47:31.798 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 5.75
+11:47:32.185 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 39 fitness evolutions and 2 second: 5.6
+11:47:32.835 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.6
+11:47:32.835 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.6. PT: 3 seconds
+11:47:32.835 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:47:46.362 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.6 | 100
+11:47:50.999 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.6 | 150
+11:47:56.682 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.6 | 200
+11:47:59.075 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 250
+11:47:59.076 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 29 seconds
+11:47:59.076 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:47:59.076 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:47:59.076 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 29 seconds
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: HqlQueryExecutor hqlQueryExecutor0 = new HqlQueryExecutor();
+ContextualAuthorizationManager contextualAuthorizationManager0 = mock(ContextualAuthorizationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "authorization", (Object) contextualAuthorizationManager0);
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "execution", (Object) execution0);
+JobProgressManager jobProgressManager0 = mock(JobProgressManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "progress", (Object) jobProgressManager0);
+HibernateSessionFactory hibernateSessionFactory0 = mock(HibernateSessionFactory.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "sessionFactory", (Object) hibernateSessionFactory0);
+Session session0 = null;
+String string0 = "ParentTree";
+String string1 = "onWa@sQSL_3cK[";
+DefaultQuery defaultQuery0 = new DefaultQuery(string0, string1, hqlQueryExecutor0);
+CountDocumentFilter countDocumentFilter0 = new CountDocumentFilter();
+Logger logger0 = (Logger)SQLCustomQuery.log;
+Injector.inject(countDocumentFilter0, (Class<?>) CountDocumentFilter.class, "logger", (Object) logger0);
+Injector.validateBean(countDocumentFilter0, (Class<?>) CountDocumentFilter.class);
+DefaultQuery defaultQuery1 = (DefaultQuery)defaultQuery0.addFilter(countDocumentFilter0);
+hqlQueryExecutor0.createHibernateQuery(session0, defaultQuery1);
+hqlQueryExecutor0.getStore();
+hqlQueryExecutor0.execute((Query) defaultQuery1);
+
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.StringIndexOutOfBoundsException: String index out of range: -8
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.String.substring(String.java:1967)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.AbstractQueryFilter.getSelectColumns(AbstractQueryFilter.java:80)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.isFilterable(CountDocumentFilter.java:60)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter.java:70)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.createHibernateQuery(HqlQueryExecutor.java:230)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:47:59.077 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:47:59.078 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:47:59.079 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:47:59.093 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:47:59.094 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:47:59.094 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:48:02.181 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'HqlQueryExecutor_ESTest' to results/XWIKI-14152-5-13-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:48:02.246 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,65 @@
+20:43:44.858 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.MaxIterationsExceededException
+20:43:44.861 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.special.Gamma.regularizedGammaP(Gamma:180)
+20:43:44.861 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.special.Gamma
+20:43:44.861 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:43:45.483 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+20:43:47.094 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:43:47.102 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:43:47.111 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:43:47.116 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:43:47.350 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.90625
+20:43:47.441 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 4.499999999650754
+20:43:48.085 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 0 second: 0.0
+20:43:48.969 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:43:48.970 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:43:48.970 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:43:48.970 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:43:48.970 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:43:48.970 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double double0 = 0.0;
+Gamma.logGamma(double0);
+double double1 = 0.0;
+double double2 = 0.0;
+double double3 = (-1976.7062021387005);
+int int0 = 9;
+Gamma.regularizedGammaP(double1, double2, double3, int0);
+double double4 = 566.039;
+double double5 = 0.0;
+int int1 = (-461);
+double double6 = Gamma.regularizedGammaP(double4, double4, double5, int1);
+double double7 = 0.0;
+Gamma.regularizedGammaP(double6, (double) int0, double7, int0);
+Gamma.logGamma(double7);
+Gamma gamma0 = new Gamma();
+double double8 = 0.0;
+Gamma.logGamma(double8);
+double double9 = 48.0;
+double double10 = 2582.833927872604;
+double double11 = (-1776.8673525);
+Gamma.regularizedGammaP(double9, double10, double11, int0);
+Gamma gamma1 = new Gamma();
+double double12 = 1887.906898179613;
+Gamma.regularizedGammaQ(double12, double0);
+
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MaxIterationsExceededException: Maximal number of iterations (-461) exceeded
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.special.Gamma.regularizedGammaP(Gamma.java:180)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:43:48.971 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:43:48.972 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:43:48.978 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:43:48.979 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:43:48.979 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:43:50.957 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Gamma_ESTest' to results/MATH-103b-1-5-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:43:50.969 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

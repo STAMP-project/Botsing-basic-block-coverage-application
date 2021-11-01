@@ -1,0 +1,75 @@
+03:39:39.793 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+03:39:39.796 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math3.geometry.euclidean.threed.Line.getAbscissa(Line:114)
+03:39:39.796 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math3.geometry.euclidean.threed.Line
+03:39:39.796 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+03:39:40.784 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math3.geometry.euclidean.threed.Line
+03:39:40.805 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+03:39:43.902 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:39:43.936 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+03:39:43.991 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+03:39:44.038 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+03:39:44.707 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.5
+03:39:44.785 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 1.0
+03:39:46.662 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.0
+03:39:46.662 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.0. PT: 2 seconds
+03:39:46.662 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+03:39:47.604 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 100
+03:39:48.493 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 150
+03:39:49.279 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 200
+03:39:50.250 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 250
+03:39:50.700 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 300
+03:39:51.378 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+03:39:51.379 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 7 seconds
+03:39:51.379 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+03:39:51.379 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+03:39:51.379 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 7 seconds
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Vector3D vector3D0 = Vector3D.NaN;
+Line line0 = new Line(vector3D0, vector3D0);
+double double0 = 1624.10244;
+Vector1D vector1D0 = Vector1D.POSITIVE_INFINITY;
+Vector1D vector1D1 = new Vector1D(double0, vector1D0, double0, vector1D0, double0, vector1D0);
+Vector3D vector3D1 = line0.toSpace(vector1D1);
+line0.reset(vector3D0, vector3D1);
+Vector3D vector3D2 = line0.getDirection();
+Line line1 = line0.revert();
+Vector3D vector3D3 = line1.pointAt(double0);
+double double1 = (-820.6858);
+String string0 = "^a$<F:+;Hx(5m22\\3)f";
+String string1 = "denominator must be different from 0";
+String string2 = "KQb\"T}+mz4";
+Locale locale0 = new Locale(string0, string1, string2);
+DecimalFormat decimalFormat0 = (DecimalFormat)NumberFormat.getCurrencyInstance(locale0);
+vector3D0.toString((NumberFormat) decimalFormat0);
+double double2 = 1.9868161777724352E-8;
+Line line2 = new Line(line0);
+Vector3D vector3D4 = null;
+line1.getAbscissa(vector3D3);
+line1.distance(line0);
+Vector<Euclidean3D> vector0 = null;
+Line line3 = new Line(vector3D3, vector3D2);
+line3.toSubSpace(vector3D3);
+line1.toSubSpace(vector3D4);
+
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.geometry.euclidean.threed.Line.getAbscissa(Line.java:114)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.geometry.euclidean.threed.Line.toSubSpace(Line.java:129)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03:39:51.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+03:39:51.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+03:39:51.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+03:39:51.382 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+03:39:51.386 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+03:39:51.387 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+03:39:51.387 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+03:39:53.340 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Line_ESTest' to results/MATH-4b-1-24-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+03:39:53.359 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

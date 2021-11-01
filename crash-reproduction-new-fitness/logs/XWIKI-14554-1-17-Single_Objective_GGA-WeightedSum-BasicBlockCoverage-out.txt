@@ -1,0 +1,71 @@
+14:07:42.508 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+14:07:42.511 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator:214)
+14:07:42.511 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.notifications.internal.email.AbstractMimeMessageIterator
+14:07:42.511 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+14:07:43.400 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 580.
+14:08:13.283 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+14:08:13.294 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+14:08:13.300 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+14:08:13.306 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+14:08:17.166 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 3 second: 4.5
+14:08:18.058 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+14:08:18.059 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 4 seconds
+14:08:18.059 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+14:08:21.529 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+14:08:21.531 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+14:08:22.815 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 74 fitness evolutions and 9 second: 3.0
+14:08:24.311 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+14:08:24.312 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 11 seconds
+14:08:27.087 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+14:08:28.170 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 168 fitness evolutions and 14 second: 0.0
+14:08:29.281 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 200
+14:08:29.282 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 15 seconds
+14:08:29.293 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+14:08:29.294 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+14:08:29.294 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 15 seconds
+14:08:29.294 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: PeriodicMimeMessageIterator periodicMimeMessageIterator0 = new PeriodicMimeMessageIterator();
+NotificationEmailRenderer notificationEmailRenderer0 = mock(NotificationEmailRenderer.class, new ViolatedAssumptionAnswer());
+Injector.inject(periodicMimeMessageIterator0, (Class<?>) AbstractMimeMessageIterator.class, "defaultNotificationEmailRenderer", (Object) notificationEmailRenderer0);
+DocumentAccessBridge documentAccessBridge0 = mock(DocumentAccessBridge.class, new ViolatedAssumptionAnswer());
+XWikiContext xWikiContext0 = new XWikiContext();
+MimeMessage mimeMessage0 = periodicMimeMessageIterator0.next();
+xWikiContext0.remove((Object) mimeMessage0);
+ExternalServletURLFactory externalServletURLFactory0 = new ExternalServletURLFactory();
+String string0 = ":\\k>va3ne*lc1LR4";
+String string1 = "";
+String string2 = "6v1roy:]=\"A19";
+String string3 = "!YaCu<Fa";
+String string4 = "";
+String string5 = "s:g(w!aq^vqQ:7}";
+URL uRL0 = externalServletURLFactory0.createSkinURL(string3, string4, string5, xWikiContext0);
+xWikiContext0.setURL(uRL0);
+xWikiContext0.clone();
+periodicMimeMessageIterator0.spliterator();
+XWikiContext xWikiContext1 = new XWikiContext();
+MergeConfiguration mergeConfiguration0 = new MergeConfiguration();
+periodicMimeMessageIterator0.computeNext();
+periodicMimeMessageIterator0.iterator();
+
+14:08:29.294 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator.java:214)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+14:08:29.295 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+14:08:29.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+14:08:29.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+14:08:29.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+14:08:29.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+14:08:29.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+14:08:29.300 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+14:08:29.306 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+14:08:29.306 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+14:08:29.306 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+14:08:33.401 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractMimeMessageIterator_ESTest' to results/XWIKI-14554-1-17-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+14:08:33.469 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

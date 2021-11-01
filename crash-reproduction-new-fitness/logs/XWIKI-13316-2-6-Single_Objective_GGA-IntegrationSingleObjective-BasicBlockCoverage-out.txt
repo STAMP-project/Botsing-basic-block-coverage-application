@@ -1,0 +1,177 @@
+20:02:11.219 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+20:02:11.222 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.internal.skin.AbstractSkin.getOutputSyntax(AbstractSkin:140)
+20:02:11.222 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.internal.skin.AbstractSkin
+20:02:11.222 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:02:12.617 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.internal.skin.EnvironmentSkin
+20:02:12.618 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.internal.skin.AbstractSkin
+20:02:12.628 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 575.
+20:02:37.430 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:02:37.439 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:02:37.446 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:02:37.453 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:02:39.099 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 2.5
+20:02:40.375 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 2.5
+20:02:40.376 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 2.5. PT: 2 seconds
+20:02:40.376 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:02:43.183 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 100
+20:02:45.880 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 150
+20:02:48.098 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 200
+20:02:48.422 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 216 fitness evolutions and 10 second: 1.0
+20:02:49.502 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 250
+20:02:49.502 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.0. PT: 12 seconds
+20:02:51.878 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 300
+20:02:53.535 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 350
+20:02:55.461 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 400
+20:02:57.578 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 450
+20:03:00.898 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 500
+20:03:03.716 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 550
+20:03:05.806 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 600
+20:03:05.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 28 seconds
+20:03:05.808 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:03:05.808 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:03:05.808 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 28 seconds
+20:03:05.811 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: InternalSkinManager internalSkinManager0 = null;
+InternalSkinConfiguration internalSkinConfiguration0 = new InternalSkinConfiguration();
+DefaultConfigurationSourceProvider defaultConfigurationSourceProvider0 = new DefaultConfigurationSourceProvider();
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+EmbeddableComponentManager embeddableComponentManager0 = new EmbeddableComponentManager();
+WikiSkinUtils wikiSkinUtils0 = null;
+MergeResult mergeResult0 = new MergeResult();
+DefaultSyntaxFactory defaultSyntaxFactory0 = new DefaultSyntaxFactory();
+String string0 = "";
+DefaultSyntaxFactory defaultSyntaxFactory1 = new DefaultSyntaxFactory();
+Configuration configuration0 = new Configuration();
+String string1 = "";
+Class<?> class0 = configuration0.getClassByNameOrNull(string1);
+String string2 = "";
+RoleHint<ObjectPropertyReference> roleHint0 = new RoleHint<ObjectPropertyReference>(class0, string2);
+roleHint0.getRoleType();
+String string3 = "/skins/";
+LinkedTransferQueue<SubstituteLoggingEvent> linkedTransferQueue0 = new LinkedTransferQueue<SubstituteLoggingEvent>();
+boolean boolean0 = true;
+SubstituteLogger substituteLogger0 = new SubstituteLogger(string0, linkedTransferQueue0, boolean0);
+EventRecodingLogger eventRecodingLogger0 = new EventRecodingLogger(substituteLogger0, linkedTransferQueue0);
+Environment environment0 = null;
+XWikiContextProvider xWikiContextProvider0 = new XWikiContextProvider();
+XWikiStubContextProvider xWikiStubContextProvider0 = mock(XWikiStubContextProvider.class, new ViolatedAssumptionAnswer());
+Injector.inject(xWikiContextProvider0, (Class<?>) XWikiContextProvider.class, "contextProvider", (Object) xWikiStubContextProvider0);
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(xWikiContextProvider0, (Class<?>) XWikiContextProvider.class, "execution", (Object) execution1);
+Injector.validateBean(xWikiContextProvider0, (Class<?>) XWikiContextProvider.class);
+EnvironmentSkin environmentSkin0 = new EnvironmentSkin(string3, internalSkinManager0, internalSkinConfiguration0, eventRecodingLogger0, defaultSyntaxFactory0, environment0, xWikiContextProvider0);
+environmentSkin0.getOutputSyntax();
+InternalSkinManager internalSkinManager1 = new InternalSkinManager();
+ConfigurationSource configurationSource0 = defaultConfigurationSourceProvider0.get();
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "allConfiguration", (Object) configurationSource0);
+ContextualAuthorizationManager contextualAuthorizationManager0 = mock(ContextualAuthorizationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "authorization", (Object) contextualAuthorizationManager0);
+CacheManager cacheManager0 = mock(CacheManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "cacheManager", (Object) cacheManager0);
+ServletEnvironment servletEnvironment0 = new ServletEnvironment();
+RoleHint<Integer> roleHint1 = new RoleHint<Integer>(class0, string1);
+GenericProvider<Integer> genericProvider0 = new GenericProvider<Integer>(embeddableComponentManager0, roleHint1);
+Injector.inject(servletEnvironment0, (Class<?>) AbstractEnvironment.class, "configurationProvider", (Object) genericProvider0);
+LogQueue logQueue0 = mergeResult0.getLog();
+Injector.inject(servletEnvironment0, (Class<?>) AbstractEnvironment.class, "logger", (Object) logQueue0);
+Injector.validateBean(servletEnvironment0, (Class<?>) ServletEnvironment.class);
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "environment", (Object) servletEnvironment0);
+Logger logger0 = CustomX509TrustManager.logger;
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "logger", (Object) logger0);
+DefaultObservationManager defaultObservationManager0 = new DefaultObservationManager();
+ComponentManager componentManager0 = embeddableComponentManager0.getParent();
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "componentManager", (Object) componentManager0);
+String string4 = null;
+boolean boolean1 = true;
+SubstituteLogger substituteLogger1 = new SubstituteLogger(string4, linkedTransferQueue0, boolean1);
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "logger", (Object) substituteLogger1);
+Injector.validateBean(defaultObservationManager0, (Class<?>) DefaultObservationManager.class);
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "observation", (Object) defaultObservationManager0);
+InternalSkinConfiguration internalSkinConfiguration1 = new InternalSkinConfiguration();
+RestrictedConfigurationSourceProvider restrictedConfigurationSourceProvider0 = new RestrictedConfigurationSourceProvider();
+ContextRootComponentManager contextRootComponentManager0 = new ContextRootComponentManager();
+ContextComponentManager contextComponentManager0 = new ContextComponentManager();
+Execution execution2 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "execution", (Object) execution2);
+WikiComponentManager wikiComponentManager0 = new WikiComponentManager();
+ComponentManager componentManager1 = contextComponentManager0.getParent();
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "rootComponentManager", (Object) componentManager1);
+WikiDescriptorManager wikiDescriptorManager0 = mock(WikiDescriptorManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "wikis", (Object) wikiDescriptorManager0);
+Execution execution3 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution3);
+EntityReferenceSerializer<String> entityReferenceSerializer0 = (EntityReferenceSerializer<String>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer0);
+ComponentManagerManager componentManagerManager0 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager0);
+Injector.validateBean(wikiComponentManager0, (Class<?>) WikiComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "rootComponentManager", (Object) wikiComponentManager0);
+RootComponentManager rootComponentManager0 = new RootComponentManager();
+EmbeddableComponentManager embeddableComponentManager1 = new EmbeddableComponentManager(string1);
+Injector.inject(rootComponentManager0, (Class<?>) RootComponentManager.class, "rootComponentManager", (Object) embeddableComponentManager1);
+Injector.validateBean(rootComponentManager0, (Class<?>) RootComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "userComponentManager", (Object) rootComponentManager0);
+Injector.validateBean(contextComponentManager0, (Class<?>) ContextComponentManager.class);
+ComponentManager componentManager2 = contextComponentManager0.getComponentManager();
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "rootComponentManager", (Object) componentManager2);
+ContextComponentManagerProvider contextComponentManagerProvider0 = new ContextComponentManagerProvider();
+Logger logger1 = URLStreamHandlerFactory.log;
+Injector.inject(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class, "logger", (Object) logger1);
+ComponentManager componentManager3 = embeddableComponentManager0.getParent();
+Injector.inject(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class, "rootComponentManager", (Object) componentManager3);
+Injector.validateBean(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class);
+ComponentManager componentManager4 = contextComponentManagerProvider0.get();
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "userComponentManager", (Object) componentManager4);
+Injector.validateBean(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class);
+Injector.inject(restrictedConfigurationSourceProvider0, (Class<?>) AbstractConfigurationSourceProvider.class, "componentManager", (Object) contextRootComponentManager0);
+Injector.validateBean(restrictedConfigurationSourceProvider0, (Class<?>) RestrictedConfigurationSourceProvider.class);
+ConfigurationSource configurationSource1 = restrictedConfigurationSourceProvider0.get();
+Injector.inject(internalSkinConfiguration1, (Class<?>) InternalSkinConfiguration.class, "xwikicfg", (Object) configurationSource1);
+Injector.validateBean(internalSkinConfiguration1, (Class<?>) InternalSkinConfiguration.class);
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "skinConfiguration", (Object) internalSkinConfiguration1);
+DefaultSyntaxFactory defaultSyntaxFactory2 = new DefaultSyntaxFactory();
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "syntaxFactory", (Object) defaultSyntaxFactory2);
+WikiSkinUtils wikiSkinUtils1 = new WikiSkinUtils();
+DocumentReferenceResolver<XYDatasetTableModel> documentReferenceResolver0 = (DocumentReferenceResolver<XYDatasetTableModel>) mock(DocumentReferenceResolver.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "currentMixedDocumentReferenceResolver", (Object) documentReferenceResolver0);
+EventRecodingLogger eventRecodingLogger1 = new EventRecodingLogger(substituteLogger0, linkedTransferQueue0);
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "logger", (Object) eventRecodingLogger1);
+EntityReferenceSerializer<Object> entityReferenceSerializer1 = (EntityReferenceSerializer<Object>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "referenceSerializer", (Object) entityReferenceSerializer1);
+Class<PrinterLocation> class1 = PrinterLocation.class;
+LoadedClass<PrinterLocation> loadedClass0 = new LoadedClass<PrinterLocation>(class1);
+com.google.inject.Injector injector0 = mock(com.google.inject.Injector.class, new ViolatedAssumptionAnswer());
+Injector.inject(loadedClass0, (Class<?>) AbstractDeferredClass.class, "injector", (Object) injector0);
+Injector.validateBean(loadedClass0, (Class<?>) LoadedClass.class);
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "xcontextProvider", (Object) loadedClass0);
+Injector.validateBean(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class);
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "wikiSkinUtils", (Object) wikiSkinUtils1);
+Provider<JToggleButton> provider0 = (Provider<JToggleButton>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(internalSkinManager1, (Class<?>) InternalSkinManager.class, "xcontextProvider", (Object) provider0);
+Injector.validateBean(internalSkinManager1, (Class<?>) InternalSkinManager.class);
+WikiSkin wikiSkin0 = new WikiSkin(string1, internalSkinManager1, internalSkinConfiguration1, wikiSkinUtils0, substituteLogger1, defaultSyntaxFactory0);
+wikiSkin0.createParent();
+
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getProperties(EnvironmentSkin.java:90)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getOutputSyntaxString(EnvironmentSkin.java:156)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.AbstractSkin.getOutputSyntax(AbstractSkin.java:140)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:03:05.812 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:03:05.813 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:03:05.813 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:03:05.833 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:03:05.837 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:03:05.837 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:03:05.837 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:03:08.457 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractSkin_ESTest' to results/XWIKI-13316-2-6-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+20:03:08.465 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

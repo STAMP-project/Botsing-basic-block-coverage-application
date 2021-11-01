@@ -1,0 +1,64 @@
+06:13:48.718 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.exception.NotStrictlyPositiveException
+06:13:48.721 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.function.Gaussian$Parametric.value(Gaussian$Parametric:128)
+06:13:48.721 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.function.Gaussian$Parametric
+06:13:48.721 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+06:13:49.017 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.function.Gaussian$Parametric
+06:13:49.018 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.function.Gaussian$Parametric
+06:13:49.043 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+06:13:50.310 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+06:13:50.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+06:13:50.324 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+06:13:50.329 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+06:13:50.562 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 2.5
+06:13:50.597 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 1.5
+06:13:50.696 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.697 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.712 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.712 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.713 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.735 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.737 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.768 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.769 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.940 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.965 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+06:13:50.990 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+06:13:50.990 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:13:50.990 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+06:13:50.991 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+06:13:50.991 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+06:13:50.991 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:13:50.991 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Gaussian.Parametric gaussian_Parametric0 = new Gaussian.Parametric();
+Gaussian.Parametric gaussian_Parametric1 = new Gaussian.Parametric();
+double double0 = 0.0;
+double[] doubleArray0 = new double[3];
+doubleArray0[0] = double0;
+doubleArray0[1] = double0;
+double double1 = 0.0;
+doubleArray0[2] = double1;
+gaussian_Parametric0.value(double0, doubleArray0);
+
+06:13:50.991 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.exception.NotStrictlyPositiveException: 0 is smaller than, or equal to, the minimum (0)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.function.Gaussian$Parametric.validateParameters(Gaussian.java:183)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.function.Gaussian$Parametric.value(Gaussian.java:128)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+06:13:50.997 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+06:13:50.998 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+06:13:50.998 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+06:13:50.998 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+06:13:50.998 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+06:13:50.999 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+06:13:50.999 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+06:13:50.999 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+06:13:50.999 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+06:13:51.000 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+06:13:51.003 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+06:13:51.003 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+06:13:51.003 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+06:13:51.846 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Gaussian$Parametric_ESTest' to results/MATH-58b-2-20-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+06:13:51.861 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

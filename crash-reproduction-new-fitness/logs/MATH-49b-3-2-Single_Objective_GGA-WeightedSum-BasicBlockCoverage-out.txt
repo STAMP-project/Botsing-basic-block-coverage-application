@@ -1,0 +1,78 @@
+21:00:12.053 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.MathRuntimeException$6
+21:00:12.059 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector:372)
+21:00:12.060 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.OpenMapRealVector
+21:00:12.060 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:00:13.435 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:00:17.199 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:00:17.302 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:00:17.337 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:00:17.347 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:00:18.250 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.666666666666666
+21:00:18.273 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 4.5
+21:00:18.283 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 3.0
+21:00:21.052 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+21:00:21.053 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 3 seconds
+21:00:21.053 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:00:21.835 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+21:00:22.458 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+21:00:23.155 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 200
+21:00:23.787 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 250
+21:00:24.265 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 300
+21:00:24.897 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 350
+21:00:25.036 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 379 fitness evolutions and 7 second: 0.0
+21:00:25.443 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 400
+21:00:25.443 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+21:00:25.449 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:00:25.450 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:00:25.450 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: RealVector realVector0 = mock(RealVector.class, new ViolatedAssumptionAnswer());
+double double0 = 417.396259487;
+double double1 = 0.0;
+double double2 = 0.0;
+double double3 = 9.313225746154785E-10;
+double[] doubleArray0 = new double[7];
+doubleArray0[0] = double0;
+doubleArray0[1] = double3;
+doubleArray0[2] = double3;
+doubleArray0[0] = double3;
+doubleArray0[4] = double3;
+doubleArray0[5] = double2;
+doubleArray0[6] = double2;
+OpenMapRealVector openMapRealVector0 = new OpenMapRealVector(doubleArray0);
+OpenMapRealVector openMapRealVector1 = new OpenMapRealVector(openMapRealVector0);
+double double4 = (-2000.01072061986);
+double double5 = 417.396259487;
+OpenMapRealVector openMapRealVector2 = openMapRealVector0.append(double5);
+OpenMapRealVector openMapRealVector3 = openMapRealVector0.ebeMultiply((RealVector) openMapRealVector1);
+openMapRealVector3.ebeDivide(doubleArray0);
+OpenMapRealVector openMapRealVector4 = openMapRealVector3.subtract((RealVector) openMapRealVector2);
+openMapRealVector4.isInfinite();
+openMapRealVector1.getMinIndex();
+OpenMapRealVector openMapRealVector5 = new OpenMapRealVector(doubleArray0);
+double double6 = 1.0;
+openMapRealVector3.set(double6);
+
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException$6: map has been modified while iterating
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException.createConcurrentModificationException(MathRuntimeException.java:373)
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.util.OpenIntToDoubleHashMap$Iterator.advance(OpenIntToDoubleHashMap.java:564)
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.OpenMapRealVector.ebeMultiply(OpenMapRealVector.java:372)
+21:00:25.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:00:25.452 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:00:25.453 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:00:25.458 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:00:25.458 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:00:25.458 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:00:27.039 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'OpenMapRealVector_ESTest' to results/MATH-49b-3-2-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:00:27.055 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

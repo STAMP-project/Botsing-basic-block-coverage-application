@@ -1,0 +1,69 @@
+20:27:03.463 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NumberFormatException
+20:27:03.469 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils:545)
+20:27:03.470 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.math.NumberUtils
+20:27:03.470 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:27:06.476 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 6.
+20:27:10.801 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:27:10.810 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:27:10.840 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:27:10.852 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:27:11.190 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.990384615384615
+20:27:11.203 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 5.714285714285714
+20:27:11.237 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 0 second: 5.684210526315789
+20:27:11.241 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 8 fitness evolutions and 0 second: 0.0
+20:27:12.162 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:27:12.162 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:27:12.165 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:27:12.165 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:27:12.165 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:27:12.165 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:27:12.166 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: NumberUtils numberUtils0 = new NumberUtils();
+String string0 = "<";
+short short0 = NumberUtils.toShort(string0);
+int[] intArray0 = new int[7];
+intArray0[0] = (int) short0;
+intArray0[1] = (int) short0;
+int int0 = 88;
+intArray0[2] = int0;
+intArray0[3] = (int) short0;
+intArray0[4] = (int) short0;
+intArray0[5] = (int) short0;
+intArray0[6] = (int) short0;
+NumberUtils.min(intArray0);
+short short1 = NumberUtils.toShort(string0);
+byte byte0 = (byte)9;
+byte byte1 = NumberUtils.min(byte0, byte0, byte0);
+float float0 = Float.NaN;
+NumberUtils.min(float0, float0, (float) intArray0[5]);
+float float1 = 0.0F;
+float float2 = 1042.785F;
+NumberUtils.min(float1, (float) intArray0[5], float2);
+NumberUtils.createNumber(string0);
+NumberUtils numberUtils1 = new NumberUtils();
+NumberUtils.toInt(string0, (int) short1);
+byte byte2 = (byte)43;
+NumberUtils.max(byte1, byte2, byte2);
+
+20:27:12.166 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:27:12.166 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NumberFormatException: < is not a valid number.
+20:27:12.166 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:545)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:27:12.167 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:27:12.169 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:27:12.194 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:27:12.194 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:27:12.194 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:27:16.566 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'NumberUtils_ESTest' to results/LANG-16b-1-7-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:27:16.646 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,56 @@
+17:44:35.445 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+17:44:35.456 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.internal.skin.EnvironmentSkin.getOutputSyntaxString(EnvironmentSkin:156)
+17:44:35.457 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.internal.skin.EnvironmentSkin
+17:44:35.457 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+17:44:36.989 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 575.
+17:45:03.486 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+17:45:03.497 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+17:45:03.504 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+17:45:03.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+17:45:05.448 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 4.5
+17:45:05.462 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 1 second: 0.0
+17:45:06.036 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+17:45:06.036 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+17:45:06.036 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+17:45:06.037 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+17:45:06.037 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+17:45:06.037 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "}NL";
+InternalSkinManager internalSkinManager0 = mock(InternalSkinManager.class, new ViolatedAssumptionAnswer());
+InternalSkinConfiguration internalSkinConfiguration0 = mock(InternalSkinConfiguration.class, new ViolatedAssumptionAnswer());
+PriorityBlockingQueue<SubstituteLoggingEvent> priorityBlockingQueue0 = new PriorityBlockingQueue<SubstituteLoggingEvent>();
+boolean boolean0 = false;
+SubstituteLogger substituteLogger0 = new SubstituteLogger(string0, priorityBlockingQueue0, boolean0);
+SyntaxFactory syntaxFactory0 = mock(SyntaxFactory.class, new ViolatedAssumptionAnswer());
+Environment environment0 = null;
+Provider<XWikiContext> provider0 = null;
+EnvironmentSkin environmentSkin0 = new EnvironmentSkin(string0, internalSkinManager0, internalSkinConfiguration0, substituteLogger0, syntaxFactory0, environment0, provider0);
+environmentSkin0.getOutputSyntaxString();
+environmentSkin0.createParent();
+Object.registerNatives();
+environmentSkin0.getOutputSyntaxString();
+
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getProperties(EnvironmentSkin.java:90)
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getOutputSyntaxString(EnvironmentSkin.java:156)
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+17:45:06.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+17:45:06.040 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+17:45:06.041 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+17:45:06.043 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+17:45:06.050 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+17:45:06.050 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+17:45:06.050 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+17:45:07.711 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EnvironmentSkin_ESTest' to results/XWIKI-13316-1-3-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+17:45:07.716 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

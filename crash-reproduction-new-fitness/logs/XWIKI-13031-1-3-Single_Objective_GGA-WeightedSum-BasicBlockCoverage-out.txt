@@ -1,0 +1,74 @@
+16:20:44.333 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+16:20:44.336 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.getWikiReference(SolrEntityReferenceResolver:93)
+16:20:44.336 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver
+16:20:44.336 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:20:45.288 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 896.
+16:20:57.848 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:20:57.860 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:20:57.890 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:20:57.897 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:21:03.662 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 5 second: 5.857142857142857
+16:21:03.666 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 5 second: 4.5
+16:21:03.975 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 6 second: 3.0
+16:21:05.546 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+16:21:05.547 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 7 seconds
+16:21:05.548 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:21:07.036 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+16:21:07.972 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+16:21:08.740 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 200
+16:21:09.441 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 250
+16:21:10.251 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 300
+16:21:10.581 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 350
+16:21:10.690 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 383 fitness evolutions and 12 second: 0.0
+16:21:11.158 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 400
+16:21:11.158 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 13 seconds
+16:21:11.159 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:21:11.159 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:21:11.159 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 13 seconds
+16:21:11.159 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: EntityReferenceResolver<Integer> entityReferenceResolver0 = (EntityReferenceResolver<Integer>) mock(EntityReferenceResolver.class, new ViolatedAssumptionAnswer());
+SolrDocument solrDocument0 = new SolrDocument();
+Object object0 = new Object();
+EntityType entityType0 = EntityType.BLOCK;
+EntityType entityType1 = EntityType.SPACE;
+SolrEntityReferenceResolver solrEntityReferenceResolver0 = new SolrEntityReferenceResolver();
+Injector.inject(solrEntityReferenceResolver0, (Class<?>) SolrEntityReferenceResolver.class, "explicitReferenceEntityReferenceResolver", (Object) entityReferenceResolver0);
+Injector.validateBean(solrEntityReferenceResolver0, (Class<?>) SolrEntityReferenceResolver.class);
+EntityType entityType2 = EntityType.WIKI;
+String string0 = "wiki";
+ExplicitStringEntityReferenceResolver explicitStringEntityReferenceResolver0 = new ExplicitStringEntityReferenceResolver();
+solrDocument0.putIfAbsent(string0, explicitStringEntityReferenceResolver0);
+Object[] objectArray0 = null;
+solrEntityReferenceResolver0.resolve(solrDocument0, entityType2, objectArray0);
+EntityType entityType3 = EntityType.SPACE;
+Object[] objectArray1 = new Object[21];
+Object object1 = new Object();
+objectArray1[0] = object1;
+objectArray1[1] = (Object) entityReferenceResolver0;
+solrEntityReferenceResolver0.resolve(solrDocument0, entityType3, objectArray1);
+EntityType entityType4 = EntityType.BLOCK;
+solrEntityReferenceResolver0.resolve(solrDocument0, entityType4, objectArray0);
+
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.xwiki.model.internal.reference.ExplicitStringEntityReferenceResolver cannot be cast to java.lang.String
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.getWikiReference(SolrEntityReferenceResolver.java:93)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.getEntityReference(SolrEntityReferenceResolver.java:70)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.resolve(SolrEntityReferenceResolver.java:63)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:21:11.160 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:21:11.161 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:21:11.165 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:21:11.166 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:21:11.166 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:21:15.563 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'SolrEntityReferenceResolver_ESTest' to results/XWIKI-13031-1-3-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:21:15.574 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

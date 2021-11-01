@@ -1,0 +1,75 @@
+22:39:52.367 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+22:39:52.394 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl:106)
+22:39:52.394 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.FDistributionImpl
+22:39:52.395 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:39:52.788 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+22:39:53.858 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:39:53.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:39:53.876 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:39:53.882 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:39:54.255 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.727272727272727
+22:39:54.300 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 27 fitness evolutions and 0 second: 0.6654275092936803
+22:39:54.800 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.6654275092936803
+22:39:54.800 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.6654275092936803. PT: 0 seconds
+22:39:54.801 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:39:55.178 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 100
+22:39:55.632 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 150
+22:39:55.963 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 200
+22:39:56.338 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 250
+22:39:56.784 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 300
+22:39:57.086 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 350
+22:39:57.301 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 400
+22:39:57.619 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 450
+22:39:57.748 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6654275092936803 | 500
+22:39:57.791 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 545 fitness evolutions and 3 second: 0.0
+22:39:57.861 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 550
+22:39:57.862 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+22:39:57.863 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:39:57.863 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:39:57.863 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+22:39:57.863 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double double0 = 1164.49;
+FDistributionImpl fDistributionImpl0 = new FDistributionImpl(double0, double0);
+double double1 = 25.052962555906575;
+double double2 = 2772.4184785593047;
+double double3 = fDistributionImpl0.cumulativeProbability(double2);
+double double4 = 1.0;
+FDistributionImpl fDistributionImpl1 = new FDistributionImpl(double4, double3);
+double double5 = 25.052962555906575;
+double double6 = 2772.4184785593047;
+FDistributionImpl fDistributionImpl2 = new FDistributionImpl(double5, double3);
+fDistributionImpl2.cumulativeProbability(double1);
+double double7 = 0.0013216050845353952;
+fDistributionImpl1.inverseCumulativeProbability(double7);
+double double8 = 1224.3630642226085;
+double double9 = (-5129.75749465);
+fDistributionImpl2.setDenominatorDegreesOfFreedom(double9);
+double double10 = 3075.8157970000566;
+double double11 = 1.0E-6;
+fDistributionImpl1.getDomainLowerBound(double11);
+fDistributionImpl0.setNumeratorDegreesOfFreedom(double5);
+
+22:39:57.863 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:39:57.863 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Invalid endpoint parameters:  lowerBound=0.0 initial=-1.0 upperBound=1.7976931348623157E308
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:179)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:128)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:84)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl.java:106)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:39:57.864 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:39:57.865 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:39:57.869 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:39:57.869 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:39:57.869 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:39:59.178 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FDistributionImpl_ESTest' to results/MATH-95b-4-24-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:39:59.185 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,66 @@
+00:42:27.442 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+00:42:27.445 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter:866)
+00:42:27.445 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.format.DateTimeFormatter
+00:42:27.445 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+00:42:27.792 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+00:42:30.415 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:42:30.451 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+00:42:30.472 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+00:42:30.483 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+00:42:31.242 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+00:42:31.541 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 8 fitness evolutions and 1 second: 0.0
+00:42:32.196 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+00:42:32.197 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+00:42:32.197 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+00:42:32.197 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+00:42:32.197 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+00:42:32.197 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+00:42:32.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
+DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
+doReturn((String) null).when(dateTimeParser0).toString();
+doReturn(0).when(dateTimeParser0).parseInto(any(org.joda.time.format.DateTimeParserBucket.class) , anyString() , anyInt());
+DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimePrinter0, dateTimeParser0);
+String string0 = "1\\\\T~";
+dateTimeFormatter0.parseDateTime(string0);
+int int0 = 1631;
+PipedReader pipedReader0 = new PipedReader(int0);
+PipedWriter pipedWriter0 = new PipedWriter(pipedReader0);
+TimeZone timeZone0 = TimeZone.getTimeZone(string0);
+Calendar calendar0 = Calendar.getInstance(timeZone0);
+LocalTime localTime0 = LocalTime.fromCalendarFields(calendar0);
+dateTimeFormatter0.printTo((Appendable) pipedWriter0, (ReadablePartial) localTime0);
+String string1 = ":c^|I[1]p0@";
+dateTimeFormatter0.parseLocalDateTime(string1);
+DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
+String string2 = "No formatter supplied";
+dateTimeFormatter1.parseLocalTime(string2);
+dateTimeFormatter1.getPivotYear();
+GregorianChronology gregorianChronology0 = GregorianChronology.getInstanceUTC();
+MutableDateTime mutableDateTime0 = new MutableDateTime(pipedWriter0, gregorianChronology0);
+MutableDateTime mutableDateTime1 = mutableDateTime0.toMutableDateTime();
+int int1 = (-650);
+dateTimeFormatter1.parseInto(mutableDateTime1, string2, int1);
+
+00:42:32.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+00:42:32.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Invalid format: "1\\T~"
+00:42:32.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:866)
+00:42:32.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+00:42:32.199 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+00:42:32.200 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+00:42:32.210 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+00:42:32.211 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+00:42:32.211 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+00:42:33.025 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeFormatter_ESTest' to results/TIME-20b-1-20-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+00:42:33.039 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

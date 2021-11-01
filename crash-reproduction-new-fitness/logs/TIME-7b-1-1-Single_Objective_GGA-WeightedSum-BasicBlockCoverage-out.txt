@@ -1,0 +1,62 @@
+06:35:14.235 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.joda.time.IllegalFieldValueException
+06:35:14.238 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils:220)
+06:35:14.238 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.field.FieldUtils
+06:35:14.238 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+06:35:14.500 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+06:35:16.123 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+06:35:16.131 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+06:35:16.137 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+06:35:16.149 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+06:35:16.423 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.7
+06:35:16.792 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 0 second: 0.0
+06:35:17.042 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+06:35:17.043 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:35:17.043 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+06:35:17.043 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+06:35:17.043 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+06:35:17.043 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: TestOffsetDateTimeField.MockStandardDateTimeField testOffsetDateTimeField_MockStandardDateTimeField0 = new TestOffsetDateTimeField.MockStandardDateTimeField();
+Chronology chronology0 = null;
+LenientDateTimeField lenientDateTimeField0 = new LenientDateTimeField(testOffsetDateTimeField_MockStandardDateTimeField0, chronology0);
+int int0 = 2758;
+int int1 = 1320;
+int int2 = 77;
+FieldUtils.verifyValueBounds((DateTimeField) lenientDateTimeField0, int0, int1, int2);
+int int3 = 0;
+int int4 = 1;
+FieldUtils.verifyValueBounds((DateTimeField) testOffsetDateTimeField_MockStandardDateTimeField0, int1, int3, int4);
+int int5 = 0;
+long long0 = FieldUtils.safeMultiply((long) int3, int5);
+int int6 = 0;
+FieldUtils.verifyValueBounds((DateTimeField) testOffsetDateTimeField_MockStandardDateTimeField0, int3, int4, int6);
+FieldUtils.safeToInt(long0);
+String string0 = "@qIQk9`&'\"6j[O=";
+int int7 = 0;
+int int8 = 1971;
+FieldUtils.verifyValueBounds(string0, int5, int7, int8);
+int int9 = (-4212);
+FieldUtils.getWrappedValue(int0, int1, int9, int5);
+
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.IllegalFieldValueException: Value 2758 for secondOfMinute must be in the range [1320,77]
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+06:35:17.044 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+06:35:17.045 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+06:35:17.049 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+06:35:17.049 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+06:35:17.049 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+06:35:17.687 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FieldUtils_ESTest' to results/TIME-7b-1-1-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+06:35:17.695 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

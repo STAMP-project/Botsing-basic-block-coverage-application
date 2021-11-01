@@ -1,0 +1,67 @@
+21:38:33.673 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.exception.TooManyEvaluationsException
+21:38:33.675 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve(BaseSecantSolver:117)
+21:38:33.676 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.solvers.BaseSecantSolver
+21:38:33.676 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:38:34.161 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:38:36.006 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:38:36.016 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:38:36.041 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:38:36.047 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:38:36.472 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+21:38:37.176 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+21:38:37.176 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 1 seconds
+21:38:37.177 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:38:37.354 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 62 fitness evolutions and 1 second: 3.0
+21:38:38.272 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 77 fitness evolutions and 2 second: 0.0
+21:38:38.702 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+21:38:38.702 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:38:38.703 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:38:38.703 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:38:38.703 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:38:38.703 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseSecantSolver.Method baseSecantSolver_Method0 = BaseSecantSolver.Method.ILLINOIS;
+UnivariateRealFunction univariateRealFunction0 = mock(UnivariateRealFunction.class, new ViolatedAssumptionAnswer());
+AllowedSolution allowedSolution0 = AllowedSolution.BELOW_SIDE;
+double double0 = (-1594.771616762408);
+RegulaFalsiSolver regulaFalsiSolver0 = new RegulaFalsiSolver(double0);
+int int0 = 1979;
+SincFunction sincFunction0 = new SincFunction();
+UnivariateRealFunction univariateRealFunction1 = sincFunction0.derivative();
+double double1 = 1972.77983475;
+double double2 = 1.0E-6;
+double double3 = regulaFalsiSolver0.solve(int0, univariateRealFunction1, double0, double1, double2, allowedSolution0);
+double double4 = regulaFalsiSolver0.doSolve();
+int int1 = (-2114);
+double double5 = 0.0;
+double double6 = regulaFalsiSolver0.solve(int1, univariateRealFunction0, double5, double5, double4);
+int int2 = (-765);
+regulaFalsiSolver0.solve(int2, (UnivariateRealFunction) sincFunction0, double6, double5, double3);
+String string0 = "";
+BaseSecantSolver.Method.valueOf(string0);
+
+21:38:38.703 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (1,979) exceeded: evaluations
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.incrementEvaluationCount(BaseAbstractUnivariateRealSolver.java:296)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.computeObjectiveValue(BaseAbstractUnivariateRealSolver.java:153)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve(BaseSecantSolver.java:161)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:190)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve(BaseSecantSolver.java:117)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:38:38.704 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:38:38.705 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:38:38.706 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:38:38.876 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:38:38.877 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:38:38.877 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:38:40.274 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseSecantSolver_ESTest' to results/MATH-51b-5-16-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:38:40.435 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

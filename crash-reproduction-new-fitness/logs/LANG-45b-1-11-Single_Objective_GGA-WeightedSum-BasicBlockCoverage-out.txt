@@ -1,0 +1,76 @@
+20:45:43.157 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+20:45:43.161 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.WordUtils.abbreviate(WordUtils:629)
+20:45:43.162 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.WordUtils
+20:45:43.162 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:45:43.597 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+20:45:44.581 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:45:44.590 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:45:44.599 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:45:44.606 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:45:44.797 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+20:45:44.800 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 0.0
+20:45:45.049 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:45:45.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:45:45.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:45:45.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:45:45.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:45:45.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:45:45.051 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = " ";
+int int0 = 2;
+String string1 = "(riMjwY";
+String string2 = WordUtils.abbreviate(string0, int0, int0, string1);
+String string3 = "[/%UdSWV{P-w~";
+String string4 = "4.0";
+boolean boolean0 = false;
+String string5 = WordUtils.wrap(string3, int0, string4, boolean0);
+char[] charArray0 = null;
+WordUtils.capitalizeFully(string1, charArray0);
+String string6 = " ";
+WordUtils.wrap(string6, int0);
+String string7 = "";
+String string8 = WordUtils.abbreviate(string7, int0, int0, string2);
+String string9 = "=z6# xd";
+WordUtils.wrap(string9, int0);
+String string10 = "Irix";
+WordUtils.capitalize(string10);
+String string11 = "mP97)ohXM$xMb";
+WordUtils.capitalizeFully(string11);
+WordUtils.uncapitalize(string5);
+WordUtils.capitalize(string8);
+String string12 = "S?jL@";
+WordUtils.initials(string12);
+char char0 = '$';
+WordUtils.isDelimiter(char0, charArray0);
+WordUtils.capitalize(string7, charArray0);
+char char1 = 'i';
+WordUtils.isDelimiter(char1, charArray0);
+WordUtils.initials(string12, charArray0);
+WordUtils.initials(string7, charArray0);
+WordUtils wordUtils0 = new WordUtils();
+WordUtils.swapCase(string4);
+String string13 = "";
+WordUtils.swapCase(string13);
+
+20:45:45.051 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:45:45.051 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.String.substring(String.java:1963)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang.WordUtils.abbreviate(WordUtils.java:629)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:45:45.052 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:45:45.053 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:45:45.062 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:45:45.063 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:45:45.063 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:45:46.068 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'WordUtils_ESTest' to results/LANG-45b-1-11-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:45:46.079 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

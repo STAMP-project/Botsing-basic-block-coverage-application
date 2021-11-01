@@ -1,0 +1,69 @@
+11:32:42.147 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+11:32:42.157 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty:45)
+11:32:42.157 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.objects.BaseStringProperty
+11:32:42.157 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:32:43.754 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 566.
+11:32:56.206 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:32:56.216 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:32:56.224 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:32:56.231 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:32:57.236 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 0.0
+11:32:58.457 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:32:58.457 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+11:32:58.458 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:32:58.458 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:32:58.458 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:32:58.458 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseProperty<DocumentReference> baseProperty0 = new BaseProperty<DocumentReference>();
+BaseElement.ajc$get$name(baseProperty0);
+BaseStringProperty baseStringProperty0 = new BaseStringProperty();
+Object object0 = new Object();
+baseStringProperty0.setValue(object0);
+long long0 = 0L;
+baseStringProperty0.setId(long0);
+BaseStringProperty baseStringProperty1 = baseStringProperty0.clone();
+String string0 = null;
+Object[] objectArray0 = new Object[0];
+baseStringProperty0.localizePlain(string0, objectArray0);
+boolean boolean0 = baseStringProperty0.isValueDirty();
+baseStringProperty1.createReference();
+baseStringProperty0.getReference();
+Object.registerNatives();
+baseStringProperty1.setId(long0);
+baseStringProperty0.setValueDirty(boolean0);
+baseStringProperty1.getObject();
+long long1 = 440L;
+baseStringProperty1.setId(long1);
+baseStringProperty1.setValue(baseStringProperty0);
+String string1 = "#if";
+baseStringProperty0.localizePlain(string1, objectArray0);
+baseStringProperty1.getId();
+baseStringProperty1.getPrettyName();
+baseStringProperty0.getCustomMappingValue();
+baseStringProperty1.getName();
+baseStringProperty1.getOwnerDocument();
+baseStringProperty0.toString();
+
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: java.lang.Object cannot be cast to java.lang.String
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty.java:45)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:32:58.459 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:32:58.460 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:32:58.468 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:32:58.468 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:32:58.468 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:33:00.017 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseStringProperty_ESTest' to results/XWIKI-13377-1-12-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+11:33:00.021 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

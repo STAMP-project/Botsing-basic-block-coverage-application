@@ -1,0 +1,63 @@
+21:05:34.060 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math3.fraction.FractionConversionException
+21:05:34.063 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction:306)
+21:05:34.063 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math3.fraction.BigFraction
+21:05:34.063 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:05:34.898 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 6.
+21:05:37.208 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:05:37.239 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:05:37.279 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:05:37.286 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:05:42.812 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 5 second: 5.914285714285715
+21:05:42.815 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 5 second: 5.911764705882353
+21:05:42.838 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 5 second: 5.2499999999126885
+21:05:42.854 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 5 fitness evolutions and 5 second: 0.0
+21:05:43.317 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+21:05:43.334 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+21:05:43.334 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:05:43.334 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:05:43.334 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:05:43.335 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+21:05:43.335 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BigInteger bigInteger0 = BigInteger.TEN;
+BigFraction bigFraction0 = new BigFraction(bigInteger0, bigInteger0);
+double double0 = 4.406750291994231E-9;
+int int0 = (-2867);
+BigFraction bigFraction1 = new BigFraction(double0, int0);
+BigFraction bigFraction2 = new BigFraction(int0);
+bigFraction0.intValue();
+int int1 = 1075;
+BigFraction bigFraction3 = BigFraction.getReducedFraction(int1, int0);
+double double1 = bigFraction0.percentageValue();
+bigFraction1.getField();
+bigFraction3.getDenominatorAsInt();
+int int2 = bigFraction0.getDenominatorAsInt();
+BigInteger bigInteger1 = bigFraction0.getNumerator();
+bigFraction3.subtract(bigFraction2);
+BigFraction bigFraction4 = new BigFraction(bigInteger1, bigInteger1);
+bigFraction3.subtract(bigInteger0);
+BigFraction bigFraction5 = bigFraction0.add(int2);
+bigFraction5.hashCode();
+BigFraction bigFraction6 = new BigFraction(double1, int2);
+
+21:05:43.335 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.fraction.FractionConversionException: illegal state: Overflow trying to convert 100 to fraction (-99/9,223,372,036,854,775,807)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:306)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.fraction.BigFraction.<init>(BigFraction.java:356)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor6.newInstance(Unknown Source)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:05:43.339 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:05:43.340 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:05:43.340 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:05:43.340 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:05:43.340 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:05:43.340 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:05:43.347 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:05:43.347 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:05:43.347 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:05:44.872 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigFraction_ESTest' to results/MATH-1b-1-29-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:05:44.885 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

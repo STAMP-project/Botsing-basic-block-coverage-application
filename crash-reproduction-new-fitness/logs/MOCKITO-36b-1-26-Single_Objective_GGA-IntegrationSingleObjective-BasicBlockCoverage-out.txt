@@ -1,0 +1,83 @@
+11:35:41.211 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+11:35:41.235 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.internal.invocation.Invocation.callRealMethod(Invocation:202)
+11:35:41.235 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.internal.invocation.Invocation
+11:35:41.235 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:35:42.662 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.invocation.Invocation
+11:35:42.670 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+11:35:47.907 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:35:47.939 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:35:47.948 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:35:47.954 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:35:51.635 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 3 second: 1.0
+11:35:52.893 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.0
+11:35:52.893 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.0. PT: 4 seconds
+11:35:52.893 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:35:54.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 100
+11:35:55.201 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 150
+11:35:57.051 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 200
+11:36:08.964 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 250
+11:36:10.264 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 300
+11:36:11.963 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 350
+11:36:13.296 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 400
+11:36:13.296 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 25 seconds
+11:36:13.297 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:36:13.297 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:36:13.297 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 25 seconds
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Class<Integer> class0 = Integer.class;
+MockitoMethod mockitoMethod0 = mock(MockitoMethod.class, new ViolatedAssumptionAnswer());
+doReturn(false).when(mockitoMethod0).isVarArgs();
+Class<Invocation> class1 = Invocation.class;
+Matcher<Object> matcher0 = IsInstanceOf.instanceOf(class0);
+int int0 = 3611;
+PrintSettings printSettings0 = mock(PrintSettings.class, new ViolatedAssumptionAnswer());
+Object[] objectArray0 = new Object[3];
+Throwable throwable0 = null;
+Class<Object> class2 = Object.class;
+int int1 = (-610);
+Class<Integer> class3 = Integer.class;
+Class<Object> class4 = Object.class;
+String string0 = "?WO,ioFFi!,LQ?s,_o";
+int int2 = 5;
+MockitoMethodProxy mockitoMethodProxy0 = null;
+Integer integer0 = new Integer(int1);
+Object object0 = new Object();
+Object[] objectArray1 = new Object[8];
+objectArray1[0] = (Object) string0;
+objectArray1[1] = (Object) class4;
+objectArray1[2] = (Object) string0;
+objectArray1[3] = (Object) throwable0;
+objectArray1[4] = (Object) matcher0;
+objectArray1[5] = (Object) class3;
+objectArray1[6] = (Object) string0;
+objectArray1[7] = object0;
+int int3 = 7;
+RealMethod realMethod0 = null;
+FilteredCGLIBProxyRealMethod filteredCGLIBProxyRealMethod0 = new FilteredCGLIBProxyRealMethod(realMethod0);
+Invocation invocation0 = new Invocation(object0, mockitoMethod0, objectArray1, int3, filteredCGLIBProxyRealMethod0);
+invocation0.callRealMethod();
+invocation0.isValidException(throwable0);
+Invocation.isToString(invocation0);
+
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.invocation.realmethod.FilteredCGLIBProxyRealMethod.invoke(FilteredCGLIBProxyRealMethod.java:26)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.invocation.Invocation.callRealMethod(Invocation.java:202)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:36:13.298 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:36:13.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:36:13.299 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:36:13.300 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:36:13.300 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:36:13.300 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:36:13.300 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:36:13.300 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:36:13.335 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:36:13.335 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:36:13.336 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:36:16.288 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Invocation_ESTest' to results/MOCKITO-36b-1-26-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:36:16.333 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

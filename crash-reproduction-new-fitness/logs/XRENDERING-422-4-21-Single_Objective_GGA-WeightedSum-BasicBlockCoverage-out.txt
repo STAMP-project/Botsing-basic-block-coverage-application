@@ -1,0 +1,82 @@
+03:49:51.061 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.util.NoSuchElementException
+03:49:51.065 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rendering.listener.chaining.BlockStateChainingListener.endFormat(BlockStateChainingListener:439)
+03:49:51.065 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rendering.listener.chaining.BlockStateChainingListener
+03:49:51.065 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+03:49:52.111 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 589.
+03:50:02.812 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:50:02.839 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+03:50:02.850 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+03:50:02.856 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+03:50:04.471 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 3.0
+03:50:06.426 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 49 fitness evolutions and 3 second: 0.7446808510638298
+03:50:06.892 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.7446808510638298
+03:50:06.892 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.7446808510638298. PT: 4 seconds
+03:50:06.892 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+03:50:07.396 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 77 fitness evolutions and 4 second: 0.0
+03:50:07.862 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+03:50:07.863 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 5 seconds
+03:50:07.864 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+03:50:07.864 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+03:50:07.864 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 5 seconds
+03:50:07.865 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: ListenerChain listenerChain0 = new ListenerChain();
+EmptyBlockChainingListener emptyBlockChainingListener0 = new EmptyBlockChainingListener(listenerChain0);
+MetaDataStateChainingListener metaDataStateChainingListener0 = new MetaDataStateChainingListener(listenerChain0);
+ListenerChain listenerChain1 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+doReturn(emptyBlockChainingListener0).when(listenerChain1).getNextListener(nullable(java.lang.Class.class));
+BlockStateChainingListener blockStateChainingListener0 = new BlockStateChainingListener(listenerChain1);
+blockStateChainingListener0.createChainingListenerInstance();
+Format format0 = Format.STRIKEDOUT;
+Map<String, String> map0 = Listener.EMPTY_PARAMETERS;
+blockStateChainingListener0.endFormat(format0, map0);
+MetaData metaData0 = mock(MetaData.class, new ViolatedAssumptionAnswer());
+blockStateChainingListener0.endMetaData(metaData0);
+int int0 = 31;
+blockStateChainingListener0.onEmptyLines(int0);
+blockStateChainingListener0.getQuotationLineDepth();
+String string0 = "";
+String string1 = "+l;MHuBN";
+boolean boolean0 = true;
+blockStateChainingListener0.endMacroMarker(string0, map0, string1, boolean0);
+blockStateChainingListener0.isInLink();
+blockStateChainingListener0.endTable(map0);
+HeaderLevel headerLevel0 = HeaderLevel.LEVEL1;
+blockStateChainingListener0.endHeader(headerLevel0, string0, map0);
+String string2 = "NONE";
+String string3 = null;
+boolean boolean1 = false;
+blockStateChainingListener0.beginMacroMarker(string2, map0, string3, boolean1);
+ListType listType0 = ListType.BULLETED;
+blockStateChainingListener0.endList(listType0, map0);
+char char0 = '4';
+blockStateChainingListener0.onSpecialSymbol(char0);
+MetaData metaData1 = mock(MetaData.class, new ViolatedAssumptionAnswer());
+blockStateChainingListener0.endDocument(metaData1);
+blockStateChainingListener0.onWord(string3);
+
+03:50:07.865 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+03:50:07.865 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.NoSuchElementException
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.removeFirst(ArrayDeque.java:285)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.pop(ArrayDeque.java:522)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener.java:458)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener.java:263)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.AbstractChainingListener.endFormat(AbstractChainingListener.java:290)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.BlockStateChainingListener.endFormat(BlockStateChainingListener.java:439)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor27.invoke(Unknown Source)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+03:50:07.866 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+03:50:07.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+03:50:07.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03:50:07.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+03:50:07.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+03:50:07.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+03:50:07.869 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+03:50:07.876 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+03:50:07.876 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+03:50:07.876 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+03:50:10.554 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BlockStateChainingListener_ESTest' to results/XRENDERING-422-4-21-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+03:50:10.581 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

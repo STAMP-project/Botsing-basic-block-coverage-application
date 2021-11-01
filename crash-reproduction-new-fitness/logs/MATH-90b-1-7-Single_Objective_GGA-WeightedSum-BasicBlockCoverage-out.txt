@@ -1,0 +1,65 @@
+21:32:10.874 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+21:32:10.876 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.stat.Frequency.addValue(Frequency:134)
+21:32:10.876 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.stat.Frequency
+21:32:10.877 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:32:11.367 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:32:12.696 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:32:12.734 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:32:12.746 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:32:12.752 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:32:14.077 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 0.0
+21:32:15.080 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+21:32:15.081 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:32:15.081 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:32:15.081 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:32:15.082 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:32:15.082 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:32:15.082 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Comparator<Object> comparator0 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+Frequency frequency0 = new Frequency(comparator0);
+Frequency frequency1 = new Frequency();
+frequency1.addValue((Object) frequency0);
+frequency0.clear();
+int int0 = 2429;
+frequency0.getCumPct(int0);
+char char0 = ';';
+frequency1.getCumPct(char0);
+frequency0.getCumPct((Object) frequency1);
+Comparator<Object> comparator1 = (Comparator<Object>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+Frequency frequency2 = new Frequency(comparator1);
+long long0 = frequency2.getCount(int0);
+frequency2.getPct(char0);
+frequency1.getCumFreq(long0);
+Frequency frequency3 = new Frequency();
+Object object0 = null;
+frequency2.addValue(object0);
+long long1 = 127L;
+frequency3.getCumFreq(long1);
+frequency2.getCumFreq((Object) frequency3);
+char char1 = 'S';
+frequency3.getCount(char1);
+frequency2.getSumFreq();
+Object.registerNatives();
+
+21:32:15.082 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Value not comparable to existing values.
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.stat.Frequency.addValue(Frequency.java:134)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:32:15.083 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:32:15.084 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:32:15.091 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:32:15.091 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:32:15.091 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:32:16.738 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Frequency_ESTest' to results/MATH-90b-1-7-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:32:16.747 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

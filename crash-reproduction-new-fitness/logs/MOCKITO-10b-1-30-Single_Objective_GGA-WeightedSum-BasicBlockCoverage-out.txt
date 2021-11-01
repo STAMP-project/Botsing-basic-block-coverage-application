@@ -1,0 +1,59 @@
+23:05:20.738 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.mockito.exceptions.base.MockitoException
+23:05:20.741 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.exceptions.Reporter.serializableWontWorkForObjectsThatDontImplementSerializable(Reporter:760)
+23:05:20.741 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.exceptions.Reporter
+23:05:20.741 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+23:05:21.380 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+23:05:22.527 [main] ERROR e.s.b.reproduction.CrashReproduction - Error in target initialization:
+23:05:22.550 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+23:05:22.559 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+23:05:22.566 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+23:05:22.646 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Type org.mockito.internal.matchers.LocalizedMatcher not present
+23:05:22.793 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Type org.mockito.internal.matchers.LocalizedMatcher not present
+23:05:22.814 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Type org.mockito.internal.matchers.LocalizedMatcher not present
+23:05:22.849 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Type org.mockito.internal.matchers.LocalizedMatcher not present
+23:05:22.908 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Type org.mockito.internal.matchers.LocalizedMatcher not present
+23:05:22.938 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.0
+23:05:22.939 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+23:05:22.939 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+23:05:22.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+23:05:22.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+23:05:22.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+23:05:22.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Reporter reporter0 = new Reporter();
+Class<Object> class0 = Object.class;
+reporter0.serializableWontWorkForObjectsThatDontImplementSerializable(class0);
+reporter0.serializableWontWorkForObjectsThatDontImplementSerializable(class0);
+Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
+LinkedList<VerificationAwareInvocation> linkedList0 = new LinkedList<VerificationAwareInvocation>();
+reporter0.noMoreInteractionsWanted(invocation0, linkedList0);
+
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.base.MockitoException: 
+You are using the setting 'withSettings().serializable()' however the type you are trying to mock 'Object'
+do not implement Serializable AND do not have a no-arg constructor.
+This combination is requested, otherwise you will get an 'java.io.InvalidClassException' when the mock will be serialized
+
+Also note that as requested by the Java serialization specification, the whole hierarchy need to implements Serializable,
+i.e. the top-most superclass has to implements Serializable.
+
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.Reporter.serializableWontWorkForObjectsThatDontImplementSerializable(Reporter.java:760)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+23:05:22.950 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+23:05:22.951 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+23:05:22.952 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+23:05:22.955 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+23:05:22.955 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+23:05:22.955 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+23:05:23.963 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Reporter_ESTest' to results/MOCKITO-10b-1-30-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+23:05:23.976 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

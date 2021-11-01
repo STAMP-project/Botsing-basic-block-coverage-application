@@ -1,0 +1,82 @@
+16:36:05.647 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.joda.time.IllegalFieldValueException
+16:36:05.650 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket:359)
+16:36:05.650 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.format.DateTimeParserBucket
+16:36:05.650 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:36:05.964 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+16:36:07.957 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:36:07.966 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:36:07.976 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:36:07.983 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:36:08.853 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.6551724137931034
+16:36:09.797 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.6551724137931034
+16:36:09.798 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.6551724137931034. PT: 1 seconds
+16:36:09.798 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:36:10.344 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6551724137931034 | 100
+16:36:10.909 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6551724137931034 | 150
+16:36:11.239 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6551724137931034 | 200
+16:36:11.509 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6551724137931034 | 250
+16:36:11.726 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 303 fitness evolutions and 3 second: 0.6
+16:36:11.805 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.6 | 300
+16:36:11.805 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.6. PT: 3 seconds
+16:36:11.937 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 334 fitness evolutions and 3 second: 0.0
+16:36:12.092 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+16:36:12.092 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+16:36:12.093 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:36:12.093 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:36:12.094 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: long long0 = 1L;
+BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+BuddhistChronology buddhistChronology1 = (BuddhistChronology)buddhistChronology0.withUTC();
+Locale locale0 = Locale.CANADA;
+int int0 = 0;
+Integer integer0 = new Integer(int0);
+buddhistChronology0.withUTC();
+Locale locale1 = Locale.CANADA;
+int int1 = 0;
+int int2 = 3541;
+Integer integer1 = new Integer(int2);
+long long1 = 31083597720000L;
+int int3 = 1;
+Integer integer2 = new Integer(int3);
+DateTimeParserBucket dateTimeParserBucket0 = new DateTimeParserBucket(long1, buddhistChronology1, locale0, integer2);
+DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfWeek();
+String string0 = "";
+String string1 = null;
+dateTimeParserBucket0.saveField(dateTimeFieldType0, string1, locale1);
+dateTimeParserBucket0.computeMillis();
+boolean boolean0 = false;
+String string2 = null;
+boolean boolean1 = true;
+dateTimeParserBucket0.computeMillis(boolean1, string0);
+DurationField durationField0 = MillisDurationField.INSTANCE;
+DateTimeParserBucket.compareReverse(durationField0, durationField0);
+DateTimeParserBucket.access$402(dateTimeParserBucket0, boolean0);
+
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.IllegalFieldValueException: Value 0 for dayOfWeek must be in the range [1,7]
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.chrono.LimitChronology$LimitDateTimeField.set(LimitChronology.java:510)
+16:36:12.094 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeParserBucket$SavedField.set(DateTimeParserBucket.java:483)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:366)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:359)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeParserBucket.computeMillis(DateTimeParserBucket.java:319)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:36:12.095 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:36:12.097 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:36:12.101 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:36:12.101 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:36:12.101 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:36:13.232 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeParserBucket_ESTest' to results/TIME-7b-5-17-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:36:13.240 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

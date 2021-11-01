@@ -1,0 +1,58 @@
+17:59:43.784 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+17:59:43.788 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rendering.internal.parser.DefaultContentParser.parse(DefaultContentParser:62)
+17:59:43.788 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rendering.internal.parser.DefaultContentParser
+17:59:43.789 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+17:59:45.591 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rendering.internal.parser.DefaultContentParser
+17:59:45.596 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
+18:00:10.909 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+18:00:10.921 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+18:00:10.932 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+18:00:10.938 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+18:00:13.035 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 1.5
+18:00:13.806 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+18:00:13.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+18:00:13.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+18:00:13.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+18:00:13.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+18:00:13.807 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DefaultContentParser defaultContentParser0 = new DefaultContentParser();
+Provider<ConfluenceParser> provider0 = (Provider<ConfluenceParser>) mock(Provider.class, new ViolatedAssumptionAnswer());
+doReturn((Object) null).when(provider0).get();
+Injector.inject(defaultContentParser0, (Class<?>) DefaultContentParser.class, "componentManagerProvider", (Object) provider0);
+EntityReferenceSerializer<ContextComponentManager> entityReferenceSerializer0 = (EntityReferenceSerializer<ContextComponentManager>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultContentParser0, (Class<?>) DefaultContentParser.class, "serializer", (Object) entityReferenceSerializer0);
+Injector.validateBean(defaultContentParser0, (Class<?>) DefaultContentParser.class);
+String string0 = "";
+Syntax syntax0 = mock(Syntax.class, new ViolatedAssumptionAnswer());
+doReturn((String) null).when(syntax0).toIdString();
+defaultContentParser0.parse(string0, syntax0);
+Object.registerNatives();
+Syntax syntax1 = mock(Syntax.class, new ViolatedAssumptionAnswer());
+defaultContentParser0.parse(string0, syntax1);
+Syntax syntax2 = mock(Syntax.class, new ViolatedAssumptionAnswer());
+defaultContentParser0.parse(string0, syntax2);
+
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.internal.parser.DefaultContentParser.getParser(DefaultContentParser.java:87)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.internal.parser.DefaultContentParser.parse(DefaultContentParser.java:62)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+18:00:13.808 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+18:00:13.809 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+18:00:13.809 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+18:00:13.809 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+18:00:13.809 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+18:00:13.809 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+18:00:13.810 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+18:00:13.820 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+18:00:13.820 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+18:00:13.820 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+18:00:16.287 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DefaultContentParser_ESTest' to results/XWIKI-14612-1-23-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+18:00:16.308 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

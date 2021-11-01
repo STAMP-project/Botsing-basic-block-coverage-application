@@ -1,0 +1,55 @@
+15:57:26.490 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:57:26.493 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.EntityReference.<init>(EntityReference:142)
+15:57:26.493 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.EntityReference
+15:57:26.493 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:57:27.763 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 585.
+15:57:37.390 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:57:37.401 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:57:37.410 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:57:37.418 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:57:37.672 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+15:57:37.693 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 3.0
+15:57:37.734 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 5 fitness evolutions and 0 second: 0.5714285714285715
+15:57:37.743 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 12 fitness evolutions and 0 second: 0.49127906976744184
+15:57:37.760 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 25 fitness evolutions and 0 second: 0.0
+15:57:38.601 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+15:57:38.601 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:57:38.601 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:57:38.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:57:38.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:57:38.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "3+9/(nMP$1iZ~CE}";
+EntityType entityType0 = EntityType.WIKI;
+EntityReference entityReference0 = new EntityReference(string0, entityType0);
+EntityReference entityReference1 = entityReference0.extractFirstReference(entityType0);
+entityReference0.equalsNonRecursive(entityReference1);
+entityReference1.getParameters();
+entityReference0.getParameter(string0);
+EntityType entityType1 = entityReference1.getType();
+String string1 = "";
+EntityReference entityReference2 = new EntityReference(string1, entityType1);
+
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:186)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:171)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:142)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+15:57:38.602 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:57:38.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:57:38.604 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:57:38.608 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:57:38.608 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:57:38.608 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:57:40.306 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EntityReference_ESTest' to results/XWIKI-13546-3-9-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:57:40.316 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

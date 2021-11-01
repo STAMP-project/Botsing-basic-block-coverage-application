@@ -1,0 +1,79 @@
+10:59:56.977 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+10:59:56.979 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference:68)
+10:59:56.979 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.AttachmentReference
+10:59:56.980 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:59:57.750 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 583.
+11:00:07.227 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:00:07.239 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:00:07.247 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:00:07.253 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:00:07.615 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+11:00:08.856 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 1 second: 0.6216347826086956
+11:00:09.029 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 15 fitness evolutions and 1 second: 0.5535307517084282
+11:00:09.045 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 32 fitness evolutions and 1 second: 0.5161290322580646
+11:00:09.049 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 37 fitness evolutions and 1 second: 0.49380165289256195
+11:00:09.062 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 49 fitness evolutions and 1 second: 0.0
+11:00:09.313 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:00:09.314 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+11:00:09.314 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:00:09.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:00:09.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:00:09.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = ",'zjbzoq{";
+DocumentReference documentReference0 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+doReturn((EntityReference) null).when(documentReference0).getParent();
+AttachmentReference attachmentReference0 = new AttachmentReference(string0, documentReference0);
+DocumentReference documentReference1 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+doReturn((Locale) null).when(documentReference1).getLocale();
+doReturn(0).when(documentReference1).compareTo(any(org.xwiki.model.reference.EntityReference.class));
+doReturn((String) null).when(documentReference1).getName();
+doReturn((EntityReference) null, (EntityReference) null, (EntityReference) null).when(documentReference1).getParent();
+doReturn((EntityType) null, (EntityType) null).when(documentReference1).getType();
+AttachmentReference attachmentReference1 = new AttachmentReference(string0, documentReference1);
+attachmentReference0.size();
+attachmentReference0.getParameters();
+attachmentReference0.size();
+attachmentReference1.size();
+attachmentReference1.compareTo((EntityReference) attachmentReference0);
+String string1 = attachmentReference1.toString();
+attachmentReference1.getReversedReferenceChain();
+attachmentReference0.getParameter(string1);
+AttachmentReference attachmentReference2 = new AttachmentReference(attachmentReference0);
+String string2 = "q )+0O2";
+DocumentReference documentReference2 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+AttachmentReference attachmentReference3 = new AttachmentReference(string2, documentReference2);
+String string3 = "";
+DocumentReference documentReference3 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+AttachmentReference attachmentReference4 = new AttachmentReference(string3, documentReference3);
+DocumentReference documentReference4 = attachmentReference2.getDocumentReference();
+attachmentReference0.toString();
+EntityType entityType0 = EntityType.OBJECT;
+attachmentReference3.equals((EntityReference) documentReference4, entityType0);
+attachmentReference1.compareTo((EntityReference) documentReference4);
+attachmentReference4.getParameters();
+attachmentReference0.replaceParent(attachmentReference2, attachmentReference1);
+
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:185)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:153)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference.java:68)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+11:00:09.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:00:09.318 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:00:09.319 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:00:09.334 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:00:09.334 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:00:09.334 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:00:11.537 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AttachmentReference_ESTest' to results/XWIKI-12667-3-11-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+11:00:11.579 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

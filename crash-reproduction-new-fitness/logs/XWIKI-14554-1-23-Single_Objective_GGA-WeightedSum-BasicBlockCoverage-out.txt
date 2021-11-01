@@ -1,0 +1,53 @@
+14:09:11.053 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+14:09:11.056 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator:214)
+14:09:11.056 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.notifications.internal.email.AbstractMimeMessageIterator
+14:09:11.056 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+14:09:12.319 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 580.
+14:09:44.693 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+14:09:44.706 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+14:09:44.713 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+14:09:44.720 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+14:09:48.373 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 3 second: 4.5
+14:09:48.999 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+14:09:48.999 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 4 seconds
+14:09:48.999 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+14:09:52.572 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+14:09:52.574 [main] INFO  e.s.b.s.BasicBlockCoverage - *C2*
+14:09:52.800 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 77 fitness evolutions and 8 second: 3.0
+14:09:53.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+14:09:53.951 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 9 seconds
+14:09:56.473 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 146 fitness evolutions and 11 second: 0.0
+14:09:56.963 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+14:09:56.964 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 12 seconds
+14:09:56.966 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+14:09:56.966 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+14:09:56.966 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 12 seconds
+14:09:56.966 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: PeriodicMimeMessageIterator periodicMimeMessageIterator0 = new PeriodicMimeMessageIterator();
+NotificationEmailRenderer notificationEmailRenderer0 = mock(NotificationEmailRenderer.class, new ViolatedAssumptionAnswer());
+periodicMimeMessageIterator0.hasNext();
+periodicMimeMessageIterator0.next();
+periodicMimeMessageIterator0.iterator();
+
+14:09:56.966 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+14:09:56.967 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+14:09:56.967 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator.java:214)
+14:09:56.967 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+14:09:56.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+14:09:56.969 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+14:09:56.969 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+14:09:56.970 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+14:09:56.978 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+14:09:56.978 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+14:09:56.978 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+14:10:00.633 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractMimeMessageIterator_ESTest' to results/XWIKI-14554-1-23-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+14:10:00.678 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

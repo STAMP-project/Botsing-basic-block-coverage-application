@@ -1,0 +1,63 @@
+12:03:54.882 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+12:03:54.886 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty:45)
+12:03:54.886 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.objects.BaseStringProperty
+12:03:54.886 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+12:03:56.093 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 566.
+12:04:07.982 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+12:04:07.998 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+12:04:08.005 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+12:04:08.012 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+12:04:09.032 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 0.0
+12:04:09.909 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+12:04:09.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+12:04:09.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+12:04:09.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+12:04:09.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+12:04:09.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseStringProperty baseStringProperty0 = new BaseStringProperty();
+BaseStringProperty baseStringProperty1 = new BaseStringProperty();
+String string0 = baseStringProperty1.getPrettyName();
+baseStringProperty1.setValue(baseStringProperty0);
+long long0 = (-882L);
+baseStringProperty1.setId(long0);
+BaseElement.ajc$set$name(baseStringProperty1, string0);
+long long1 = 0L;
+baseStringProperty0.setId(long1);
+baseStringProperty1.getClassType();
+BaseStringProperty baseStringProperty2 = baseStringProperty1.clone();
+baseStringProperty2.getClassType();
+Object[] objectArray0 = new Object[0];
+baseStringProperty2.localizePlainOrKey(string0, objectArray0);
+MergeConfiguration mergeConfiguration0 = mock(MergeConfiguration.class, new ViolatedAssumptionAnswer());
+XWikiContext xWikiContext0 = new XWikiContext();
+MergeResult mergeResult0 = mock(MergeResult.class, new ViolatedAssumptionAnswer());
+baseStringProperty0.merge(baseStringProperty2, baseStringProperty1, mergeConfiguration0, xWikiContext0, mergeResult0);
+baseStringProperty2.getOwnerDocument();
+baseStringProperty1.getLocalEntityReferenceSerializer();
+baseStringProperty2.toXMLString();
+boolean boolean0 = true;
+baseStringProperty1.apply(baseStringProperty2, boolean0);
+
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: com.xpn.xwiki.objects.BaseStringProperty cannot be cast to java.lang.String
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty.java:45)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+12:04:09.911 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+12:04:09.912 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+12:04:09.912 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+12:04:09.915 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+12:04:09.915 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+12:04:09.915 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+12:04:12.792 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseStringProperty_ESTest' to results/XWIKI-13377-1-27-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+12:04:12.799 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,84 @@
+11:08:41.001 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+11:08:41.004 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+11:08:41.004 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+11:08:41.004 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:08:41.958 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.DateTimeZone
+11:08:41.972 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+11:08:44.331 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:08:44.348 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:08:44.363 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:08:44.372 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:08:44.616 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.8333333333333335
+11:08:44.621 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 1.6666249217282405
+11:08:44.674 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 0 second: 1.6665997591328783
+11:08:44.680 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 11 fitness evolutions and 0 second: 1.4
+11:08:45.048 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 22 fitness evolutions and 0 second: 1.3333333333333333
+11:08:45.427 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:08:45.427 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:08:45.427 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:08:45.428 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:08:45.428 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:08:45.428 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: int int0 = (-16);
+FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone)DateTimeZone.forOffsetMillis(int0);
+boolean boolean0 = false;
+long long0 = 1816L;
+fixedDateTimeZone0.convertLocalToUTC((long) int0, boolean0, long0);
+DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(int0, int0);
+long long1 = 2903L;
+dateTimeZone0.getOffset(long1);
+String string0 = "Australia/Sydney";
+DateTimeZone dateTimeZone1 = DateTimeZone.forID(string0);
+dateTimeZone0.toTimeZone();
+DateTimeZone dateTimeZone2 = DateTimeZone.getDefault();
+dateTimeZone0.hashCode();
+dateTimeZone0.equals(dateTimeZone2);
+DateTimeZone.getAvailableIDs();
+String string1 = "DateTimeZone.setNameProvider";
+DateTimeZone dateTimeZone3 = DateTimeZone.forID(string1);
+Provider provider0 = mock(Provider.class, new ViolatedAssumptionAnswer());
+DateTimeZone.setProvider(provider0);
+DateTimeZone.offsetFormatter();
+long long2 = 553L;
+String string2 = dateTimeZone3.getName(long2);
+DateTimeZone.getAvailableIDs();
+String string3 = "vZSK7~9a";
+DateTimeZone dateTimeZone4 = new DateTimeZone(string3);
+fixedDateTimeZone0.getShortName(long2);
+long long3 = 2381L;
+dateTimeZone1.getMillisKeepLocal(dateTimeZone4, long3);
+dateTimeZone0.writeReplace();
+Object.registerNatives();
+Provider provider1 = DateTimeZone.getProvider();
+DateTimeZone.offsetFormatter();
+fixedDateTimeZone0.getName(long3);
+Instant instant0 = Instant.parse(string2);
+dateTimeZone4.getOffset((ReadableInstant) instant0);
+DateTimeZone.getNameProvider();
+DateTimeZone.setProvider(provider1);
+fixedDateTimeZone0.getID();
+DateTimeZone.offsetFormatter();
+
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Minutes out of range: -16
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone.java:280)
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:08:45.429 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:08:45.430 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:08:45.431 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:08:45.435 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:08:45.435 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:08:45.435 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:08:46.228 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-27-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:08:46.242 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

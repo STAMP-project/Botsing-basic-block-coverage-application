@@ -1,0 +1,80 @@
+20:10:20.808 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+20:10:20.836 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.LocaleUtils.isAvailableLocale(LocaleUtils:223)
+20:10:20.836 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.LocaleUtils
+20:10:20.836 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:10:21.491 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+20:10:23.161 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:10:23.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:10:23.178 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:10:23.184 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:10:23.561 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.0
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:10:24.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:10:24.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Locale locale0 = Locale.ENGLISH;
+LocaleUtils.isAvailableLocale(locale0);
+LocaleUtils.localeLookupList(locale0);
+LocaleUtils.availableLocaleList();
+String string0 = "BrPSyM";
+Locale locale1 = LocaleUtils.toLocale(string0);
+Locale locale2 = Locale.ROOT;
+LocaleUtils.isAvailableLocale(locale2);
+LocaleUtils.availableLocaleSet();
+LocaleUtils localeUtils0 = new LocaleUtils();
+Object.registerNatives();
+LocaleUtils.availableLocaleList();
+String string1 = "";
+LocaleUtils.countriesByLanguage(string1);
+LocaleUtils.localeLookupList(locale1);
+LocaleUtils.isAvailableLocale(locale0);
+Object.registerNatives();
+LocaleUtils.countriesByLanguage(string1);
+Object.registerNatives();
+String string2 = "2xsVq!/E2spKj>Q\"";
+LocaleUtils.countriesByLanguage(string2);
+String string3 = "\\^[3I~,2[bIAA'|Fl";
+LocaleUtils.toLocale(string3);
+LocaleUtils.availableLocaleList();
+LocaleUtils.availableLocaleSet();
+Locale locale3 = Locale.SIMPLIFIED_CHINESE;
+LocaleUtils.localeLookupList(locale3);
+LocaleUtils.availableLocaleList();
+LocaleUtils.localeLookupList(locale0, locale3);
+Locale locale4 = Locale.UK;
+Locale locale5 = Locale.TRADITIONAL_CHINESE;
+LocaleUtils.localeLookupList(locale4, locale5);
+LocaleUtils.localeLookupList(locale2);
+LocaleUtils.toLocale(string1);
+LocaleUtils.localeLookupList(locale4, locale1);
+String string4 = "ue'9T";
+LocaleUtils.languagesByCountry(string4);
+String string5 = "";
+LocaleUtils.countriesByLanguage(string5);
+
+20:10:24.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:10:24.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+20:10:24.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.instrumentation.testability.ContainerHelper.collectionContains(ContainerHelper.java:70)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang.LocaleUtils.isAvailableLocale(LocaleUtils.java:223)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:10:24.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:10:24.513 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:10:24.535 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:10:24.535 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:10:24.535 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:10:26.289 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'LocaleUtils_ESTest' to results/LANG-57b-1-21-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:10:26.308 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

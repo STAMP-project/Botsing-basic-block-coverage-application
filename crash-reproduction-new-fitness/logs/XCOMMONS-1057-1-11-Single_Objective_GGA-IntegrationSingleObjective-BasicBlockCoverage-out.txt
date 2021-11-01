@@ -1,0 +1,58 @@
+10:27:44.297 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+10:27:44.300 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree.clone(AbstractInstallPlanJob$ModifableExtensionPlanTree:84)
+10:27:44.300 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree
+10:27:44.300 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:27:45.669 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree
+10:27:45.679 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 577.
+10:27:59.891 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:27:59.904 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:27:59.938 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:27:59.959 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:28:00.990 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: null
+10:28:01.038 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 1.3333333333333333
+10:28:02.482 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.3333333333333333
+10:28:02.483 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.3333333333333333. PT: 2 seconds
+10:28:02.483 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:28:03.840 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+10:28:03.840 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+10:28:03.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:28:03.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:28:03.841 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: AbstractInstallPlanJob.ModifableExtensionPlanTree abstractInstallPlanJob_ModifableExtensionPlanTree0 = new AbstractInstallPlanJob.ModifableExtensionPlanTree();
+Extension extension0 = null;
+LinkedList<InstalledExtension> linkedList0 = new LinkedList<InstalledExtension>();
+ExtensionPlanAction.Action extensionPlanAction_Action0 = ExtensionPlanAction.Action.INSTALL;
+String string0 = null;
+boolean boolean0 = true;
+DefaultExtensionPlanAction defaultExtensionPlanAction0 = new DefaultExtensionPlanAction(extension0, linkedList0, extensionPlanAction_Action0, string0, boolean0);
+String string1 = "$xKq7B6]U4^j(jh4";
+DefaultVersionConstraint defaultVersionConstraint0 = new DefaultVersionConstraint(string1);
+DefaultExtensionPlanNode defaultExtensionPlanNode0 = new DefaultExtensionPlanNode(defaultExtensionPlanAction0, defaultVersionConstraint0);
+DefaultExtensionPlanNode defaultExtensionPlanNode1 = new DefaultExtensionPlanNode(defaultExtensionPlanNode0);
+abstractInstallPlanJob_ModifableExtensionPlanTree0.addIfAbsent(defaultExtensionPlanNode1);
+AbstractInstallPlanJob.ModifableExtensionPlanTree abstractInstallPlanJob_ModifableExtensionPlanTree1 = abstractInstallPlanJob_ModifableExtensionPlanTree0.clone();
+abstractInstallPlanJob_ModifableExtensionPlanTree1.parallelStream();
+abstractInstallPlanJob_ModifableExtensionPlanTree0.clone();
+
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.xwiki.extension.job.plan.internal.DefaultExtensionPlanNode cannot be cast to org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanNode
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree.clone(AbstractInstallPlanJob.java:84)
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:28:03.841 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:28:03.842 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:28:03.843 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:28:03.847 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:28:03.847 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:28:03.847 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:28:06.697 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractInstallPlanJob$ModifableExtensionPlanTree_ESTest' to results/XCOMMONS-1057-1-11-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+10:28:06.714 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

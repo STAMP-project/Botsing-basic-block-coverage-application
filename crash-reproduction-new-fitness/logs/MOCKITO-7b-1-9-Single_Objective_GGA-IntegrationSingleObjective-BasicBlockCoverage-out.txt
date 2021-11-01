@@ -1,0 +1,76 @@
+08:42:00.691 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.mockito.exceptions.base.MockitoException
+08:42:00.694 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType.extractRawTypeOf(GenericMetadataSupport$TypeVariableReturnType:407)
+08:42:00.694 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType
+08:42:00.694 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+08:42:01.223 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType
+08:42:01.224 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType
+08:42:01.225 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVariableReturnType
+08:42:01.245 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+08:42:02.245 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:42:02.254 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+08:42:02.292 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+08:42:02.300 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+08:42:03.958 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 3.8333333333333335
+08:42:04.662 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+08:42:04.664 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+08:42:04.664 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+08:42:04.665 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+08:42:04.666 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+08:42:04.666 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+08:42:04.670 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: GenericMetadataSupport genericMetadataSupport0 = mock(GenericMetadataSupport.class, new ViolatedAssumptionAnswer());
+TypeVariable<Class<String>>[] typeVariableArray0 = (TypeVariable<Class<String>>[]) Array.newInstance(TypeVariable.class, 0);
+Type type0 = mock(Type.class, new ViolatedAssumptionAnswer());
+doReturn((String) null).when(type0).toString();
+GenericMetadataSupport.inferFrom(type0);
+Type type1 = mock(Type.class, new ViolatedAssumptionAnswer());
+GenericMetadataSupport.inferFrom(type1);
+Type type2 = mock(Type.class, new ViolatedAssumptionAnswer());
+GenericMetadataSupport.inferFrom(type2);
+Object.registerNatives();
+Type type3 = mock(Type.class, new ViolatedAssumptionAnswer());
+GenericMetadataSupport.inferFrom(type3);
+Object.registerNatives();
+Object.registerNatives();
+Object.registerNatives();
+Object.registerNatives();
+Object.registerNatives();
+Type type4 = mock(Type.class, new ViolatedAssumptionAnswer());
+GenericMetadataSupport.inferFrom(type4);
+Object.registerNatives();
+Type type5 = null;
+GenericMetadataSupport.inferFrom(type5);
+GenericMetadataSupport.inferFrom(type5);
+Object.registerNatives();
+GenericMetadataSupport genericMetadataSupport1 = GenericMetadataSupport.inferFrom(type5);
+Object.registerNatives();
+TypeVariable<Class<String>>[] typeVariableArray1 = (TypeVariable<Class<String>>[]) Array.newInstance(TypeVariable.class, 1);
+typeVariableArray1[0] = (TypeVariable<Class<String>>) typeVariableArray1;
+GenericMetadataSupport.TypeVariableReturnType genericMetadataSupport_TypeVariableReturnType0 = new GenericMetadataSupport.TypeVariableReturnType(genericMetadataSupport1, typeVariableArray1, typeVariableArray1[0]);
+Class<?> class0 = genericMetadataSupport_TypeVariableReturnType0.rawType();
+GenericMetadataSupport.inferFrom(class0);
+genericMetadataSupport_TypeVariableReturnType0.extraInterfaces();
+genericMetadataSupport_TypeVariableReturnType0.getActualTypeArgumentFor(typeVariableArray1[0]);
+
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.base.MockitoException: Type meta-data for this Type (org.evosuite.shaded.org.mockito.codegen.Type$MockitoMock$370621065) is not supported : Mock for Type, hashCode: 1183919360
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.util.reflection.GenericMetadataSupport.inferFrom(GenericMetadataSupport.java:237)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+08:42:04.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+08:42:04.672 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+08:42:04.672 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08:42:04.672 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+08:42:04.672 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+08:42:04.672 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+08:42:04.677 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+08:42:04.696 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+08:42:04.697 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+08:42:04.697 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+08:42:05.646 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'GenericMetadataSupport$TypeVariableReturnType_ESTest' to results/MOCKITO-7b-1-9-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+08:42:05.658 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

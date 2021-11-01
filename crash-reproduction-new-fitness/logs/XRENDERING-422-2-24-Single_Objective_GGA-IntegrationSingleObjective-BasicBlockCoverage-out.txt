@@ -1,0 +1,52 @@
+15:53:50.068 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.util.NoSuchElementException
+15:53:50.071 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener:263)
+15:53:50.071 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:53:50.072 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:53:51.213 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:53:51.214 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:53:51.222 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 589.
+15:54:02.431 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:54:02.440 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:54:02.448 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:54:02.454 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:54:02.852 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 2.5
+15:54:03.922 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 19 fitness evolutions and 1 second: 1.0
+15:54:04.260 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+15:54:04.261 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:54:04.261 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:54:04.261 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:54:04.261 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:54:04.261 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:54:04.261 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: ListenerChain listenerChain0 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+doReturn((ChainingListener) null).when(listenerChain0).getNextListener(nullable(java.lang.Class.class));
+EmptyBlockChainingListener emptyBlockChainingListener0 = new EmptyBlockChainingListener(listenerChain0);
+Format format0 = Format.UNDERLINED;
+Map<String, String> map0 = Listener.EMPTY_PARAMETERS;
+emptyBlockChainingListener0.endFormat(format0, map0);
+
+15:54:04.261 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.NoSuchElementException
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.removeFirst(ArrayDeque.java:285)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.pop(ArrayDeque.java:522)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener.java:458)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener.java:263)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:54:04.262 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:54:04.263 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:54:04.272 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:54:04.272 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:54:04.272 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:54:05.996 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EmptyBlockChainingListener_ESTest' to results/XRENDERING-422-2-24-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+15:54:06.004 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,89 @@
+14:59:06.276 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+14:59:06.286 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.internal.skin.AbstractSkin.getOutputSyntax(AbstractSkin:140)
+14:59:06.286 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.internal.skin.AbstractSkin
+14:59:06.286 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+14:59:07.179 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 575.
+14:59:36.759 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+14:59:36.769 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+14:59:36.777 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+14:59:36.784 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+14:59:39.684 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 4.5
+14:59:40.374 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+14:59:40.375 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 3 seconds
+14:59:40.375 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+14:59:43.409 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 100
+14:59:44.770 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 129 fitness evolutions and 7 second: 3.0
+14:59:46.495 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+14:59:46.495 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 9 seconds
+14:59:47.643 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 200
+14:59:49.218 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 250
+14:59:50.757 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 300
+14:59:52.155 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 332 fitness evolutions and 15 second: 0.5496688741721855
+14:59:52.982 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.5496688741721855 | 350
+14:59:52.983 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.5496688741721855. PT: 16 seconds
+14:59:54.003 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.5496688741721855 | 400
+14:59:55.012 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.5496688741721855 | 450
+14:59:55.351 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 490 fitness evolutions and 18 second: 0.42857142857142855
+14:59:55.375 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 493 fitness evolutions and 18 second: 0.0
+14:59:55.735 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 500
+14:59:55.735 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 18 seconds
+14:59:55.736 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+14:59:55.736 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+14:59:55.736 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 18 seconds
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "U";
+InternalSkinManager internalSkinManager0 = mock(InternalSkinManager.class, new ViolatedAssumptionAnswer());
+InternalSkinConfiguration internalSkinConfiguration0 = mock(InternalSkinConfiguration.class, new ViolatedAssumptionAnswer());
+Logger logger0 = null;
+SyntaxFactory syntaxFactory0 = mock(SyntaxFactory.class, new ViolatedAssumptionAnswer());
+WikiSkinUtils wikiSkinUtils0 = new WikiSkinUtils();
+DocumentReferenceResolver<HeaderLevel> documentReferenceResolver0 = (DocumentReferenceResolver<HeaderLevel>) mock(DocumentReferenceResolver.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils0, (Class<?>) WikiSkinUtils.class, "currentMixedDocumentReferenceResolver", (Object) documentReferenceResolver0);
+ch.qos.logback.classic.Logger logger1 = (ch.qos.logback.classic.Logger)URLStreamHandlerFactory.log;
+Injector.inject(wikiSkinUtils0, (Class<?>) WikiSkinUtils.class, "logger", (Object) logger1);
+EntityReferenceSerializer<Integer> entityReferenceSerializer0 = (EntityReferenceSerializer<Integer>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils0, (Class<?>) WikiSkinUtils.class, "referenceSerializer", (Object) entityReferenceSerializer0);
+Class<Integer> class0 = Integer.class;
+WikiSkinUtils wikiSkinUtils1 = new WikiSkinUtils();
+DocumentReferenceResolver<DefaultTableModel> documentReferenceResolver1 = (DocumentReferenceResolver<DefaultTableModel>) mock(DocumentReferenceResolver.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "currentMixedDocumentReferenceResolver", (Object) documentReferenceResolver1);
+String string1 = "";
+PriorityQueue<SubstituteLoggingEvent> priorityQueue0 = new PriorityQueue<SubstituteLoggingEvent>();
+boolean boolean0 = false;
+SubstituteLogger substituteLogger0 = new SubstituteLogger(string1, priorityQueue0, boolean0);
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "logger", (Object) substituteLogger0);
+EntityReferenceSerializer<HeaderBlock> entityReferenceSerializer1 = (EntityReferenceSerializer<HeaderBlock>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiSkinUtils1, (Class<?>) WikiSkinUtils.class, "referenceSerializer", (Object) entityReferenceSerializer1);
+Class<SubstituteLoggingEvent> class1 = SubstituteLoggingEvent.class;
+LoadedClass<Object> loadedClass0 = new LoadedClass<Object>(class1);
+NOPLogger nOPLogger0 = NOPLogger.NOP_LOGGER;
+Provider<XWikiContext> provider0 = null;
+String string2 = "";
+SyntaxFactory syntaxFactory1 = null;
+Environment environment0 = null;
+EnvironmentSkin environmentSkin0 = new EnvironmentSkin(string2, internalSkinManager0, internalSkinConfiguration0, substituteLogger0, syntaxFactory1, environment0, provider0);
+environmentSkin0.getOutputSyntax();
+
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getProperties(EnvironmentSkin.java:90)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.EnvironmentSkin.getOutputSyntaxString(EnvironmentSkin.java:156)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.internal.skin.AbstractSkin.getOutputSyntax(AbstractSkin.java:140)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+14:59:55.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+14:59:55.739 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+14:59:55.743 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+14:59:55.743 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+14:59:55.743 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+14:59:57.438 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractSkin_ESTest' to results/XWIKI-13316-2-12-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+14:59:57.451 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

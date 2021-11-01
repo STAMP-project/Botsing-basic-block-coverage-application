@@ -1,0 +1,110 @@
+12:59:53.307 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+12:59:53.313 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.doc.XWikiAttachment.getMimeType(XWikiAttachment:923)
+12:59:53.313 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.doc.XWikiAttachment
+12:59:53.313 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+13:00:00.991 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/gagravarr/vorbis/VorbisStyleComments.class' should be in target project!
+13:00:00.991 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:01.062 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/gagravarr/ogg/OggStreamIdentifier.class' should be in target project!
+13:00:01.062 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:01.083 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/gagravarr/vorbis/VorbisStyleComments.class' should be in target project!
+13:00:01.083 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:01.088 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/gagravarr/vorbis/VorbisStyleComments.class' should be in target project!
+13:00:01.088 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:01.091 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/gagravarr/vorbis/VorbisStyleComments.class' should be in target project!
+13:00:01.092 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:12.700 [main] WARN  e.s.b.c.i.InstrumentingClassLoader - Class 'org/sqlite/JDBC.class' should be in target project!
+13:00:12.700 [main] ERROR e.s.b.c.i.InstrumentingClassLoader - Error while loading class: java.io.IOException: Class not found
+13:00:12.935 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.reference.EntityReference
+13:00:12.935 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.reference.EntityReference
+13:00:12.936 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.model.reference.AttachmentReference
+13:00:12.936 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.doc.XWikiAttachment
+13:00:12.936 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.doc.XWikiAttachment
+13:00:12.936 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.doc.XWikiAttachment
+13:00:14.951 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 583.
+13:00:53.400 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+13:00:53.486 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+13:00:53.508 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+13:00:53.518 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+13:00:54.982 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 6.5
+13:00:55.043 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 6 fitness evolutions and 1 second: 4.5
+13:00:56.049 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 2 second: 3.5
+13:00:56.536 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+13:00:56.537 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+13:00:56.537 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+13:00:56.538 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+13:00:56.538 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+13:00:56.538 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+13:00:56.539 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: XWikiDocument xWikiDocument0 = mock(XWikiDocument.class, new ViolatedAssumptionAnswer());
+doReturn((DocumentReference) null).when(xWikiDocument0).getDocumentReference();
+String string0 = "";
+XWikiAttachment xWikiAttachment0 = new XWikiAttachment(xWikiDocument0, string0);
+XWikiAttachmentContent xWikiAttachmentContent0 = mock(XWikiAttachmentContent.class, new ViolatedAssumptionAnswer());
+doReturn((InputStream) null).when(xWikiAttachmentContent0).getContentInputStream();
+xWikiAttachment0.setAttachment_content(xWikiAttachmentContent0);
+XWikiContext xWikiContext0 = new XWikiContext();
+XWikiContext xWikiContext1 = xWikiContext0.clone();
+XWikiContext xWikiContext2 = xWikiContext1.clone();
+XWikiContext xWikiContext3 = xWikiContext2.clone();
+xWikiAttachment0.getMimeType(xWikiContext3);
+xWikiAttachment0.getMimeType(xWikiContext2);
+boolean boolean0 = true;
+boolean boolean1 = false;
+XWikiContext xWikiContext4 = xWikiContext3.clone();
+xWikiAttachment0.toXML(boolean0, boolean1, xWikiContext4);
+xWikiAttachment0.getMimeType(xWikiContext2);
+xWikiAttachment0.getContentInputStream(xWikiContext1);
+xWikiAttachment0.updateContentArchive(xWikiContext0);
+xWikiAttachment0.getMimeType(xWikiContext3);
+XWikiAttachment xWikiAttachment1 = new XWikiAttachment();
+XWikiAttachmentArchive xWikiAttachmentArchive0 = mock(XWikiAttachmentArchive.class, new ViolatedAssumptionAnswer());
+xWikiAttachment0.setAttachment_archive(xWikiAttachmentArchive0);
+XWikiDocument xWikiDocument1 = mock(XWikiDocument.class, new ViolatedAssumptionAnswer());
+xWikiAttachment1.setDoc(xWikiDocument1);
+xWikiAttachment0.resetMimeType(xWikiContext2);
+xWikiAttachment0.getVersion();
+XWikiAttachment.getCompactWikiEntityReferenceSerializer();
+byte[] byteArray0 = new byte[7];
+byte byte0 = (byte)127;
+byteArray0[0] = byte0;
+byte byte1 = (byte)0;
+byteArray0[1] = byte1;
+byte byte2 = (byte)0;
+byteArray0[2] = byte2;
+byte byte3 = (byte) (-113);
+byteArray0[3] = byte3;
+byte byte4 = (byte)0;
+byteArray0[4] = byte4;
+byte byte5 = (byte)0;
+byteArray0[5] = byte5;
+byte byte6 = (byte)115;
+byteArray0[6] = byte6;
+xWikiAttachment1.setContent(byteArray0);
+
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:185)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:153)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference.java:68)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.getReference(XWikiAttachment.java:156)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.extractMimeType(XWikiAttachment.java:980)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.getMimeType(XWikiAttachment.java:923)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13:00:56.540 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13:00:56.541 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+13:00:56.542 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+13:00:56.551 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+13:00:56.551 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+13:00:56.551 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+13:01:00.200 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XWikiAttachment_ESTest' to results/XWIKI-12667-6-15-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+13:01:00.266 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,71 @@
+07:14:02.712 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+07:14:02.714 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.stat.Frequency.addValue(Frequency:134)
+07:14:02.715 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.stat.Frequency
+07:14:02.715 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+07:14:03.365 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.stat.Frequency
+07:14:03.377 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+07:14:04.911 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+07:14:04.937 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+07:14:04.962 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+07:14:04.969 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+07:14:05.295 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.5
+07:14:06.226 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 17 fitness evolutions and 1 second: 1.3333333333333333
+07:14:06.773 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+07:14:06.773 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+07:14:06.773 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+07:14:06.774 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+07:14:06.774 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+07:14:06.774 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Comparator<Object> comparator0 = null;
+Frequency frequency0 = new Frequency(comparator0);
+String string0 = frequency0.toString();
+Frequency frequency1 = new Frequency(comparator0);
+int int0 = 2579;
+frequency1.getCumFreq(int0);
+frequency1.getCumPct(int0);
+frequency1.addValue((long) int0);
+frequency1.getCumPct(int0);
+frequency0.addValue(int0);
+Frequency frequency2 = new Frequency(comparator0);
+int int1 = 9;
+Integer integer0 = new Integer(int1);
+frequency0.addValue(integer0);
+int int2 = (-1);
+frequency2.getCount(int2);
+frequency2.getCumPct(int2);
+Object object0 = new Object();
+frequency2.getPct(object0);
+char char0 = '(';
+frequency2.getCumPct(char0);
+frequency1.clear();
+frequency0.getCumFreq((Object) string0);
+frequency2.getCumFreq(char0);
+frequency0.addValue((Object) frequency2);
+int int3 = 0;
+frequency2.addValue(int3);
+frequency1.addValue((Object) string0);
+frequency2.addValue((Object) frequency0);
+
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Value not comparable to existing values.
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.stat.Frequency.addValue(Frequency.java:134)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+07:14:06.775 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+07:14:06.776 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+07:14:06.776 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+07:14:06.776 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+07:14:06.777 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+07:14:06.801 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+07:14:06.801 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+07:14:06.801 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+07:14:08.050 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Frequency_ESTest' to results/MATH-90b-1-23-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+07:14:08.070 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

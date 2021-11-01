@@ -1,0 +1,90 @@
+16:34:06.289 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.UnsupportedOperationException
+16:34:06.291 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.PeriodType.setIndexedField(PeriodType:690)
+16:34:06.291 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.PeriodType
+16:34:06.292 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:34:06.747 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+16:34:08.605 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:34:08.621 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:34:08.632 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:34:08.641 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:34:09.031 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+16:34:09.052 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 6 fitness evolutions and 0 second: 0.0
+16:34:09.732 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+16:34:09.733 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:09.733 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:34:09.734 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:34:09.734 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:34:09.734 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Months months0 = Months.EIGHT;
+PeriodType periodType0 = months0.getPeriodType();
+Seconds seconds0 = Seconds.MAX_VALUE;
+int int0 = 3;
+int[] intArray0 = new int[4];
+int int1 = (-292275054);
+intArray0[0] = int1;
+intArray0[1] = int0;
+intArray0[2] = int0;
+intArray0[3] = int0;
+periodType0.setIndexedField(seconds0, int0, intArray0, intArray0[0]);
+PeriodType periodType1 = periodType0.withMillisRemoved();
+PeriodType periodType2 = periodType0.withHoursRemoved();
+PeriodType periodType3 = periodType2.withHoursRemoved();
+PeriodType.weeks();
+PeriodType.time();
+PeriodType periodType4 = PeriodType.time();
+PeriodType periodType5 = PeriodType.yearMonthDayTime();
+periodType0.withYearsRemoved();
+Duration duration0 = seconds0.toStandardDuration();
+Minutes minutes0 = duration0.toStandardMinutes();
+DurationFieldType durationFieldType0 = minutes0.getFieldType();
+int int2 = periodType4.indexOf(durationFieldType0);
+PeriodType periodType6 = periodType3.withMinutesRemoved();
+periodType6.setIndexedField(seconds0, intArray0[3], intArray0, intArray0[1]);
+PeriodType.yearDay();
+periodType1.isSupported(durationFieldType0);
+int int3 = 42;
+periodType5.addIndexedField(months0, int3, intArray0, intArray0[2]);
+PeriodType.standard();
+String string0 = "";
+DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
+DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
+DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimePrinter0, dateTimeParser0);
+DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withZoneUTC();
+DateTimeFormatter dateTimeFormatter2 = dateTimeFormatter1.withPivotYear((Integer) intArray0[0]);
+DateTimeFormatter dateTimeFormatter3 = dateTimeFormatter2.withPivotYear(int3);
+String string1 = ".),WK";
+Locale locale0 = new Locale(string0, string0, string1);
+DateTimeFormatter dateTimeFormatter4 = dateTimeFormatter3.withLocale(locale0);
+TestBasePartial.MockPartial testBasePartial_MockPartial0 = new TestBasePartial.MockPartial();
+Chronology chronology0 = testBasePartial_MockPartial0.getChronology();
+DateTimeFormatter dateTimeFormatter5 = dateTimeFormatter4.withChronology(chronology0);
+int int4 = 5125;
+DateTimeFormatter dateTimeFormatter6 = dateTimeFormatter5.withDefaultYear(int4);
+MutableDateTime mutableDateTime0 = MutableDateTime.parse(string0, dateTimeFormatter6);
+DateTime dateTime0 = mutableDateTime0.toDateTime();
+Days days0 = Days.daysBetween((ReadableInstant) dateTime0, (ReadableInstant) dateTime0);
+periodType0.addIndexedField(days0, int2, intArray0, int2);
+
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.UnsupportedOperationException: Field is not supported
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.PeriodType.setIndexedField(PeriodType.java:690)
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:34:09.736 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:34:09.737 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:34:09.738 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:34:09.741 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:34:09.741 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:34:09.741 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:34:10.408 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'PeriodType_ESTest' to results/TIME-5b-1-17-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:34:10.419 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

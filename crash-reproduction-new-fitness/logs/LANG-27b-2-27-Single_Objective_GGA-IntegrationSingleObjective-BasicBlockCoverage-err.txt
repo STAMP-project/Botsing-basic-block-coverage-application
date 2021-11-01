@@ -1,0 +1,13 @@
+Exception in thread "main" java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at eu.stamp.botsing.ga.strategy.operators.GuidedSearchUtility.collectPublicCalls(GuidedSearchUtility.java:36)
+	at eu.stamp.botsing.fitnessfunction.testcase.factories.StackTraceChromosomeFactory.fillPublicCalls(StackTraceChromosomeFactory.java:206)
+	at eu.stamp.botsing.fitnessfunction.testcase.factories.StackTraceChromosomeFactory.<init>(StackTraceChromosomeFactory.java:70)
+	at eu.stamp.botsing.testgeneration.strategy.TestGenerationUtility.getChromosomeFactory(TestGenerationUtility.java:78)
+	at eu.stamp.botsing.testgeneration.strategy.TestGenerationUtility.getGA(TestGenerationUtility.java:28)
+	at eu.stamp.botsing.testgeneration.strategy.BotsingIndividualStrategy.generateTests(BotsingIndividualStrategy.java:63)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:113)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:105)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:189)

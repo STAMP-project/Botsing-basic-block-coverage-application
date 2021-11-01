@@ -1,0 +1,75 @@
+13:59:05.814 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+13:59:05.818 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty:45)
+13:59:05.818 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.objects.BaseStringProperty
+13:59:05.819 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+13:59:07.145 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.objects.BaseStringProperty
+13:59:07.151 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 566.
+13:59:22.189 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+13:59:22.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+13:59:22.205 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+13:59:22.212 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+13:59:23.833 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 1.0
+13:59:25.058 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+13:59:25.060 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+13:59:25.060 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+13:59:25.061 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+13:59:25.061 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+13:59:25.061 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseStringProperty baseStringProperty0 = new BaseStringProperty();
+BaseStringProperty baseStringProperty1 = new BaseStringProperty();
+baseStringProperty0.setValue(baseStringProperty1);
+String string0 = baseStringProperty1.toText();
+baseStringProperty1.getLocalUidStringEntityReferenceSerializer();
+BaseStringProperty baseStringProperty2 = new BaseStringProperty();
+Object object0 = baseStringProperty0.getCustomMappingValue();
+baseStringProperty2.setValue(object0);
+baseStringProperty2.getLocalUidStringEntityReferenceSerializer();
+baseStringProperty2.getLocalUidStringEntityReferenceSerializer();
+baseStringProperty2.getLocalization();
+baseStringProperty0.toString();
+boolean boolean0 = true;
+baseStringProperty0.apply(baseStringProperty1, boolean0);
+baseStringProperty2.getValue();
+long long0 = 1925L;
+baseStringProperty2.setId(long0);
+baseStringProperty1.getPrettyName();
+baseStringProperty1.getObject();
+BaseStringProperty baseStringProperty3 = baseStringProperty0.clone();
+baseStringProperty2.equals(baseStringProperty3);
+boolean boolean1 = false;
+baseStringProperty2.setValueDirty(boolean1);
+baseStringProperty0.setClassType(string0);
+baseStringProperty0.toXML();
+baseStringProperty2.getClassType();
+baseStringProperty1.toText();
+Object object1 = null;
+baseStringProperty3.equals(object1);
+int int0 = 1423;
+int int1 = 0;
+int int2 = 0;
+ThaiBuddhistDate thaiBuddhistDate0 = ThaiBuddhistDate.of(int0, int1, int2);
+baseStringProperty2.setValue(thaiBuddhistDate0);
+
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: com.xpn.xwiki.objects.BaseStringProperty cannot be cast to java.lang.String
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.objects.BaseStringProperty.setValue(BaseStringProperty.java:45)
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+13:59:25.062 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+13:59:25.063 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+13:59:25.065 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+13:59:25.069 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+13:59:25.070 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+13:59:25.070 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+13:59:28.047 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseStringProperty_ESTest' to results/XWIKI-13377-1-8-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+13:59:28.055 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

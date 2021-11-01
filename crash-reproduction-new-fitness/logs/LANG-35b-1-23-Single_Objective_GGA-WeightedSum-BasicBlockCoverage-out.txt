@@ -1,0 +1,67 @@
+20:43:10.873 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.text.ParseException
+20:43:10.876 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.time.DateUtils.parseDateWithLeniency(DateUtils:346)
+20:43:10.876 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.time.DateUtils
+20:43:10.876 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:43:11.907 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+20:43:13.760 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:43:13.770 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:43:13.807 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:43:13.813 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:43:14.060 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.428571428571429
+20:43:14.068 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 0.0
+20:43:15.558 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:43:15.558 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:43:15.558 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:43:15.559 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:43:15.559 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:43:15.559 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+20:43:15.559 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "";
+String[] stringArray0 = new String[0];
+Date date0 = DateUtils.parseDate(string0, stringArray0);
+int int0 = (-1);
+Date date1 = DateUtils.setHours(date0, int0);
+int int1 = 0;
+DateUtils.getFragment(date1, int1, int1);
+Calendar calendar0 = mock(Calendar.class, new ViolatedAssumptionAnswer());
+int int2 = (-1983);
+DateUtils.getFragmentInHours(calendar0, int2);
+Calendar calendar1 = mock(Calendar.class, new ViolatedAssumptionAnswer());
+int int3 = (-645);
+Calendar calendar2 = DateUtils.truncate(calendar1, int3);
+DateUtils.isSameLocalTime(calendar2, calendar2);
+int int4 = 0;
+DateUtils.getFragmentInSeconds(calendar2, int4);
+int int5 = 325;
+DateUtils.add(date0, int5, int0);
+String string1 = "Date and Patterns must not be null";
+DateUtils.truncate((Object) string1, int2);
+int int6 = 1076;
+DateUtils.iterator(calendar2, int6);
+DateUtils.getFragmentInHours(calendar2, int1);
+int int7 = 4402;
+DateUtils.getFragmentInMilliseconds(calendar2, int7);
+
+20:43:15.559 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:43:15.559 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.text.ParseException: Unable to parse the date: 
+20:43:15.559 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.DateUtils.parseDateWithLeniency(DateUtils.java:346)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.DateUtils.parseDate(DateUtils.java:287)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:43:15.560 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:43:15.567 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:43:15.568 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:43:15.572 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:43:15.572 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:43:15.573 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:43:16.698 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateUtils_ESTest' to results/LANG-35b-1-23-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:43:16.736 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

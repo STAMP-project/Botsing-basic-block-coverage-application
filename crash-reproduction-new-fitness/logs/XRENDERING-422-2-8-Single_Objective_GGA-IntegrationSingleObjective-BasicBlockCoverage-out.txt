@@ -1,0 +1,85 @@
+15:05:27.913 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.util.NoSuchElementException
+15:05:27.916 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener:263)
+15:05:27.916 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:05:27.917 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:05:29.199 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:05:29.200 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+15:05:29.207 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 589.
+15:05:37.494 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:05:37.506 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:05:37.515 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:05:37.521 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:05:38.805 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 2.5
+15:05:38.869 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 1 second: 0.0
+15:05:39.179 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+15:05:39.180 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:05:39.180 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:05:39.180 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:05:39.181 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:05:39.181 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+15:05:39.181 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: ListenerChain listenerChain0 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+EmptyBlockChainingListener emptyBlockChainingListener0 = new EmptyBlockChainingListener(listenerChain0);
+ListenerChain listenerChain1 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+doReturn((ChainingListener) null).when(listenerChain1).getNextListener(nullable(java.lang.Class.class));
+EmptyBlockChainingListener emptyBlockChainingListener1 = new EmptyBlockChainingListener(listenerChain1);
+Format format0 = Format.MONOSPACE;
+HashMap<String, String> hashMap0 = new HashMap<String, String>();
+emptyBlockChainingListener1.endFormat(format0, hashMap0);
+emptyBlockChainingListener1.beginListItem();
+ResourceReference resourceReference0 = mock(ResourceReference.class, new ViolatedAssumptionAnswer());
+boolean boolean0 = false;
+Map<String, String> map0 = null;
+emptyBlockChainingListener0.onImage(resourceReference0, boolean0, map0);
+MetaData metaData0 = mock(MetaData.class, new ViolatedAssumptionAnswer());
+emptyBlockChainingListener0.beginMetaData(metaData0);
+emptyBlockChainingListener1.beginListItem();
+emptyBlockChainingListener1.getListenerChain();
+emptyBlockChainingListener0.isCurrentContainerBlockEmpty();
+MetaData metaData1 = mock(MetaData.class, new ViolatedAssumptionAnswer());
+emptyBlockChainingListener0.beginDocument(metaData1);
+Format format1 = Format.SUBSCRIPT;
+emptyBlockChainingListener1.endFormat(format1, map0);
+emptyBlockChainingListener0.endTableCell(hashMap0);
+emptyBlockChainingListener1.endFormat(format0, map0);
+Format format2 = Format.NONE;
+emptyBlockChainingListener1.beginFormat(format2, hashMap0);
+emptyBlockChainingListener1.beginQuotationLine();
+emptyBlockChainingListener1.endDefinitionList(hashMap0);
+emptyBlockChainingListener1.beginGroup(hashMap0);
+emptyBlockChainingListener1.endFormat(format0, hashMap0);
+emptyBlockChainingListener1.beginListItem();
+emptyBlockChainingListener1.endGroup(map0);
+emptyBlockChainingListener1.beginTableHeadCell(hashMap0);
+emptyBlockChainingListener0.beginDefinitionDescription();
+emptyBlockChainingListener0.endDefinitionTerm();
+emptyBlockChainingListener0.beginTableHeadCell(map0);
+HeaderLevel headerLevel0 = HeaderLevel.LEVEL4;
+String string0 = "qOEX {P";
+emptyBlockChainingListener1.endHeader(headerLevel0, string0, hashMap0);
+
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.NoSuchElementException
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.removeFirst(ArrayDeque.java:285)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.pop(ArrayDeque.java:522)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener.java:458)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener.java:263)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:05:39.182 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:05:39.183 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:05:39.195 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:05:39.195 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:05:39.195 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:05:40.921 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EmptyBlockChainingListener_ESTest' to results/XRENDERING-422-2-8-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+15:05:40.932 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

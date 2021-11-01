@@ -1,0 +1,90 @@
+09:48:55.259 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+09:48:55.262 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.EigenDecompositionImpl.processGeneralBlock(EigenDecompositionImpl:893)
+09:48:55.262 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.EigenDecompositionImpl
+09:48:55.263 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+09:49:01.464 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:01.485 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:01.496 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:01.499 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:01.502 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:01.503 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.linear.EigenDecompositionImpl
+09:49:02.189 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+09:49:05.437 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+09:49:05.445 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+09:49:05.796 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+09:49:05.805 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+09:49:07.133 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 6.978260869565217
+09:49:07.147 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 1 second: 4.978260869565217
+09:49:08.739 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.978260869565217
+09:49:08.739 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.978260869565217. PT: 2 seconds
+09:49:08.739 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+09:49:09.233 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 85 fitness evolutions and 3 second: 1.5
+09:49:09.680 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 100
+09:49:09.680 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.5. PT: 3 seconds
+09:49:10.171 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 150
+09:49:10.706 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 200
+09:49:11.580 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 250
+09:49:12.285 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 300
+09:49:15.167 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+09:49:15.167 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 9 seconds
+09:49:15.168 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+09:49:15.169 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+09:49:15.169 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 9 seconds
+09:49:15.169 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double[] doubleArray0 = new double[9];
+double double0 = 0.0;
+doubleArray0[0] = double0;
+double double1 = (-2418.29538704313);
+doubleArray0[1] = double1;
+double double2 = (-1807.819);
+doubleArray0[2] = double2;
+double double3 = 1554.665618025621;
+doubleArray0[3] = double3;
+double double4 = 9.0;
+doubleArray0[4] = double4;
+double double5 = 944.0;
+double double6 = 0.0;
+doubleArray0[6] = double6;
+double double7 = 125.068164572;
+doubleArray0[7] = double7;
+int int0 = (-2234);
+double[] doubleArray1 = new double[8];
+doubleArray1[0] = double0;
+doubleArray1[1] = double3;
+doubleArray1[2] = (double) int0;
+doubleArray1[3] = double5;
+doubleArray1[4] = double4;
+doubleArray1[5] = double3;
+doubleArray1[6] = double2;
+doubleArray1[7] = double1;
+double double8 = 5949885.1395054525;
+EigenDecompositionImpl eigenDecompositionImpl0 = new EigenDecompositionImpl(doubleArray0, doubleArray1, double8);
+eigenDecompositionImpl0.getEigenvector(int0);
+eigenDecompositionImpl0.getRealEigenvalue(int0);
+
+09:49:15.169 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+09:49:15.169 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ArrayIndexOutOfBoundsException: -2
+09:49:15.169 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.computeShiftIncrement(EigenDecompositionImpl.java:1544)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.goodStep(EigenDecompositionImpl.java:1071)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.processGeneralBlock(EigenDecompositionImpl.java:893)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.findEigenvalues(EigenDecompositionImpl.java:657)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.decompose(EigenDecompositionImpl.java:246)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.EigenDecompositionImpl.<init>(EigenDecompositionImpl.java:205)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor7.newInstance(Unknown Source)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09:49:15.170 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+09:49:15.171 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+09:49:15.259 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+09:49:15.260 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+09:49:15.260 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+09:49:16.878 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EigenDecompositionImpl_ESTest' to results/MATH-81b-3-12-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+09:49:16.942 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

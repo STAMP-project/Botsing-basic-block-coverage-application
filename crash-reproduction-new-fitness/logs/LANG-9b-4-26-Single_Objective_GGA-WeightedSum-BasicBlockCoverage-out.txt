@@ -1,0 +1,92 @@
+08:57:04.278 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+08:57:04.281 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.time.FastDateParser.init(FastDateParser:138)
+08:57:04.281 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.time.FastDateParser
+08:57:04.281 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+08:57:04.783 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 9.
+08:57:06.011 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:57:06.020 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+08:57:06.041 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+08:57:06.047 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+08:57:06.286 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.833333333333333
+08:57:06.944 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.833333333333333
+08:57:06.944 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.833333333333333. PT: 0 seconds
+08:57:06.944 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+08:57:07.591 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.833333333333333 | 100
+08:57:07.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.833333333333333 | 150
+08:57:08.099 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 193 fitness evolutions and 2 second: 4.0
+08:57:08.286 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 200
+08:57:08.287 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.0. PT: 2 seconds
+08:57:08.579 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 250
+08:57:08.901 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 300
+08:57:08.933 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 315 fitness evolutions and 2 second: 3.0
+08:57:09.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 350
+08:57:09.109 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 3 seconds
+08:57:09.296 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 400
+08:57:09.866 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 450
+08:57:10.045 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 500
+08:57:10.251 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 550
+08:57:10.467 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 600
+08:57:10.599 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 647 fitness evolutions and 4 second: 0.0
+08:57:10.698 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 650
+08:57:10.698 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+08:57:10.699 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+08:57:10.699 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+08:57:10.699 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+08:57:10.699 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "GMTCST";
+int int0 = (-1);
+SimpleTimeZone simpleTimeZone0 = new SimpleTimeZone(int0, string0);
+Locale locale0 = FastDateParser.JAPANESE_IMPERIAL;
+FastDateParser fastDateParser0 = new FastDateParser(string0, simpleTimeZone0, locale0);
+Locale locale1 = fastDateParser0.getLocale();
+String string1 = "r";
+TimeZone.getTimeZone(string1);
+Locale locale2 = null;
+SimpleTimeZone simpleTimeZone1 = (SimpleTimeZone)fastDateParser0.getTimeZone();
+fastDateParser0.getParsePattern();
+Object.registerNatives();
+ParsePosition parsePosition0 = mock(ParsePosition.class, new ViolatedAssumptionAnswer());
+fastDateParser0.parseObject(string1, parsePosition0);
+int int1 = 118;
+simpleTimeZone0.setStartRule(int0, int0, int0, int1);
+String string2 = fastDateParser0.toString();
+String string3 = " locale does not support dates before 1868 AD)\n";
+FastDateParser fastDateParser1 = new FastDateParser(string3, simpleTimeZone1, locale2);
+TimeZone timeZone0 = fastDateParser0.getTimeZone();
+FastDateParser.KeyValue[] fastDateParser_KeyValueArray0 = new FastDateParser.KeyValue[6];
+String[] stringArray0 = null;
+String[] stringArray1 = new String[8];
+stringArray1[0] = string3;
+stringArray1[1] = string2;
+stringArray1[2] = string2;
+stringArray1[3] = string1;
+stringArray1[4] = string2;
+fastDateParser0.getFieldWidth();
+FastDateParser fastDateParser2 = new FastDateParser(string3, timeZone0, locale1);
+fastDateParser2.parseObject(stringArray1[4]);
+
+08:57:10.699 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+08:57:10.699 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ArrayIndexOutOfBoundsException: 5
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.FastDateParser.toArray(FastDateParser.java:413)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.FastDateParser.getDisplayNames(FastDateParser.java:381)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.FastDateParser$TextStrategy.addRegex(FastDateParser.java:664)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.FastDateParser.init(FastDateParser.java:138)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.FastDateParser.<init>(FastDateParser.java:108)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+08:57:10.700 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+08:57:10.701 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+08:57:10.704 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+08:57:10.704 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+08:57:10.704 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+08:57:11.291 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FastDateParser_ESTest' to results/LANG-9b-4-26-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+08:57:11.298 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

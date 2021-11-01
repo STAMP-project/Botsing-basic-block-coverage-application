@@ -1,0 +1,57 @@
+19:53:40.115 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+19:53:40.118 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.EntityReference.setName(EntityReference:186)
+19:53:40.118 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.EntityReference
+19:53:40.119 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+19:53:41.679 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 585.
+19:53:55.281 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+19:53:55.290 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+19:53:55.298 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+19:53:55.304 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+19:53:56.064 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.0
+19:53:57.791 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+19:53:57.792 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+19:53:57.792 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+19:53:57.792 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+19:53:57.792 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+19:53:57.792 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "";
+EntityType entityType0 = EntityType.BLOCK;
+EntityReference entityReference0 = new EntityReference(string0, entityType0);
+entityReference0.setParent(entityReference0);
+String string1 = "] does not belong to the parents chain of the reference [";
+entityReference0.setName(string1);
+EntityReference entityReference1 = entityReference0.removeParent(entityReference0);
+EntityReference entityReference2 = entityReference0.extractFirstReference(entityType0);
+String string2 = "w-: af}z";
+EntityReference entityReference3 = new EntityReference(string2, entityType0, entityReference2);
+entityReference1.compareTo(entityReference2);
+entityReference2.setName(string2);
+EntityType entityType1 = EntityType.DOCUMENT;
+entityReference3.extractReference(entityType1);
+entityReference0.toString();
+
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:186)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:171)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:142)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+19:53:57.793 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+19:53:57.794 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+19:53:57.885 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+19:53:57.886 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+19:53:57.886 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+19:54:02.059 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EntityReference_ESTest' to results/XWIKI-13196-1-17-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+19:54:02.073 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

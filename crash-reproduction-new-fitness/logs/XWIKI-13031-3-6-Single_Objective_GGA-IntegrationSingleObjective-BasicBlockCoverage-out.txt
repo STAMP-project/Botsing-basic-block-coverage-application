@@ -1,0 +1,76 @@
+15:12:49.616 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+15:12:49.637 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.resolve(SolrEntityReferenceResolver:63)
+15:12:49.637 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver
+15:12:49.639 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:12:51.240 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver
+15:12:51.241 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver
+15:12:51.241 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver
+15:12:51.255 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 896.
+15:13:01.818 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:13:01.825 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:13:01.831 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:13:01.836 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:13:03.162 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 2.5
+15:13:03.768 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 2.5
+15:13:03.768 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 2.5. PT: 1 seconds
+15:13:03.769 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:13:04.280 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 100
+15:13:04.874 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 150
+15:13:05.247 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 200
+15:13:05.609 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 250
+15:13:06.042 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 300
+15:13:06.352 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 350
+15:13:06.605 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 400
+15:13:07.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 450
+15:13:07.413 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 500
+15:13:07.413 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 5 seconds
+15:13:07.414 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:13:07.414 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:13:07.414 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 5 seconds
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: EntityReferenceResolver<Object> entityReferenceResolver0 = (EntityReferenceResolver<Object>) mock(EntityReferenceResolver.class, new ViolatedAssumptionAnswer());
+SolrEntityReferenceResolver solrEntityReferenceResolver0 = new SolrEntityReferenceResolver();
+EntityReferenceResolver<Integer> entityReferenceResolver1 = (EntityReferenceResolver<Integer>) mock(EntityReferenceResolver.class, new ViolatedAssumptionAnswer());
+Injector.inject(solrEntityReferenceResolver0, (Class<?>) SolrEntityReferenceResolver.class, "explicitReferenceEntityReferenceResolver", (Object) entityReferenceResolver1);
+Injector.validateBean(solrEntityReferenceResolver0, (Class<?>) SolrEntityReferenceResolver.class);
+String string0 = "wiki";
+SolrDocument solrDocument0 = new SolrDocument();
+Collection<Object> collection0 = solrDocument0.getFieldValues(string0);
+EntityType entityType0 = EntityType.ATTACHMENT;
+SolrEntityReferenceResolver solrEntityReferenceResolver1 = new SolrEntityReferenceResolver();
+Injector.inject(solrEntityReferenceResolver1, (Class<?>) SolrEntityReferenceResolver.class, "explicitReferenceEntityReferenceResolver", (Object) solrEntityReferenceResolver0);
+solrDocument0.put(string0, (Object) entityType0);
+Injector.validateBean(solrEntityReferenceResolver1, (Class<?>) SolrEntityReferenceResolver.class);
+Object[] objectArray0 = new Object[3];
+objectArray0[0] = (Object) entityReferenceResolver0;
+objectArray0[1] = (Object) collection0;
+objectArray0[2] = (Object) entityType0;
+solrEntityReferenceResolver0.resolve(solrDocument0, entityType0, objectArray0);
+EntityType entityType1 = EntityType.SPACE;
+EntityType entityType2 = EntityType.OBJECT_PROPERTY;
+EntityType entityType3 = EntityType.SPACE;
+solrEntityReferenceResolver0.resolve(solrDocument0, entityType3, objectArray0);
+
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.xwiki.model.EntityType cannot be cast to java.lang.String
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.getWikiReference(SolrEntityReferenceResolver.java:93)
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.getEntityReference(SolrEntityReferenceResolver.java:70)
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.search.solr.internal.reference.SolrEntityReferenceResolver.resolve(SolrEntityReferenceResolver.java:63)
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+15:13:07.414 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:13:07.415 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:13:07.416 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:13:07.419 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:13:07.419 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:13:07.419 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:13:09.790 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'SolrEntityReferenceResolver_ESTest' to results/XWIKI-13031-3-6-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+15:13:09.799 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

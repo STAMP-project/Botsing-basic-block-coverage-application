@@ -1,0 +1,71 @@
+06:15:06.421 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.xwiki.query.jpql.parser.ParserException
+06:15:06.424 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.query.jpql.internal.JPQLParser.parse(JPQLParser:46)
+06:15:06.424 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.query.jpql.internal.JPQLParser
+06:15:06.424 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+06:15:14.506 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.jpql.parser.Parser
+06:15:14.520 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.query.jpql.internal.JPQLParser
+06:15:14.664 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 569.
+06:15:23.542 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+06:15:23.550 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+06:15:24.431 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+06:15:24.438 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+06:15:24.855 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 2.5
+06:15:24.887 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 14 fitness evolutions and 0 second: 1.5
+06:15:25.201 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+06:15:25.201 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:15:25.201 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+06:15:25.202 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+06:15:25.202 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+06:15:25.202 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+06:15:25.202 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: JPQLParser jPQLParser0 = new JPQLParser();
+JPQLParser jPQLParser1 = new JPQLParser();
+String string0 = "org.xwiki.query.jpql.parser.Parser";
+jPQLParser1.parse(string0);
+JPQLParser jPQLParser2 = new JPQLParser();
+jPQLParser1.parse(string0);
+Object.registerNatives();
+JPQLParser jPQLParser3 = new JPQLParser();
+JPQLParser jPQLParser4 = new JPQLParser();
+JPQLParser jPQLParser5 = new JPQLParser();
+jPQLParser1.parse(string0);
+JPQLParser jPQLParser6 = new JPQLParser();
+Object.registerNatives();
+jPQLParser3.parse(string0);
+JPQLParser jPQLParser7 = new JPQLParser();
+JPQLParser jPQLParser8 = new JPQLParser();
+String string1 = " ";
+jPQLParser6.parse(string1);
+jPQLParser0.parse(string0);
+Object.registerNatives();
+JPQLParser jPQLParser9 = new JPQLParser();
+jPQLParser2.parse(string0);
+JPQLParser jPQLParser10 = new JPQLParser();
+jPQLParser0.parse(string1);
+Object.registerNatives();
+JPQLParser jPQLParser11 = new JPQLParser();
+JPQLParser jPQLParser12 = new JPQLParser();
+
+06:15:25.202 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+06:15:25.202 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.parser.ParserException: [1,1] expecting: select
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.parser.Parser.parse(Parser.java:1385)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.jpql.internal.JPQLParser.parse(JPQLParser.java:46)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+06:15:25.203 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+06:15:25.205 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+06:15:25.206 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+06:15:25.210 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+06:15:25.210 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+06:15:25.210 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+06:15:26.581 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'JPQLParser_ESTest' to results/XWIKI-12919-2-21-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+06:15:26.602 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

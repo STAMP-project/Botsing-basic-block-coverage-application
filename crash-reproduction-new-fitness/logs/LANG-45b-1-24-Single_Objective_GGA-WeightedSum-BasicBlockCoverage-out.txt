@@ -1,0 +1,77 @@
+20:46:26.600 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+20:46:26.603 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang.WordUtils.abbreviate(WordUtils:629)
+20:46:26.603 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang.WordUtils
+20:46:26.603 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:46:27.151 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+20:46:28.118 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:46:28.134 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:46:28.142 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:46:28.148 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:46:28.404 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.0
+20:46:28.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:46:28.674 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:46:28.675 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:46:28.675 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:46:28.675 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:46:28.675 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = " ";
+WordUtils.uncapitalize(string0);
+String string1 = "";
+char[] charArray0 = null;
+WordUtils.initials(string1, charArray0);
+String string2 = "f)4";
+String string3 = WordUtils.uncapitalize(string2, charArray0);
+String string4 = "r=C#%M";
+int int0 = (-1314);
+WordUtils.abbreviate(string4, int0, int0, string2);
+String string5 = "java.vm.specification.vendor";
+WordUtils.uncapitalize(string5);
+String string6 = WordUtils.initials(string2, charArray0);
+String string7 = "";
+int int1 = 367;
+WordUtils.wrap(string7, int1);
+WordUtils.uncapitalize(string4, charArray0);
+String string8 = WordUtils.capitalize(string2);
+String string9 = "4ySMwI";
+WordUtils.initials(string9);
+Object.registerNatives();
+WordUtils.swapCase(string4);
+char char0 = 'r';
+WordUtils.isDelimiter(char0, charArray0);
+WordUtils.initials(string1);
+WordUtils.abbreviate(string3, int1, int1, string8);
+WordUtils.capitalize(string3, charArray0);
+int int2 = (-2431);
+int int3 = 0;
+String string10 = "file.separator";
+WordUtils.abbreviate(string6, int2, int3, string10);
+String string11 = "/i";
+int int4 = (-2276);
+String string12 = " ";
+WordUtils.abbreviate(string11, int4, int3, string12);
+String string13 = "b";
+WordUtils.capitalizeFully(string13);
+
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.StringIndexOutOfBoundsException: String index out of range: -1314
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.String.substring(String.java:1967)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang.WordUtils.abbreviate(WordUtils.java:629)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:46:28.676 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:46:28.677 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:46:28.678 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:46:28.681 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:46:28.681 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:46:28.681 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:46:29.588 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'WordUtils_ESTest' to results/LANG-45b-1-24-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:46:29.598 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

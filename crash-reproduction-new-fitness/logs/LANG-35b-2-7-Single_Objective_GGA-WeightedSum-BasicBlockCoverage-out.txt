@@ -1,0 +1,88 @@
+20:35:19.835 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.text.ParseException
+20:35:19.838 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.time.DateUtils.parseDate(DateUtils:287)
+20:35:19.838 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.time.DateUtils
+20:35:19.839 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:35:20.954 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+20:35:23.568 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:35:23.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:35:23.601 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:35:23.637 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:35:24.171 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+20:35:24.177 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 3.0
+20:35:25.356 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 13 fitness evolutions and 1 second: 0.0
+20:35:25.949 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:35:25.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+20:35:25.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:35:25.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:35:25.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:35:25.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "";
+String[] stringArray0 = new String[0];
+Date date0 = DateUtils.parseDate(string0, stringArray0);
+int int0 = 0;
+Date date1 = DateUtils.setMonths(date0, int0);
+int int1 = 0;
+DateUtils.addMinutes(date1, int1);
+String string1 = "x\"Hb#";
+DateUtils.parseDate(string1, stringArray0);
+Calendar calendar0 = mock(Calendar.class, new ViolatedAssumptionAnswer());
+int int2 = 2193;
+Calendar calendar1 = DateUtils.ceiling(calendar0, int2);
+DateUtils.isSameDay(calendar1, calendar1);
+int int3 = 280000000;
+DateUtils.ceiling((Object) string0, int3);
+int int4 = 4032;
+int int5 = (-4826);
+long long0 = DateUtils.getFragment(calendar1, int4, int5);
+DateUtils.setSeconds(date1, int3);
+Clock clock0 = Clock.systemDefaultZone();
+Duration duration0 = null;
+Clock clock1 = Clock.offset(clock0, duration0);
+Instant instant0 = Instant.now(clock1);
+Instant instant1 = instant0.minusSeconds(int5);
+long long1 = 0L;
+ChronoUnit chronoUnit0 = ChronoUnit.MINUTES;
+Instant instant2 = instant1.minus(long1, (TemporalUnit) chronoUnit0);
+Period period0 = Period.ofMonths(int1);
+Period period1 = period0.normalized();
+long long2 = (-211L);
+Period period2 = period1.minusMonths(long2);
+IsoChronology isoChronology0 = period2.getChronology();
+int int6 = (-240);
+int int7 = (-1840);
+LocalDate localDate0 = isoChronology0.date(int6, int3, int7);
+IsoChronology isoChronology1 = localDate0.getChronology();
+ZonedDateTime zonedDateTime0 = isoChronology1.zonedDateTime((TemporalAccessor) instant2);
+ZonedDateTime zonedDateTime1 = zonedDateTime0.withEarlierOffsetAtOverlap();
+ZonedDateTime zonedDateTime2 = zonedDateTime1.minus(long0, (TemporalUnit) chronoUnit0);
+ZonedDateTime zonedDateTime3 = zonedDateTime2.plusNanos(int0);
+ZoneOffset zoneOffset0 = zonedDateTime3.getOffset();
+Clock clock2 = Clock.fixed(instant2, zoneOffset0);
+JapaneseDate japaneseDate0 = JapaneseDate.now(clock2);
+JapaneseDate japaneseDate1 = japaneseDate0.plus((TemporalAmount) period2);
+DateUtils.truncate((Object) japaneseDate1, int4);
+
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.text.ParseException: Unable to parse the date: 
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.DateUtils.parseDateWithLeniency(DateUtils.java:346)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.time.DateUtils.parseDate(DateUtils.java:287)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:35:25.952 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:35:25.953 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:35:25.954 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:35:25.961 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:35:25.961 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:35:25.961 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:35:27.089 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateUtils_ESTest' to results/LANG-35b-2-7-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:35:27.100 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,81 @@
+11:05:43.227 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.joda.time.IllegalFieldValueException
+11:05:43.230 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField:78)
+11:05:43.230 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.field.PreciseDurationDateTimeField
+11:05:43.231 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:05:44.099 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.field.FieldUtils
+11:05:44.100 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.field.PreciseDurationDateTimeField
+11:05:44.134 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+11:05:47.839 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:05:48.217 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:05:48.257 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:05:48.268 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:05:49.438 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 2.5
+11:05:50.938 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 2.5
+11:05:50.939 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 2.5. PT: 2 seconds
+11:05:50.939 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:05:51.698 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 2.5 | 100
+11:05:51.900 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 132 fitness evolutions and 3 second: 1.5
+11:05:52.373 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+11:05:52.373 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+11:05:52.373 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:05:52.373 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:05:52.373 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DateTimeFieldType.dayOfYear();
+DurationField durationField0 = mock(DurationField.class, new ViolatedAssumptionAnswer());
+TestPreciseDurationDateTimeField.MockStandardBaseDateTimeField testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0 = new TestPreciseDurationDateTimeField.MockStandardBaseDateTimeField();
+long long0 = 0L;
+int int0 = 4872;
+testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.set(long0, int0);
+int int1 = 0;
+int int2 = testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.getMaximumValueForSet(int0, int1);
+testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.addWrapField((long) int0, int0);
+ReadablePartial readablePartial0 = mock(ReadablePartial.class, new ViolatedAssumptionAnswer());
+long long1 = 9223372036854775807L;
+testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.getAsText(long1);
+int int3 = 1023;
+long long2 = 0L;
+long long3 = testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.roundCeiling(long2);
+int int4 = 0;
+DateTimeFieldType dateTimeFieldType0 = DateTimeFieldType.dayOfMonth();
+TestBaseDateTimeField.MockStandardBaseDateTimeField testBaseDateTimeField_MockStandardBaseDateTimeField0 = new TestBaseDateTimeField.MockStandardBaseDateTimeField();
+DurationField durationField1 = testBaseDateTimeField_MockStandardBaseDateTimeField0.getRangeDurationField();
+TestPreciseDurationDateTimeField.MockPreciseDurationDateTimeField testPreciseDurationDateTimeField_MockPreciseDurationDateTimeField0 = new TestPreciseDurationDateTimeField.MockPreciseDurationDateTimeField(dateTimeFieldType0, durationField1);
+Locale locale0 = Locale.PRC;
+long long4 = 1000000000L;
+testPreciseDurationDateTimeField_MockPreciseDurationDateTimeField0.add(long3, long4);
+int int5 = (-6);
+testPreciseDurationDateTimeField_MockPreciseDurationDateTimeField0.getAsText(int5, locale0);
+testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.isLenient();
+testPreciseDurationDateTimeField_MockPreciseDurationDateTimeField0.getMinimumValue();
+testPreciseDurationDateTimeField_MockPreciseDurationDateTimeField0.getLeapDurationField();
+PreciseDurationDateTimeField preciseDurationDateTimeField0 = new PreciseDurationDateTimeField(dateTimeFieldType0, durationField1);
+preciseDurationDateTimeField0.getMinimumValue((long) int2);
+int int6 = 1341;
+testPreciseDurationDateTimeField_MockStandardBaseDateTimeField0.set(long2, int6);
+Locale locale1 = Locale.TAIWAN;
+preciseDurationDateTimeField0.getAsShortText((long) int3, locale0);
+
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.IllegalFieldValueException: Value 4872 for secondOfMinute must be in the range [0,59]
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:05:52.374 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:05:52.375 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:05:52.376 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:05:52.380 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:05:52.380 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:05:52.380 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:05:53.273 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'PreciseDurationDateTimeField_ESTest' to results/TIME-7b-2-16-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:05:53.285 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

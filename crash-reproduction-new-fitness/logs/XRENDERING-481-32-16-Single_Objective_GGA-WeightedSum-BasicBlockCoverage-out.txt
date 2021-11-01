@@ -1,0 +1,133 @@
+01:39:08.247 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+01:39:08.253 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.velocity.internal.DefaultVelocityEngine.evaluateInternal(DefaultVelocityEngine:259)
+01:39:08.253 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.velocity.internal.DefaultVelocityEngine
+01:39:08.254 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+01:39:09.327 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 589.
+01:39:30.607 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+01:39:30.638 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+01:39:30.661 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+01:39:30.669 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+01:39:31.416 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.9734513274336285
+01:39:33.371 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.9734513274336285
+01:39:33.371 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.9734513274336285. PT: 2 seconds
+01:39:33.371 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+01:39:35.312 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 100
+01:39:36.148 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 150
+01:39:36.925 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 200
+01:39:37.809 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 250
+01:39:39.846 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 300
+01:39:40.563 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 350
+01:39:42.082 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 400
+01:39:43.241 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 450
+01:39:45.140 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 500
+01:39:46.941 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 550
+01:39:48.608 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 600
+01:39:49.897 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 650
+01:39:51.349 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 700
+01:39:53.121 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 750
+01:39:54.664 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 5.9734513274336285 | 800
+01:39:55.540 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 865 fitness evolutions and 24 second: 4.5
+01:39:55.885 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 850
+01:39:55.886 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 25 seconds
+01:39:57.506 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 900
+01:39:58.401 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 950
+01:40:03.474 [TEST_EXECUTION_THREAD_1] ERROR ucar.httpservices.HTTPSession - Parser Error: 54:velocimacro.library
+java.lang.NullPointerException: null
+	at org.apache.velocity.runtime.parser.VelocityCharStream.FillBuff(VelocityCharStream.java:151) ~[na:na]
+	at org.apache.velocity.runtime.parser.VelocityCharStream.readChar(VelocityCharStream.java:246) ~[na:na]
+	at org.apache.velocity.runtime.parser.VelocityCharStream.BeginToken(VelocityCharStream.java:181) ~[na:na]
+	at org.apache.velocity.runtime.parser.ParserTokenManager.getNextToken(ParserTokenManager.java:5254) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.getToken(Parser.java:3599) ~[na:na]
+	at org.apache.velocity.runtime.parser.node.SimpleNode.jjtOpen(SimpleNode.java:109) ~[na:na]
+	at org.apache.velocity.runtime.parser.JJTParserState.openNodeScope(JJTParserState.java:81) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.process(Parser.java:284) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.parse(Parser.java:117) ~[na:na]
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:1226) [na:1.7]
+	at org.xwiki.velocity.internal.DefaultVelocityEngine.evaluateInternal(DefaultVelocityEngine.java:242) [na:9.6]
+	at org.xwiki.velocity.internal.DefaultVelocityEngine.evaluate(DefaultVelocityEngine.java:222) [na:9.6]
+	at sun.reflect.GeneratedMethodAccessor35.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_272]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_272]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_272]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_272]
+01:40:05.366 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1000
+01:40:06.707 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1050
+01:40:07.437 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1100
+01:40:08.182 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1150
+01:40:09.094 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1200
+01:40:09.734 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 1250
+01:40:10.023 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1299 fitness evolutions and 39 second: 3.0
+01:40:10.449 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1300
+01:40:10.449 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 39 seconds
+01:40:11.310 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1350
+01:40:12.046 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1400
+01:40:13.012 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1450
+01:40:14.319 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1500
+01:40:15.899 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1550
+01:40:17.044 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1600
+01:40:18.023 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1650
+01:40:19.481 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1700
+01:40:20.863 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1750
+01:40:22.443 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1800
+01:40:24.299 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1850
+01:40:25.716 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1900
+01:40:27.588 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 1950
+01:40:29.488 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+01:40:29.867 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2000
+01:40:31.689 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2050
+01:40:37.777 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2100
+01:40:38.864 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2150
+01:40:39.980 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2200
+01:40:41.653 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2250
+01:40:42.563 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2300
+01:40:48.673 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2350
+01:40:49.708 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 2400
+01:40:55.020 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+01:40:55.556 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2493 fitness evolutions and 84 second: 0.967741935483871
+01:40:56.027 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2450
+01:40:56.027 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.967741935483871. PT: 85 seconds
+01:40:57.096 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2500
+01:40:58.137 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2550
+01:40:58.835 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2600
+01:41:04.805 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2650
+01:41:05.907 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2700
+01:41:10.876 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2750
+01:41:11.727 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2800
+01:41:12.545 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2850
+01:41:18.488 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.967741935483871 | 2900
+01:41:18.771 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument - Warning: You did not close a PDF Document
+01:41:19.172 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2996 fitness evolutions and 108 second: 0.9574468085106383
+01:41:19.566 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9574468085106383 | 2950
+01:41:19.567 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.9574468085106383. PT: 108 seconds
+01:41:20.734 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9574468085106383 | 3000
+01:41:26.603 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3106 fitness evolutions and 115 second: 0.9572953736654805
+01:41:26.917 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3050
+01:41:26.917 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.9572953736654805. PT: 116 seconds
+01:41:32.797 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3100
+01:41:33.667 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3150
+01:41:39.351 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3200
+01:41:40.242 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3250
+01:41:41.022 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3300
+01:41:47.466 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3350
+01:42:03.903 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3400
+01:42:10.241 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3450
+01:42:16.190 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3500
+01:42:21.862 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3550
+01:42:32.564 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3600
+01:42:38.494 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3650
+01:42:49.456 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3700
+01:43:05.391 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3750
+01:43:16.481 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3800
+01:43:22.193 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3850
+01:43:23.899 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3900
+01:43:39.886 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 3950
+01:44:00.259 [TEST_EXECUTION_THREAD_32] WARN  ucar.httpservices.HTTPSession - Wrong usage count for namespace []
+01:44:05.899 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.9572953736654805 | 4000

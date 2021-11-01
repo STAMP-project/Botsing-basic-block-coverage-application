@@ -1,0 +1,77 @@
+21:30:41.633 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+21:30:41.638 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math3.util.MathArrays.linearCombination(MathArrays:846)
+21:30:41.638 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math3.util.MathArrays
+21:30:41.638 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:30:44.238 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+21:30:47.198 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:30:47.207 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:30:47.233 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:30:47.239 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:30:47.263 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: null
+21:30:47.280 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: null
+21:30:47.385 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: null
+21:30:47.404 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.863636363636363
+21:30:47.461 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 4.5
+21:30:47.481 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 4.4
+21:30:47.487 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 5 fitness evolutions and 0 second: 4.0
+21:30:47.497 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 8 fitness evolutions and 0 second: 3.0
+21:30:47.589 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+21:30:47.590 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 0 seconds
+21:30:47.590 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:30:49.299 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 45 fitness evolutions and 2 second: 0.0
+21:30:49.641 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+21:30:49.641 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:30:49.641 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:30:49.641 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:30:49.642 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+21:30:49.642 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double[] doubleArray0 = new double[1];
+MathArrays.OrderDirection mathArrays_OrderDirection0 = MathArrays.OrderDirection.DECREASING;
+double[][] doubleArray1 = new double[9][0];
+doubleArray1[0] = doubleArray0;
+doubleArray1[1] = doubleArray0;
+doubleArray1[2] = doubleArray0;
+doubleArray1[3] = doubleArray0;
+doubleArray1[4] = doubleArray0;
+doubleArray1[5] = doubleArray0;
+doubleArray1[6] = doubleArray0;
+doubleArray1[7] = doubleArray0;
+doubleArray1[8] = doubleArray0;
+MathArrays.sortInPlace(doubleArray0, mathArrays_OrderDirection0, doubleArray1);
+MathArrays.copyOf(doubleArray1[2]);
+double[] doubleArray2 = new double[5];
+double double0 = 0.0;
+doubleArray2[0] = double0;
+double double1 = 0.0;
+doubleArray2[1] = double1;
+double double2 = 3.834E-20;
+doubleArray2[2] = double2;
+double double3 = 1278.3099450077;
+doubleArray2[3] = double3;
+double double4 = 95.2182870631;
+doubleArray2[4] = double4;
+MathArrays.distanceInf(doubleArray1[8], doubleArray2);
+MathArrays.safeNorm(doubleArray1[2]);
+MathArrays.linearCombination(doubleArray1[4], doubleArray1[6]);
+
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ArrayIndexOutOfBoundsException: 1
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.util.MathArrays.linearCombination(MathArrays.java:846)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:30:49.643 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:30:49.644 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:30:49.644 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:30:49.645 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:30:49.650 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:30:49.650 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:30:49.650 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:30:51.293 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'MathArrays_ESTest' to results/MATH-3b-1-18-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:30:51.345 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

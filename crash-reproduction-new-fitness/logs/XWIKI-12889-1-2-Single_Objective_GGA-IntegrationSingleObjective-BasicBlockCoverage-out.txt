@@ -1,0 +1,82 @@
+20:33:32.020 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+20:33:32.023 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory:294)
+20:33:32.023 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rest.internal.DomainObjectFactory
+20:33:32.024 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:33:33.028 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.xwiki.rest.internal.DomainObjectFactory
+20:33:33.038 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 576.
+20:33:46.593 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:33:46.601 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:33:46.608 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:33:46.613 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:33:57.391 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 10 second: 1.5
+20:33:58.086 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+20:33:58.114 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+20:33:58.126 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+20:33:58.127 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+20:33:58.219 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.5
+20:33:58.219 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.5. PT: 11 seconds
+20:33:58.219 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:34:00.250 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 100
+20:34:02.154 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 150
+20:34:08.695 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 200
+20:34:08.695 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 22 seconds
+20:34:08.696 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:34:08.696 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:34:08.696 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 22 seconds
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DomainObjectFactory domainObjectFactory0 = new DomainObjectFactory();
+ObjectFactory objectFactory0 = new ObjectFactory();
+String string0 = "self";
+URI uRI0 = new URI(string0, string0, string0);
+DefaultRequest defaultRequest0 = new DefaultRequest();
+JobStatus jobStatus0 = mock(JobStatus.class, new ViolatedAssumptionAnswer());
+DefaultObservationManager defaultObservationManager0 = new DefaultObservationManager();
+ComponentManager componentManager0 = mock(ComponentManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "componentManager", (Object) componentManager0);
+Logger logger0 = (Logger)SQLCustomQuery.log;
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "logger", (Object) logger0);
+Injector.validateBean(defaultObservationManager0, (Class<?>) DefaultObservationManager.class);
+LoggerManager loggerManager0 = null;
+DefaultJobStatus<DefaultRequest> defaultJobStatus0 = new DefaultJobStatus<DefaultRequest>(defaultRequest0, jobStatus0, defaultObservationManager0, loggerManager0);
+DomainObjectFactory.createJobStatus(objectFactory0, uRI0, defaultJobStatus0);
+XWikiContext xWikiContext0 = new XWikiContext();
+boolean boolean0 = false;
+String string1 = "";
+String string2 = "&f'";
+XWiki xWiki0 = null;
+BaseObject baseObject0 = new BaseObject();
+XWikiDocument xWikiDocument0 = baseObject0.getOwnerDocument();
+Document document0 = new Document(xWikiDocument0, xWikiContext0);
+Document document1 = document0.getTranslatedDocument();
+int int0 = 0;
+PipedInputStream pipedInputStream0 = new PipedInputStream(int0);
+Attachment attachment0 = document1.addAttachment(string1, (InputStream) pipedInputStream0);
+String string3 = "";
+String string4 = "cot,1";
+YesNoType yesNoType0 = YesNoType.INSTANCE;
+String string5 = "8E,{B&$BWH=Us6Q4";
+Boolean boolean1 = yesNoType0.stringToObject(string5);
+DomainObjectFactory.createAttachment(objectFactory0, uRI0, attachment0, string3, string4, xWiki0, boolean1);
+
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.Calendar.setTime(Calendar.java:1770)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory.java:294)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:34:08.697 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:34:08.699 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:34:08.704 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:34:08.704 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:34:08.705 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:34:10.275 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DomainObjectFactory_ESTest' to results/XWIKI-12889-1-2-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+20:34:10.286 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,61 @@
+14:57:31.561 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+14:57:31.564 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.doc.XWikiDocument.getTranslationList(XWikiDocument:5983)
+14:57:31.564 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.doc.XWikiDocument
+14:57:31.564 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+14:57:36.682 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 580.
+14:58:05.472 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+14:58:05.482 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+14:58:05.495 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+14:58:05.504 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+14:58:32.026 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 26 second: 4.5
+14:58:32.673 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 30 fitness evolutions and 27 second: 0.0
+14:58:33.008 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+14:58:33.009 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 27 seconds
+14:58:33.009 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+14:58:33.009 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+14:58:33.009 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+14:58:33.009 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 27 seconds
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DocumentReference documentReference0 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+doReturn((Locale) null).when(documentReference0).getLocale();
+XWikiDocument xWikiDocument0 = new XWikiDocument(documentReference0);
+String string0 = "values next value for ";
+xWikiDocument0.getInternalProperty(string0);
+xWikiDocument0.getXObjectsToRemove();
+String string1 = null;
+xWikiDocument0.getStringValue(string1);
+xWikiDocument0.getTitle();
+XWikiContext xWikiContext0 = new XWikiContext();
+XWikiContext xWikiContext1 = xWikiContext0.clone();
+XWikiContext xWikiContext2 = xWikiContext1.clone();
+xWikiDocument0.getTranslationList(xWikiContext2);
+EditForm editForm0 = mock(EditForm.class, new ViolatedAssumptionAnswer());
+xWikiDocument0.readTranslationMetaFromForm(editForm0, xWikiContext1);
+XDOM xDOM0 = mock(XDOM.class, new ViolatedAssumptionAnswer());
+Syntax syntax0 = mock(Syntax.class, new ViolatedAssumptionAnswer());
+XWikiDocument.renderXDOM(xDOM0, syntax0);
+xWikiDocument0.getSyntax();
+xWikiDocument0.getTranslationList(xWikiContext2);
+
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiDocument.getTranslationList(XWikiDocument.java:5983)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+14:58:33.010 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+14:58:33.011 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+14:58:33.018 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+14:58:33.018 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+14:58:33.018 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+14:58:34.944 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XWikiDocument_ESTest' to results/XWIKI-14319-1-22-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+14:58:34.974 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

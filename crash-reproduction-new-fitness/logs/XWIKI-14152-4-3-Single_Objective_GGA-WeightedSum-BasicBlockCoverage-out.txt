@@ -1,0 +1,69 @@
+15:24:28.292 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.StringIndexOutOfBoundsException
+15:24:28.295 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter:70)
+15:24:28.296 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.query.internal.CountDocumentFilter
+15:24:28.296 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:24:29.701 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 560.
+15:24:44.248 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:24:44.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:24:44.269 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:24:44.276 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:24:46.859 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 4.5
+15:24:46.870 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 2 second: 3.0
+15:24:46.889 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 19 fitness evolutions and 2 second: 0.6
+15:24:47.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.6
+15:24:47.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.6. PT: 3 seconds
+15:24:47.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:24:48.294 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 100 fitness evolutions and 4 second: 0.0
+15:24:48.759 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+15:24:48.759 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+15:24:48.759 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:24:48.759 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:24:48.759 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: CountDocumentFilter countDocumentFilter0 = new CountDocumentFilter();
+Logger logger0 = mock(Logger.class, new ViolatedAssumptionAnswer());
+Injector.inject(countDocumentFilter0, (Class<?>) CountDocumentFilter.class, "logger", (Object) logger0);
+String string0 = "/b0hK[-XH,&h]A";
+String string1 = "doc.fullName) ";
+countDocumentFilter0.filterStatement(string0, string1);
+String string2 = "cacheSize mismatch : ";
+String string3 = "hql";
+countDocumentFilter0.filterStatement(string2, string3);
+String string4 = "";
+String string5 = "Iq1,K.+kz>BG";
+String string6 = countDocumentFilter0.filterStatement(string4, string5);
+String string7 = ")_(df-/&MVs(soF_!T";
+List<String> list0 = countDocumentFilter0.getOrderByColumns(string7);
+String string8 = "x&9-tqAl#v)JD";
+String string9 = "bN!Nfj54^V7/lDO+";
+String string10 = " order by ";
+countDocumentFilter0.filterStatement(string10, string4);
+countDocumentFilter0.filterResults(list0);
+String string11 = "segment";
+countDocumentFilter0.getSelectColumns(string11);
+countDocumentFilter0.getSelectColumns(string6);
+
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.StringIndexOutOfBoundsException: String index out of range: -8
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.String.substring(String.java:1967)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.AbstractQueryFilter.getSelectColumns(AbstractQueryFilter.java:80)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.isFilterable(CountDocumentFilter.java:60)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.query.internal.CountDocumentFilter.filterStatement(CountDocumentFilter.java:70)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor25.invoke(Unknown Source)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:24:48.760 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:24:48.761 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:24:48.762 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:24:48.780 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:24:48.781 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:24:48.781 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:24:53.638 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'CountDocumentFilter_ESTest' to results/XWIKI-14152-4-3-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:24:53.678 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

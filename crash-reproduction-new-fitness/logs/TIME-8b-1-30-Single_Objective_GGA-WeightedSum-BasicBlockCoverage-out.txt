@@ -1,0 +1,53 @@
+16:38:03.245 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+16:38:03.248 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+16:38:03.248 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+16:38:03.249 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:38:03.952 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+16:38:07.072 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:38:07.080 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:38:07.086 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:38:07.391 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:38:07.789 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.999842742569586
+16:38:07.842 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 4.99940119760479
+16:38:08.159 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 5 fitness evolutions and 1 second: 4.2
+16:38:08.810 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.2
+16:38:08.810 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.2. PT: 1 seconds
+16:38:08.810 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:38:09.460 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.2 | 100
+16:38:09.747 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 142 fitness evolutions and 2 second: 0.0
+16:38:09.812 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+16:38:09.813 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+16:38:09.813 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:38:09.813 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:38:09.813 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+16:38:09.813 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "Africa/Harare";
+String string1 = "4PuF&HB|`";
+NameProvider nameProvider0 = mock(NameProvider.class, new ViolatedAssumptionAnswer());
+doReturn(string0).when(nameProvider0).toString();
+DateTimeZone.setNameProvider(nameProvider0);
+int int0 = 0;
+int int1 = (-3292);
+DateTimeZone.forOffsetHoursMinutes(int0, int1);
+
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Minutes out of range: -3292
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone.java:280)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:38:09.814 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:38:09.815 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:38:09.837 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:38:09.837 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:38:09.837 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:38:11.231 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-30-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:38:11.246 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

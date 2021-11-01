@@ -1,0 +1,82 @@
+22:29:12.674 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.optimization.OptimizationException
+22:29:12.677 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.optimization.direct.MultiDirectional.iterateSimplex(MultiDirectional:66)
+22:29:12.677 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.optimization.direct.MultiDirectional
+22:29:12.677 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:29:13.050 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+22:29:14.486 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:29:14.495 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:29:14.507 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:29:14.515 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:29:15.599 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 3.0
+22:29:16.394 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+22:29:16.395 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 1 seconds
+22:29:16.395 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:29:16.822 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+22:29:16.977 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 135 fitness evolutions and 2 second: 0.0
+22:29:17.176 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+22:29:17.177 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+22:29:17.178 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:29:17.178 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:29:17.178 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: MultiDirectional multiDirectional0 = new MultiDirectional();
+int int0 = 64;
+int int1 = (-1);
+multiDirectional0.setMaxIterations(int1);
+Comparator<RealPointValuePair> comparator0 = null;
+multiDirectional0.iterateSimplex(comparator0);
+multiDirectional0.getConvergenceChecker();
+multiDirectional0.evaluateSimplex(comparator0);
+double[] doubleArray0 = new double[1];
+doubleArray0[0] = (double) int0;
+multiDirectional0.setStartConfiguration(doubleArray0);
+MultiDirectional multiDirectional1 = new MultiDirectional(int0, int1);
+multiDirectional1.incrementIterationsCounter();
+GoalType goalType0 = GoalType.MINIMIZE;
+MultivariateVectorialFunction multivariateVectorialFunction0 = mock(MultivariateVectorialFunction.class, new ViolatedAssumptionAnswer());
+double[] doubleArray1 = new double[7];
+double double0 = 1768.4;
+doubleArray1[0] = double0;
+double double1 = 1993.66586728;
+doubleArray1[1] = double1;
+doubleArray1[2] = (double) int1;
+doubleArray1[3] = (double) int1;
+double double2 = 1467.064777734552;
+doubleArray1[4] = double2;
+doubleArray1[5] = (double) int0;
+doubleArray1[6] = (double) int0;
+LeastSquaresConverter leastSquaresConverter0 = new LeastSquaresConverter(multivariateVectorialFunction0, doubleArray1, doubleArray0);
+GoalType goalType1 = GoalType.MAXIMIZE;
+multiDirectional0.optimize(leastSquaresConverter0, goalType1, doubleArray1);
+multiDirectional0.getMaxIterations();
+multiDirectional0.incrementIterationsCounter();
+double double3 = 0.0;
+double double4 = (-694.6390499);
+MultiDirectional multiDirectional2 = new MultiDirectional(doubleArray1[6], double4);
+Object.registerNatives();
+double double5 = 2319.829579809352;
+double double6 = 936.65797281;
+MultiDirectional multiDirectional3 = new MultiDirectional(double5, double6);
+
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.OptimizationException: org.apache.commons.math.MaxIterationsExceededException: Maximal number of iterations (-1) exceeded
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.DirectSearchOptimizer.incrementIterationsCounter(DirectSearchOptimizer.java:320)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.MultiDirectional.iterateSimplex(MultiDirectional.java:66)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:29:17.179 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:29:17.180 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:29:17.180 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:29:17.180 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:29:17.182 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:29:17.186 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:29:17.186 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:29:17.186 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:29:17.964 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'MultiDirectional_ESTest' to results/MATH-84b-2-25-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:29:17.977 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

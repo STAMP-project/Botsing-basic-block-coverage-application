@@ -1,0 +1,18 @@
+2021-10-30 08:19:34.390:INFO::main: Logging initialized @16112ms
+java.lang.IllegalArgumentException: edge not in graph
+	at org.evosuite.graphs.EvoSuiteGraph.getEdgeTarget(EvoSuiteGraph.java:143)
+	at eu.stamp.botsing.commons.graphs.cfg.BotsingRawControlFlowGraph.addInterProceduralEdge(BotsingRawControlFlowGraph.java:57)
+	at eu.stamp.botsing.graphs.cfg.CFGGenerator.generateRawGraph(CFGGenerator.java:107)
+	at eu.stamp.botsing.graphs.cfg.CFGGenerator.generateInterProceduralCFG(CFGGenerator.java:41)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:88)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:105)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:189)
+Exception in thread "main" java.lang.NullPointerException
+	at eu.stamp.botsing.fitnessfunction.utils.SpecialCallersPool.isFirstLineSpecialCaller(SpecialCallersPool.java:66)
+	at eu.stamp.botsing.fitnessfunction.utils.SpecialCallersPool.detectSpecialCallers(SpecialCallersPool.java:36)
+	at eu.stamp.botsing.testgeneration.strategy.BotsingIndividualStrategy.generateTests(BotsingIndividualStrategy.java:130)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:113)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:105)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:189)

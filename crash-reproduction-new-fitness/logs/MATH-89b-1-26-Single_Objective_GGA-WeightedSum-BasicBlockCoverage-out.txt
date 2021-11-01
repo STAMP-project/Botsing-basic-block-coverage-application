@@ -1,0 +1,67 @@
+10:02:42.278 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+10:02:42.281 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.stat.Frequency.addValue(Frequency:110)
+10:02:42.281 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.stat.Frequency
+10:02:42.281 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:02:42.615 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+10:02:43.415 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:02:43.423 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:02:43.430 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:02:43.435 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:02:44.259 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+10:02:44.267 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 0.0
+10:02:44.601 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+10:02:44.601 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+10:02:44.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:02:44.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:02:44.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:02:44.602 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+10:02:44.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Comparator<Integer> comparator0 = (Comparator<Integer>) mock(Comparator.class, new ViolatedAssumptionAnswer());
+doReturn(0).when(comparator0).compare(anyInt() , anyInt());
+Frequency frequency0 = new Frequency(comparator0);
+String string0 = "+m!hy";
+frequency0.addValue((Object) string0);
+Frequency frequency1 = new Frequency();
+long long0 = (-1267L);
+frequency1.getCount(long0);
+frequency0.addValue((Object) frequency1);
+long long1 = (-2878L);
+frequency0.getCount(long1);
+int int0 = 9;
+frequency1.getCumFreq(int0);
+frequency1.addValue((Object) frequency0);
+frequency1.addValue(long0);
+Integer integer0 = new Integer(int0);
+frequency1.addValue((Object) integer0);
+frequency1.addValue((Comparable<?>) integer0);
+frequency1.getCount(int0);
+char char0 = '7';
+frequency1.getCount(char0);
+frequency0.clear();
+frequency1.valuesIterator();
+frequency0.toString();
+long long2 = 0L;
+Long long3 = Long.valueOf(long2);
+frequency0.getCount((Object) long3);
+
+10:02:44.603 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.apache.commons.math.stat.Frequency cannot be cast to java.lang.Comparable
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.stat.Frequency.addValue(Frequency.java:110)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:02:44.604 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:02:44.605 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:02:44.614 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:02:44.614 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:02:44.614 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:02:45.389 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Frequency_ESTest' to results/MATH-89b-1-26-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+10:02:45.402 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

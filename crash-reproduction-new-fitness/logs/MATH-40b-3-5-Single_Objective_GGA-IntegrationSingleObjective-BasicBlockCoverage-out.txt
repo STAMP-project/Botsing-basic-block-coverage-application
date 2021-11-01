@@ -1,0 +1,96 @@
+05:31:28.990 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.exception.TooManyEvaluationsException
+05:31:28.993 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve(BracketingNthOrderBrentSolver:283)
+05:31:28.994 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+05:31:28.994 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+05:31:29.995 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver
+05:31:29.996 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver
+05:31:29.996 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+05:31:30.143 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+05:31:31.202 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+05:31:31.210 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+05:31:31.237 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+05:31:31.243 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+05:31:31.526 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.8333333333333335
+05:31:32.180 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 48 fitness evolutions and 0 second: 3.8181818181818183
+05:31:32.585 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.8181818181818183
+05:31:32.585 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.8181818181818183. PT: 1 seconds
+05:31:32.586 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+05:31:33.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+05:31:33.469 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+05:31:33.470 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+05:31:33.470 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+05:31:33.470 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+05:31:33.471 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double double0 = 0.0;
+double double1 = 1412.2317798;
+double double2 = Double.NaN;
+int int0 = 3;
+BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver0 = new BracketingNthOrderBrentSolver(double0, double1, double2, int0);
+double double3 = 3566.38;
+double double4 = (-0.0625);
+double double5 = 111.0;
+UnivariateFunction univariateFunction0 = mock(UnivariateFunction.class, new ViolatedAssumptionAnswer());
+doReturn(double3, double4, double4).when(univariateFunction0).value(anyDouble());
+double double6 = bracketingNthOrderBrentSolver0.solve(int0, univariateFunction0, double0);
+bracketingNthOrderBrentSolver0.getFunctionValueAccuracy();
+double double7 = (-1939.26881759);
+bracketingNthOrderBrentSolver0.isBracketing(double7, double7);
+bracketingNthOrderBrentSolver0.getAbsoluteAccuracy();
+double double8 = bracketingNthOrderBrentSolver0.getRelativeAccuracy();
+bracketingNthOrderBrentSolver0.getMin();
+double double9 = (-643.0458025328);
+bracketingNthOrderBrentSolver0.isSequence(double0, double9, double8);
+bracketingNthOrderBrentSolver0.verifyBracketing(double6, double2);
+double double10 = bracketingNthOrderBrentSolver0.doSolve();
+bracketingNthOrderBrentSolver0.getEvaluations();
+int int1 = 180;
+UnivariateFunction univariateFunction1 = mock(UnivariateFunction.class, new ViolatedAssumptionAnswer());
+double double11 = 0.5;
+double double12 = 1.0E-6;
+double double13 = (-307.7391);
+bracketingNthOrderBrentSolver0.setup(int1, univariateFunction1, double11, double12, double13);
+int int2 = bracketingNthOrderBrentSolver0.getMaxEvaluations();
+BracketingNthOrderBrentSolver bracketingNthOrderBrentSolver1 = new BracketingNthOrderBrentSolver(int0, int0);
+bracketingNthOrderBrentSolver1.getMax();
+UnivariateFunction univariateFunction2 = mock(UnivariateFunction.class, new ViolatedAssumptionAnswer());
+double double14 = (-448.68422405476);
+AllowedSolution allowedSolution0 = AllowedSolution.LEFT_SIDE;
+bracketingNthOrderBrentSolver0.solve(int2, univariateFunction2, double14, double10, double12, allowedSolution0);
+double double15 = bracketingNthOrderBrentSolver0.getRelativeAccuracy();
+bracketingNthOrderBrentSolver0.doSolve();
+UnivariateFunction univariateFunction3 = mock(UnivariateFunction.class, new ViolatedAssumptionAnswer());
+double double16 = 0.0;
+double double17 = 0.0;
+bracketingNthOrderBrentSolver1.solve(int1, univariateFunction3, double16, double15, double17);
+int int3 = 719;
+UnivariateFunction univariateFunction4 = mock(UnivariateFunction.class, new ViolatedAssumptionAnswer());
+double double18 = 0.0;
+double double19 = 2222.0;
+bracketingNthOrderBrentSolver1.solve(int3, univariateFunction4, double18, double19, double15);
+
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (3) exceeded: evaluations
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.incrementEvaluationCount(BaseAbstractUnivariateRealSolver.java:296)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.computeObjectiveValue(BaseAbstractUnivariateRealSolver.java:153)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve(BracketingNthOrderBrentSolver.java:283)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:190)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BaseAbstractUnivariateRealSolver.solve(BaseAbstractUnivariateRealSolver.java:200)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+05:31:33.472 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+05:31:33.473 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+05:31:33.474 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+05:31:33.482 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+05:31:33.482 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+05:31:33.482 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+05:31:34.482 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BracketingNthOrderBrentSolver_ESTest' to results/MATH-40b-3-5-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+05:31:34.496 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,82 @@
+11:03:34.290 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.joda.time.IllegalFieldValueException
+11:03:34.293 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils:220)
+11:03:34.293 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.field.FieldUtils
+11:03:34.294 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:03:34.748 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.field.FieldUtils
+11:03:34.758 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+11:03:36.536 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:03:36.554 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:03:36.562 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:03:36.665 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:03:36.886 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.5
+11:03:36.904 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 1.4999420155398353
+11:03:36.909 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 0 second: 1.3333333333333333
+11:03:37.268 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 25 fitness evolutions and 0 second: 1.0
+11:03:37.575 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:03:37.575 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:03:37.575 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:03:37.576 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:03:37.576 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:03:37.576 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: long long0 = (-60000L);
+int int0 = (-2414);
+FieldUtils.safeMultiply(long0, int0);
+int int1 = 0;
+long long1 = FieldUtils.safeMultiply(long0, int1);
+BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+DateTimeField dateTimeField0 = buddhistChronology0.secondOfMinute();
+int int2 = 1971;
+int int3 = 0;
+FieldUtils.verifyValueBounds(dateTimeField0, int0, int2, int3);
+long long2 = (-42521587200000L);
+long long3 = 0L;
+long long4 = FieldUtils.safeSubtract(long2, long3);
+FieldUtils.safeToInt(long1);
+int int4 = 392;
+int int5 = 0;
+int int6 = 61;
+FieldUtils.getWrappedValue(int4, int5, int6);
+String string0 = "";
+int int7 = 424;
+int int8 = (-1822);
+int int9 = 61234;
+FieldUtils.verifyValueBounds(string0, int7, int8, int9);
+FieldUtils.safeToInt(long4);
+long long5 = 613L;
+FieldUtils.safeMultiply(long5, (long) int2);
+Object.registerNatives();
+int int10 = 2010;
+FieldUtils.safeNegate(int10);
+String string1 = "PT";
+Object object0 = new Object();
+FieldUtils.equals((Object) string1, object0);
+FieldUtils.safeSubtract(long2, int4);
+FieldUtils.safeNegate(int0);
+int int11 = (-759);
+FieldUtils.verifyValueBounds(dateTimeField0, int11, int7, int4);
+long long6 = (-642L);
+FieldUtils.safeMultiply((long) int10, long6);
+
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.IllegalFieldValueException: Value -2414 for secondOfMinute must be in the range [1971,0]
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:03:37.578 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:03:37.579 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:03:37.580 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:03:37.587 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:03:37.587 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:03:37.587 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:03:38.377 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FieldUtils_ESTest' to results/TIME-7b-1-3-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:03:38.389 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

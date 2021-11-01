@@ -1,0 +1,75 @@
+10:14:36.233 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+10:14:36.236 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.internal.invocation.Invocation.callRealMethod(Invocation:202)
+10:14:36.237 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.internal.invocation.Invocation
+10:14:36.237 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:14:37.272 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+10:14:40.957 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:14:40.994 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:14:41.035 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:14:41.045 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:14:43.463 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 4.5
+10:14:45.364 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 4 second: 3.0
+10:14:45.891 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 39 fitness evolutions and 4 second: 0.0
+10:14:47.343 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+10:14:47.344 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+10:14:47.344 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:14:47.345 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:14:47.345 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:14:47.345 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+10:14:47.346 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: int int0 = 3223;
+Integer integer0 = new Integer(int0);
+MockitoMethod mockitoMethod0 = mock(MockitoMethod.class, new ViolatedAssumptionAnswer());
+doReturn((String) null).when(mockitoMethod0).toString();
+doReturn(false).when(mockitoMethod0).isVarArgs();
+Object[] objectArray0 = new Object[4];
+objectArray0[0] = (Object) mockitoMethod0;
+objectArray0[1] = (Object) integer0;
+objectArray0[2] = (Object) mockitoMethod0;
+objectArray0[3] = (Object) mockitoMethod0;
+int int1 = 0;
+RealMethod realMethod0 = mock(RealMethod.class, new ViolatedAssumptionAnswer());
+Invocation invocation0 = new Invocation(integer0, mockitoMethod0, objectArray0, int1, realMethod0);
+MockitoMethod mockitoMethod1 = mock(MockitoMethod.class, new ViolatedAssumptionAnswer());
+doReturn(false).when(mockitoMethod1).isVarArgs();
+int int2 = 1;
+RealMethod realMethod1 = null;
+Invocation invocation1 = new Invocation(invocation0, mockitoMethod1, objectArray0, int2, realMethod1);
+Object[] objectArray1 = invocation0.getArguments();
+MockitoMethod mockitoMethod2 = invocation0.getMethod();
+invocation0.markVerifiedInOrder();
+invocation1.callRealMethod();
+int int3 = 0;
+Invocation invocation2 = new Invocation(invocation0, mockitoMethod2, objectArray1, int3, realMethod1);
+invocation1.equals(invocation2);
+invocation2.getLocation();
+Object.registerNatives();
+invocation2.returnsPrimitive();
+invocation1.getMock();
+invocation2.getArgumentsCount();
+invocation0.getArgumentsCount();
+invocation0.callRealMethod();
+invocation2.getMethodName();
+
+10:14:47.347 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:14:47.347 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.invocation.Invocation.callRealMethod(Invocation.java:202)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:14:47.349 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:14:47.350 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:14:47.350 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:14:47.351 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:14:47.363 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:14:47.364 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:14:47.366 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:14:49.854 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Invocation_ESTest' to results/MOCKITO-36b-1-23-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+10:14:49.872 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

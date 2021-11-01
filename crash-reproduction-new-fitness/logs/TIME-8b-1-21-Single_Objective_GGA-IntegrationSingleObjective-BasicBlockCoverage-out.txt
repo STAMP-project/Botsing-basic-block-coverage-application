@@ -1,0 +1,58 @@
+11:08:36.478 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+11:08:36.481 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone:280)
+11:08:36.481 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.DateTimeZone
+11:08:36.481 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:08:37.454 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.DateTimeZone
+11:08:37.479 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+11:08:40.467 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:08:40.475 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:08:40.483 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:08:40.490 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:08:40.727 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.8333333333333335
+11:08:40.736 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 3 fitness evolutions and 0 second: 1.6664670658682634
+11:08:40.742 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 6 fitness evolutions and 0 second: 1.6652360515021458
+11:08:40.744 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 0 second: 1.6619718309859155
+11:08:41.251 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 38 fitness evolutions and 0 second: 1.4857142857142858
+11:08:41.273 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 46 fitness evolutions and 0 second: 1.4
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:08:41.468 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DateTimeZone.getAvailableIDs();
+int int0 = 0;
+int int1 = 578;
+DateTimeZone dateTimeZone0 = DateTimeZone.forOffsetHoursMinutes(int0, int1);
+int int2 = (-2295);
+DateTimeZone dateTimeZone1 = DateTimeZone.forOffsetHours(int2);
+dateTimeZone0.hashCode();
+long long0 = (-694L);
+dateTimeZone0.getShortName(long0);
+DateTimeZone.getAvailableIDs();
+long long1 = 1L;
+dateTimeZone1.getMillisKeepLocal(dateTimeZone0, long1);
+
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Minutes out of range: 578
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.DateTimeZone.forOffsetHoursMinutes(DateTimeZone.java:280)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:08:41.469 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:08:41.470 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:08:41.470 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:08:41.473 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:08:41.473 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:08:41.473 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:08:42.302 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeZone_ESTest' to results/TIME-8b-1-21-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+11:08:42.313 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

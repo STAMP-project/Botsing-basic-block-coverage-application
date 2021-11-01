@@ -1,0 +1,66 @@
+03:58:29.341 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.util.NoSuchElementException
+03:58:29.345 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener:458)
+03:58:29.345 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener
+03:58:29.345 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+03:58:30.262 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 589.
+03:58:39.180 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+03:58:39.198 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+03:58:39.245 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+03:58:39.256 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+03:58:40.850 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 0.0
+03:58:41.146 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+03:58:41.147 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+03:58:41.147 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+03:58:41.147 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+03:58:41.147 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+03:58:41.147 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: ListenerChain listenerChain0 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+doReturn((ChainingListener) null).when(listenerChain0).getNextListener(nullable(java.lang.Class.class));
+EmptyBlockChainingListener emptyBlockChainingListener0 = new EmptyBlockChainingListener(listenerChain0);
+Format format0 = Format.BOLD;
+Map<String, String> map0 = Listener.EMPTY_PARAMETERS;
+emptyBlockChainingListener0.endFormat(format0, map0);
+Format format1 = Format.UNDERLINED;
+emptyBlockChainingListener0.endFormat(format1, map0);
+emptyBlockChainingListener0.endParagraph(map0);
+boolean boolean0 = emptyBlockChainingListener0.isCurrentContainerBlockEmpty();
+emptyBlockChainingListener0.endTable(map0);
+ResourceReference resourceReference0 = mock(ResourceReference.class, new ViolatedAssumptionAnswer());
+emptyBlockChainingListener0.onImage(resourceReference0, boolean0, map0);
+emptyBlockChainingListener0.onHorizontalLine(map0);
+emptyBlockChainingListener0.endTableRow(map0);
+ResourceReference resourceReference1 = mock(ResourceReference.class, new ViolatedAssumptionAnswer());
+boolean boolean1 = false;
+emptyBlockChainingListener0.beginLink(resourceReference1, boolean1, map0);
+ListenerChain listenerChain1 = mock(ListenerChain.class, new ViolatedAssumptionAnswer());
+emptyBlockChainingListener0.setListenerChain(listenerChain1);
+emptyBlockChainingListener0.endTableHeadCell(map0);
+Format format2 = Format.SUPERSCRIPT;
+emptyBlockChainingListener0.beginFormat(format2, map0);
+
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.NoSuchElementException
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.removeFirst(ArrayDeque.java:285)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.ArrayDeque.pop(ArrayDeque.java:522)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener.java:458)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.endFormat(EmptyBlockChainingListener.java:263)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+03:58:41.148 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+03:58:41.149 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+03:58:41.150 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+03:58:41.158 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+03:58:41.158 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+03:58:41.158 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+03:58:42.862 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'EmptyBlockChainingListener_ESTest' to results/XRENDERING-422-1-24-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+03:58:42.872 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

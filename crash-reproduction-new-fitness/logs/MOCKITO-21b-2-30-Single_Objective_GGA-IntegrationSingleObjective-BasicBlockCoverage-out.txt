@@ -1,0 +1,72 @@
+08:32:58.016 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.mockito.internal.creation.instance.InstantationException
+08:32:58.019 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.internal.creation.instance.ConstructorInstantiator.withOuterClass(ConstructorInstantiator:27)
+08:32:58.019 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.internal.creation.instance.ConstructorInstantiator
+08:32:58.019 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+08:32:58.268 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.creation.instance.ConstructorInstantiator
+08:32:58.269 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.creation.instance.ConstructorInstantiator
+08:32:58.270 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.mockito.internal.creation.instance.ConstructorInstantiator
+08:32:58.287 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+08:32:59.098 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+08:32:59.106 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+08:32:59.114 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+08:32:59.119 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+08:32:59.347 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.333333333333333
+08:33:00.107 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+08:33:00.107 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+08:33:00.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+08:33:00.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+08:33:00.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+08:33:00.108 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+08:33:00.108 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Object object0 = new Object();
+ConstructorInstantiator constructorInstantiator0 = new ConstructorInstantiator(object0);
+Class<Integer> class0 = Integer.class;
+constructorInstantiator0.newInstance((Class<?>) class0);
+Class<Object> class1 = Object.class;
+constructorInstantiator0.newInstance((Class<?>) class1);
+Object object1 = new Object();
+ConstructorInstantiator constructorInstantiator1 = new ConstructorInstantiator(object1);
+Class<Object> class2 = Object.class;
+ConstructorInstantiator.noArgConstructor((Class<?>) class2);
+ConstructorInstantiator.noArgConstructor((Class<?>) class0);
+Object.registerNatives();
+Object.registerNatives();
+Object.registerNatives();
+Class<String> class3 = String.class;
+constructorInstantiator0.newInstance((Class<?>) class3);
+Object.registerNatives();
+ConstructorInstantiator constructorInstantiator2 = new ConstructorInstantiator(class1);
+Class<Object> class4 = Object.class;
+Exception exception0 = mock(Exception.class, new ViolatedAssumptionAnswer());
+InstantationException instantationException0 = ConstructorInstantiator.paramsException((Class<?>) class4, exception0);
+ConstructorInstantiator.paramsException((Class<?>) class2, (Exception) instantationException0);
+Object object2 = new Object();
+ConstructorInstantiator constructorInstantiator3 = new ConstructorInstantiator(object2);
+Object object3 = new Object();
+ConstructorInstantiator constructorInstantiator4 = new ConstructorInstantiator(object3);
+
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.creation.instance.InstantationException: Unable to create mock instance of 'Integer'.
+Please ensure that the outer instance has correct type and that the target class has parameter-less constructor.
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.creation.instance.ConstructorInstantiator.paramsException(ConstructorInstantiator.java:33)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.creation.instance.ConstructorInstantiator.withOuterClass(ConstructorInstantiator.java:27)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.internal.creation.instance.ConstructorInstantiator.newInstance(ConstructorInstantiator.java:17)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+08:33:00.109 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+08:33:00.110 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+08:33:00.113 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+08:33:00.113 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+08:33:00.113 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+08:33:00.904 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'ConstructorInstantiator_ESTest' to results/MOCKITO-21b-2-30-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+08:33:00.913 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

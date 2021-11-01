@@ -1,0 +1,66 @@
+14:48:32.664 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+14:48:32.666 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl:997)
+14:48:32.666 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.linear.BigMatrixImpl
+14:48:32.666 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+14:48:33.404 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+14:48:34.294 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+14:48:34.302 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+14:48:34.310 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+14:48:34.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+14:48:34.585 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.0
+14:48:34.603 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 0 second: 4.95
+14:48:34.639 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 35 fitness evolutions and 0 second: 0.0
+14:48:35.068 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+14:48:35.069 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+14:48:35.069 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+14:48:35.069 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+14:48:35.069 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+14:48:35.069 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+14:48:35.070 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BigDecimal[][] bigDecimalArray0 = new BigDecimal[2][0];
+BigDecimal[] bigDecimalArray1 = new BigDecimal[1];
+long long0 = (-1582L);
+BigDecimal bigDecimal0 = new BigDecimal(long0);
+bigDecimalArray1[0] = bigDecimal0;
+bigDecimalArray0[0] = bigDecimalArray1;
+BigDecimal[] bigDecimalArray2 = new BigDecimal[1];
+bigDecimalArray2[0] = bigDecimal0;
+bigDecimalArray0[1] = bigDecimalArray2;
+BigMatrixImpl bigMatrixImpl0 = new BigMatrixImpl(bigDecimalArray0);
+bigMatrixImpl0.operate(bigDecimalArray1);
+BigDecimal[] bigDecimalArray3 = null;
+bigMatrixImpl0.operate(bigDecimalArray3);
+bigMatrixImpl0.scalarMultiply(bigDecimalArray1[0]);
+int int0 = (-1);
+bigMatrixImpl0.getColumnAsDoubleArray(int0);
+bigMatrixImpl0.getRowAsDoubleArray(int0);
+bigMatrixImpl0.getColumnDimension();
+BigMatrixImpl bigMatrixImpl1 = new BigMatrixImpl();
+BigMatrixImpl bigMatrixImpl2 = bigMatrixImpl0.subtract(bigMatrixImpl1);
+bigMatrixImpl2.getDataRef();
+bigMatrixImpl1.add((BigMatrix) bigMatrixImpl2);
+BigMatrixImpl bigMatrixImpl3 = bigMatrixImpl2.multiply(bigMatrixImpl0);
+bigMatrixImpl3.getTrace();
+
+14:48:35.070 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ArrayIndexOutOfBoundsException: 1
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.linear.BigMatrixImpl.operate(BigMatrixImpl.java:997)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+14:48:35.071 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+14:48:35.072 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+14:48:35.091 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+14:48:35.092 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+14:48:35.092 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+14:48:36.643 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BigMatrixImpl_ESTest' to results/MATH-98b-1-4-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+14:48:36.656 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

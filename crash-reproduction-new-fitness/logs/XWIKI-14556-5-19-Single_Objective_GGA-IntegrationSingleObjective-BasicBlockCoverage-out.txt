@@ -1,0 +1,133 @@
+09:05:15.709 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.hibernate.QueryParameterException
+09:05:15.713 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.setNamedParameter(HqlQueryExecutor:417)
+09:05:15.713 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+09:05:15.713 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+09:05:17.827 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.hibernate.engine.query.ParameterMetadata
+09:05:17.828 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.hibernate.engine.query.ParameterMetadata
+09:05:17.828 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.hibernate.impl.AbstractQueryImpl
+09:05:17.828 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.hibernate.impl.AbstractQueryImpl
+09:05:17.828 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+09:05:17.845 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 553.
+09:05:41.769 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+09:05:41.779 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+09:05:41.787 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+09:05:41.795 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+09:05:43.756 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 5.666666666666666
+09:05:45.244 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 12 fitness evolutions and 3 second: 4.666666666666666
+09:05:45.882 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.666666666666666
+09:05:45.883 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.666666666666666. PT: 4 seconds
+09:05:45.883 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+09:05:50.415 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 100
+09:05:54.421 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 150
+09:05:58.973 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 200
+09:06:04.644 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 250
+09:06:07.704 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 300
+09:06:14.063 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 350
+09:06:18.478 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 400
+09:06:21.940 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 450
+09:06:24.622 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 500
+09:06:31.408 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 550
+09:06:36.243 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 600
+09:06:41.240 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.666666666666666 | 650
+09:06:44.909 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 700
+09:06:44.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 63 seconds
+09:06:44.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+09:06:44.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+09:06:44.910 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 63 seconds
+09:06:44.912 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: HqlQueryExecutor hqlQueryExecutor0 = new HqlQueryExecutor();
+ContextualAuthorizationManager contextualAuthorizationManager0 = mock(ContextualAuthorizationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "authorization", (Object) contextualAuthorizationManager0);
+Provider<ContextComponentManager> provider0 = (Provider<ContextComponentManager>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "componentManagerProvider", (Object) provider0);
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "execution", (Object) execution0);
+MergeResult mergeResult0 = new MergeResult();
+mergeResult0.getLog();
+OrdinalParameterDescriptor[] ordinalParameterDescriptorArray0 = null;
+boolean boolean0 = true;
+AtomicHashMap.ProxyMode atomicHashMap_ProxyMode0 = AtomicHashMap.ProxyMode.COARSE;
+AtomicHashMap<EmbeddableComponentManager, DocumentComponentManager> atomicHashMap0 = new AtomicHashMap<EmbeddableComponentManager, DocumentComponentManager>();
+AtomicHashMap<EmbeddableComponentManager, DocumentComponentManager> atomicHashMap1 = atomicHashMap0.copy();
+ParameterMetadata parameterMetadata0 = new ParameterMetadata(ordinalParameterDescriptorArray0, atomicHashMap1);
+String string0 = "gD`x0a@CZ5d=b(0^h";
+SessionImplementor sessionImplementor0 = mock(SessionImplementor.class, new ViolatedAssumptionAnswer());
+CollectionFilterImpl collectionFilterImpl0 = new CollectionFilterImpl(string0, mergeResult0, sessionImplementor0, parameterMetadata0);
+int int0 = (-1102);
+CollectionFilterImpl collectionFilterImpl1 = (CollectionFilterImpl)collectionFilterImpl0.setTimeout(int0);
+XWikiContext xWikiContext0 = new XWikiContext();
+hqlQueryExecutor0.setNamedParameter(collectionFilterImpl1, string0, xWikiContext0);
+Object object0 = new Object();
+hqlQueryExecutor0.setNamedParameter(collectionFilterImpl0, string0, object0);
+String string1 = "e~8IdSzG]";
+hqlQueryExecutor0.completeShortFormStatement(string1);
+Query query0 = null;
+ContextComponentManager contextComponentManager0 = new ContextComponentManager();
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "execution", (Object) execution1);
+ContextRootComponentManager contextRootComponentManager0 = new ContextRootComponentManager();
+RootComponentManager rootComponentManager0 = new RootComponentManager();
+ComponentManager componentManager0 = contextComponentManager0.getParent();
+Injector.inject(rootComponentManager0, (Class<?>) RootComponentManager.class, "rootComponentManager", (Object) componentManager0);
+Injector.validateBean(rootComponentManager0, (Class<?>) RootComponentManager.class);
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "rootComponentManager", (Object) rootComponentManager0);
+UserComponentManager userComponentManager0 = new UserComponentManager();
+DocumentAccessBridge documentAccessBridge0 = mock(DocumentAccessBridge.class, new ViolatedAssumptionAnswer());
+Injector.inject(userComponentManager0, (Class<?>) UserComponentManager.class, "documentAccessBridge", (Object) documentAccessBridge0);
+EmbeddableComponentManager embeddableComponentManager0 = new EmbeddableComponentManager(string1);
+Injector.inject(userComponentManager0, (Class<?>) UserComponentManager.class, "documentComponentManager", (Object) embeddableComponentManager0);
+EntityReferenceSerializer<SpaceComponentManager> entityReferenceSerializer0 = (EntityReferenceSerializer<SpaceComponentManager>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(userComponentManager0, (Class<?>) UserComponentManager.class, "referenceSerializer", (Object) entityReferenceSerializer0);
+Execution execution2 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(userComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution2);
+EntityReferenceSerializer<Integer> entityReferenceSerializer1 = (EntityReferenceSerializer<Integer>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(userComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer1);
+ComponentManagerManager componentManagerManager0 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(userComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager0);
+Injector.validateBean(userComponentManager0, (Class<?>) UserComponentManager.class);
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "userComponentManager", (Object) userComponentManager0);
+Injector.validateBean(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "rootComponentManager", (Object) contextRootComponentManager0);
+SpaceComponentManager spaceComponentManager0 = new SpaceComponentManager();
+Provider<DocumentComponentManager> provider1 = (Provider<DocumentComponentManager>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "referenceProvider", (Object) provider1);
+ComponentManager componentManager1 = embeddableComponentManager0.getParent();
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "wikiComponentManager", (Object) componentManager1);
+Execution execution3 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution3);
+EntityReferenceSerializer<String> entityReferenceSerializer2 = (EntityReferenceSerializer<String>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer2);
+ComponentManagerManager componentManagerManager1 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager1);
+Injector.validateBean(spaceComponentManager0, (Class<?>) SpaceComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "userComponentManager", (Object) spaceComponentManager0);
+Injector.validateBean(contextComponentManager0, (Class<?>) ContextComponentManager.class);
+ScriptQuery scriptQuery0 = new ScriptQuery(query0, contextComponentManager0);
+SecureQuery secureQuery0 = scriptQuery0.checkCurrentAuthor(boolean0);
+hqlQueryExecutor0.checkAllowed(secureQuery0);
+
+09:06:44.912 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.QueryParameterException: could not locate named parameter [gD`x0a@CZ5d=b(0^h]
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.engine.query.ParameterMetadata.getNamedParameterDescriptor(ParameterMetadata.java:101)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.engine.query.ParameterMetadata.getNamedParameterExpectedType(ParameterMetadata.java:107)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.impl.AbstractQueryImpl.determineType(AbstractQueryImpl.java:460)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.impl.AbstractQueryImpl.setParameter(AbstractQueryImpl.java:430)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.setNamedParameter(HqlQueryExecutor.java:417)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor37.invoke(Unknown Source)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09:06:44.913 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+09:06:44.914 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+09:06:44.933 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+09:06:44.934 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+09:06:44.934 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+09:06:49.020 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'HqlQueryExecutor_ESTest' to results/XWIKI-14556-5-19-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+09:06:49.055 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

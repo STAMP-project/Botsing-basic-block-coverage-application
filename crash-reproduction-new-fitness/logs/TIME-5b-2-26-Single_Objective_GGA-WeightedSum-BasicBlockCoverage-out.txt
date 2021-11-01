@@ -1,0 +1,78 @@
+16:34:46.758 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.UnsupportedOperationException
+16:34:46.761 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.Period.withYears(Period:896)
+16:34:46.761 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.Period
+16:34:46.761 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:34:47.313 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+16:34:49.216 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:34:49.224 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:34:49.234 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:34:49.355 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:34:49.646 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+16:34:49.956 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 0 second: 0.0
+16:34:50.445 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+16:34:50.445 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:50.446 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:34:50.446 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:34:50.446 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:34:50.446 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: long long0 = 2817L;
+PeriodType periodType0 = PeriodType.yearMonthDayTime();
+PeriodType periodType1 = periodType0.withYearsRemoved();
+Period period0 = new Period(long0, periodType1);
+int int0 = 21;
+Period period1 = period0.withYears(int0);
+long long1 = (-906L);
+Weeks weeks0 = period1.toStandardWeeks();
+PeriodType periodType2 = weeks0.getPeriodType();
+Period period2 = new Period(long1, periodType2);
+period0.minusSeconds(int0);
+String string0 = " as this period contains months and months vary in length";
+TestMonthDay_Basics testMonthDay_Basics0 = new TestMonthDay_Basics(string0);
+TestMonthDay_Basics.MockMD testMonthDay_Basics_MockMD0 = testMonthDay_Basics0.new MockMD();
+Chronology chronology0 = testMonthDay_Basics_MockMD0.getChronology();
+Period period3 = new Period(period2, chronology0);
+Period.weeks(int0);
+Period period4 = new Period(testMonthDay_Basics_MockMD0, periodType2, chronology0);
+Period period5 = new Period(testMonthDay_Basics_MockMD0, testMonthDay_Basics_MockMD0);
+Duration duration0 = period5.toStandardDuration();
+period4.minusHours(int0);
+period1.plusMinutes(int0);
+Object object0 = new Object();
+LocalDateTime localDateTime0 = new LocalDateTime(object0, chronology0);
+LocalDateTime localDateTime1 = localDateTime0.minus((ReadableDuration) duration0);
+int int1 = 0;
+LocalDateTime localDateTime2 = localDateTime1.withWeekyear(int1);
+int int2 = 19;
+LocalDateTime localDateTime3 = localDateTime2.plusYears(int2);
+int int3 = 7;
+int int4 = (-1276);
+int int5 = 2206;
+LocalDateTime localDateTime4 = localDateTime3.withTime(int3, int4, int5, int5);
+int int6 = (-3355);
+LocalDateTime localDateTime5 = localDateTime4.plusWeeks(int6);
+Period.fieldDifference(localDateTime5, localDateTime1);
+
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.UnsupportedOperationException: Field is not supported
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.PeriodType.setIndexedField(PeriodType.java:690)
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.Period.withYears(Period.java:896)
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:34:50.447 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:34:50.448 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:34:50.449 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:34:50.452 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:34:50.452 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:34:50.452 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:34:51.227 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Period_ESTest' to results/TIME-5b-2-26-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:34:51.249 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

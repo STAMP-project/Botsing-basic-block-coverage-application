@@ -1,0 +1,63 @@
+20:35:29.857 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NumberFormatException
+20:35:29.860 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils:546)
+20:35:29.861 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.math.NumberUtils
+20:35:29.861 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:35:31.069 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+20:35:32.737 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:35:32.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:35:32.756 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:35:32.764 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:35:33.183 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.8
+20:35:33.201 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 0.0
+20:35:33.582 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+20:35:33.583 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:35:33.583 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:35:33.583 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:35:33.584 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:35:33.584 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+20:35:33.585 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "";
+NumberUtils.toDouble(string0);
+NumberUtils.toFloat(string0);
+String string1 = "mE2=_";
+NumberUtils.createNumber(string1);
+String string2 = "";
+NumberUtils.createNumber(string2);
+String string3 = "mSbPT";
+byte byte0 = (byte)12;
+byte byte1 = NumberUtils.toByte(string3, byte0);
+int int0 = NumberUtils.toInt(string1);
+NumberUtils.min((float) int0, (float) int0, (float) int0);
+double double0 = 550.122149913;
+double double1 = NumberUtils.toDouble(string0, double0);
+byte byte2 = (byte)123;
+NumberUtils.min(byte0, byte2, byte1);
+String string4 = "-I4ot=B]v/DaI1";
+NumberUtils.createLong(string4);
+double[] doubleArray0 = new double[2];
+doubleArray0[0] = (double) byte2;
+doubleArray0[1] = double1;
+NumberUtils.max(doubleArray0);
+
+20:35:33.585 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:35:33.585 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NumberFormatException: mE2=_ is not a valid number.
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.math.NumberUtils.createNumber(NumberUtils.java:546)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:35:33.586 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:35:33.587 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:35:33.588 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:35:33.592 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:35:33.592 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:35:33.592 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:35:34.996 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'NumberUtils_ESTest' to results/LANG-36b-1-6-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:35:35.008 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

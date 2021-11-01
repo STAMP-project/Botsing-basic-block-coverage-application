@@ -1,0 +1,81 @@
+00:00:51.623 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.mockito.exceptions.base.MockitoException
+00:00:51.625 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.mockito.exceptions.Reporter.cannotCallAbstractRealMethod(Reporter:583)
+00:00:51.626 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.mockito.exceptions.Reporter
+00:00:51.626 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+00:00:52.361 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+00:00:53.803 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:00:53.815 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+00:00:53.825 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+00:00:53.843 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+00:00:54.860 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 4.5
+00:00:54.874 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 1 second: 0.0
+00:00:55.945 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+00:00:55.946 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+00:00:55.946 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+00:00:55.947 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+00:00:55.947 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+00:00:55.947 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Reporter reporter0 = new Reporter();
+reporter0.cannotCallAbstractRealMethod();
+Class<Matcher> class0 = Matcher.class;
+reporter0.extraInterfacesDoesNotAcceptNullParameters();
+Invocation invocation0 = mock(Invocation.class, new ViolatedAssumptionAnswer());
+LinkedList<VerificationAwareInvocation> linkedList0 = new LinkedList<VerificationAwareInvocation>();
+reporter0.noMoreInteractionsWanted(invocation0, linkedList0);
+reporter0.notAMockPassedToWhenMethod();
+reporter0.serializableWontWorkForObjectsThatDontImplementSerializable(class0);
+String string0 = "S!$Yp_";
+String string1 = "d583";
+String string2 = "\\t";
+reporter0.wrongTypeOfReturnValue(string0, string1, string2);
+DescribedInvocation describedInvocation0 = mock(DescribedInvocation.class, new ViolatedAssumptionAnswer());
+reporter0.wantedButNotInvoked(describedInvocation0, (List<? extends DescribedInvocation>) linkedList0);
+int int0 = 34;
+int int1 = 0;
+DescribedInvocation describedInvocation1 = mock(DescribedInvocation.class, new ViolatedAssumptionAnswer());
+Location location0 = null;
+reporter0.tooManyActualInvocationsInOrder(int0, int1, describedInvocation1, location0);
+String string3 = "    someMethod(AdditionalMatchers.and(isNotNull(), \"raw String\");";
+reporter0.argumentsAreDifferent(string3, string0, location0);
+String string4 = "f .";
+SQLTransientException sQLTransientException0 = new SQLTransientException(string1);
+reporter0.cannotInitializeForInjectMocksAnnotation(string4, sQLTransientException0);
+InvocationOnMock invocationOnMock0 = mock(InvocationOnMock.class, new ViolatedAssumptionAnswer());
+String string5 = "";
+Class<Integer> class1 = Integer.class;
+reporter0.wrongTypeOfArgumentToReturn(invocationOnMock0, string5, class1, int0);
+reporter0.nullPassedToVerify();
+reporter0.cannotCallAbstractRealMethod();
+reporter0.mockedTypeIsInconsistentWithDelegatedInstanceType(class0, linkedList0);
+reporter0.invocationListenerDoesNotAcceptNullParameters();
+reporter0.extraInterfacesDoesNotAcceptNullParameters();
+Class<InvocationMatcher> class2 = InvocationMatcher.class;
+reporter0.serializableWontWorkForObjectsThatDontImplementSerializable(class2);
+
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.base.MockitoException: 
+Cannot call abstract real method on java object!
+Calling real methods is only possible when mocking non abstract method.
+  //correct example:
+  when(mockOfConcreteClass.nonAbstractMethod()).thenCallRealMethod();
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.mockito.exceptions.Reporter.cannotCallAbstractRealMethod(Reporter.java:583)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+00:00:55.948 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+00:00:55.949 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+00:00:55.949 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+00:00:55.949 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+00:00:55.949 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+00:00:55.949 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+00:00:55.950 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+00:00:55.953 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+00:00:55.953 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+00:00:55.953 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+00:00:57.046 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Reporter_ESTest' to results/MOCKITO-9b-1-23-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+00:00:57.066 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

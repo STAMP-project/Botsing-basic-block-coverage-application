@@ -1,0 +1,76 @@
+07:15:31.037 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+07:15:31.040 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl:106)
+07:15:31.041 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.distribution.FDistributionImpl
+07:15:31.041 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+07:15:32.298 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+07:15:32.301 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.analysis.UnivariateRealSolverUtils
+07:15:32.302 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.distribution.AbstractContinuousDistribution
+07:15:32.310 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.distribution.FDistributionImpl
+07:15:32.442 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+07:15:33.955 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+07:15:33.968 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+07:15:33.979 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+07:15:33.987 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+07:15:34.347 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.666666666666666
+07:15:34.492 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 29 fitness evolutions and 0 second: 3.6666666666666665
+07:15:35.377 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+07:15:35.377 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+07:15:35.378 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+07:15:35.378 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+07:15:35.378 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+07:15:35.378 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+07:15:35.379 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: double double0 = 0.5;
+FDistributionImpl fDistributionImpl0 = new FDistributionImpl(double0, double0);
+double double1 = fDistributionImpl0.inverseCumulativeProbability(double0);
+double double2 = fDistributionImpl0.getDenominatorDegreesOfFreedom();
+double double3 = (-980.42103985003);
+fDistributionImpl0.getDomainLowerBound(double3);
+double double4 = 1927.909;
+fDistributionImpl0.cumulativeProbability(double2, double4);
+fDistributionImpl0.inverseCumulativeProbability(double1);
+double double5 = (-1606.4582);
+fDistributionImpl0.getDomainUpperBound(double5);
+double double6 = 0.0;
+FDistributionImpl fDistributionImpl1 = new FDistributionImpl(double0, double6);
+double double7 = (-3482.066);
+fDistributionImpl1.setNumeratorDegreesOfFreedom(double7);
+double double8 = 0.0;
+fDistributionImpl1.setDenominatorDegreesOfFreedom(double8);
+fDistributionImpl0.getNumeratorDegreesOfFreedom();
+double double9 = fDistributionImpl1.cumulativeProbability(double2);
+Object.registerNatives();
+double double10 = fDistributionImpl0.getDomainLowerBound(double0);
+fDistributionImpl1.getInitialDomain(double3);
+fDistributionImpl1.getDomainLowerBound(double2);
+double double11 = 3.399464998481189E-5;
+fDistributionImpl1.cumulativeProbability(double6, double11);
+Object.registerNatives();
+fDistributionImpl1.inverseCumulativeProbability(double10);
+FDistributionImpl fDistributionImpl2 = new FDistributionImpl(double9, double1);
+
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Invalid endpoint parameters:  lowerBound=0.0 initial=-0.3333333333333333 upperBound=1.7976931348623157E308
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:179)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.UnivariateRealSolverUtils.bracket(UnivariateRealSolverUtils.java:128)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability(AbstractContinuousDistribution.java:84)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability(FDistributionImpl.java:106)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+07:15:35.380 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+07:15:35.381 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+07:15:35.383 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+07:15:35.383 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+07:15:35.388 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+07:15:35.392 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+07:15:35.406 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+07:15:35.406 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+07:15:35.406 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+07:15:36.878 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'FDistributionImpl_ESTest' to results/MATH-95b-4-29-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+07:15:36.888 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

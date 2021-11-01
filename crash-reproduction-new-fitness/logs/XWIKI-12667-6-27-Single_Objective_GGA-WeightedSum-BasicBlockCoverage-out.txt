@@ -1,0 +1,86 @@
+11:09:34.618 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+11:09:34.621 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.doc.XWikiAttachment.getMimeType(XWikiAttachment:923)
+11:09:34.621 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.doc.XWikiAttachment
+11:09:34.622 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:09:36.605 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 583.
+11:10:01.856 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:10:01.867 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:10:01.875 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:10:01.882 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:10:04.093 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 5.625
+11:10:05.212 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 7 fitness evolutions and 3 second: 3.0
+11:10:05.284 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 31 fitness evolutions and 3 second: 0.0
+11:10:05.624 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+11:10:05.624 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+11:10:05.624 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:10:05.625 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:10:05.625 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:10:05.625 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+11:10:05.631 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: XWikiAttachment xWikiAttachment0 = new XWikiAttachment();
+XWikiDocument xWikiDocument0 = mock(XWikiDocument.class, new ViolatedAssumptionAnswer());
+doReturn((DocumentReference) null, (DocumentReference) null).when(xWikiDocument0).getDocumentReference();
+xWikiAttachment0.setDoc(xWikiDocument0);
+XWikiContext xWikiContext0 = new XWikiContext();
+XWikiContext xWikiContext1 = xWikiContext0.clone();
+String string0 = xWikiAttachment0.getMimeType(xWikiContext1);
+XMLWriter xMLWriter0 = null;
+boolean boolean0 = true;
+boolean boolean1 = true;
+xWikiAttachment0.toXML(xMLWriter0, boolean0, boolean1, xWikiContext0);
+OHLCDataItem[] oHLCDataItemArray0 = new OHLCDataItem[1];
+Date date0 = Date.valueOf(string0);
+double double0 = 3418.9331915;
+double double1 = 0.0;
+OHLCDataItem oHLCDataItem0 = new OHLCDataItem(date0, double0, double0, double1, double0, double1);
+oHLCDataItemArray0[0] = oHLCDataItem0;
+DefaultOHLCDataset defaultOHLCDataset0 = new DefaultOHLCDataset(string0, oHLCDataItemArray0);
+int int0 = 2722;
+java.util.Date date1 = defaultOHLCDataset0.getXDate(int0, int0);
+xWikiAttachment0.setDate(date1);
+xWikiAttachment0.getDate();
+xWikiAttachment0.getFilename();
+XWikiDocument xWikiDocument1 = mock(XWikiDocument.class, new ViolatedAssumptionAnswer());
+xWikiAttachment0.setDoc(xWikiDocument1);
+String string1 = "c[T!g8Iw9r36L";
+xWikiAttachment0.setArchive(string1);
+xWikiAttachment0.isContentDirty();
+int int1 = 2;
+xWikiAttachment0.setFilesize(int1);
+xWikiAttachment0.getNextVersion();
+XWikiDocument xWikiDocument2 = xWikiAttachment0.getDoc();
+xWikiAttachment0.setDocId(int0);
+XWikiAttachment xWikiAttachment1 = new XWikiAttachment();
+xWikiAttachment1.getMimeType(xWikiContext1);
+XWikiAttachmentContent xWikiAttachmentContent0 = mock(XWikiAttachmentContent.class, new ViolatedAssumptionAnswer());
+xWikiAttachment1.setAttachment_content(xWikiAttachmentContent0);
+String string2 = xWikiAttachment1.toStringXML(boolean1, boolean0, xWikiContext1);
+XWikiAttachment xWikiAttachment2 = new XWikiAttachment(xWikiDocument2, string2);
+
+11:10:05.631 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:10:05.631 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:185)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:153)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference.java:68)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.getReference(XWikiAttachment.java:156)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.extractMimeType(XWikiAttachment.java:980)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiAttachment.getMimeType(XWikiAttachment.java:923)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:10:05.632 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:10:05.633 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:10:05.641 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:10:05.641 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:10:05.641 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:10:08.466 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XWikiAttachment_ESTest' to results/XWIKI-12667-6-27-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+11:10:08.486 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

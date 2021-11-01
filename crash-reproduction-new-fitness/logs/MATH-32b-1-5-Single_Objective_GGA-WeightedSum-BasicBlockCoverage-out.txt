@@ -1,0 +1,86 @@
+15:08:04.243 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+15:08:04.246 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties(PolygonsSet:136)
+15:08:04.246 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet
+15:08:04.246 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:08:04.879 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+15:08:07.080 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:08:07.392 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:08:07.400 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:08:07.406 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:08:08.079 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.888888888888889
+15:08:08.133 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 2 fitness evolutions and 0 second: 3.0
+15:08:08.137 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 0.42857142857142855
+15:08:10.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.42857142857142855
+15:08:10.207 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.42857142857142855. PT: 2 seconds
+15:08:10.207 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:08:11.040 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 100
+15:08:11.588 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 150
+15:08:12.194 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 200
+15:08:12.776 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 250
+15:08:13.215 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 300
+15:08:13.617 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 350
+15:08:13.658 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 367 fitness evolutions and 6 second: 0.0
+15:08:13.984 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 400
+15:08:13.985 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+15:08:13.985 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:08:13.985 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:08:13.985 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+15:08:13.986 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: PolygonsSet polygonsSet0 = new PolygonsSet();
+polygonsSet0.copySelf();
+Vector<Euclidean2D> vector0 = polygonsSet0.getBarycenter();
+polygonsSet0.copySelf();
+LinkedList<SubHyperplane<Euclidean2D>> linkedList0 = new LinkedList<SubHyperplane<Euclidean2D>>();
+PolygonsSet polygonsSet1 = new PolygonsSet(linkedList0);
+boolean boolean0 = polygonsSet0.isEmpty();
+Vector1D vector1D0 = Vector1D.POSITIVE_INFINITY;
+Vector1D vector1D1 = Vector1D.POSITIVE_INFINITY;
+boolean boolean1 = false;
+boolean boolean2 = false;
+OrientedPoint orientedPoint0 = new OrientedPoint(vector1D1, boolean2);
+Vector1D vector1D2 = null;
+OrientedPoint orientedPoint1 = new OrientedPoint(vector1D2, boolean0);
+OrientedPoint orientedPoint2 = orientedPoint1.copySelf();
+SubOrientedPoint subOrientedPoint0 = orientedPoint2.wholeHyperplane();
+Hyperplane<Euclidean1D> hyperplane0 = subOrientedPoint0.getHyperplane();
+double double0 = 1.0E-20;
+double double1 = 0.0;
+double double2 = (-4060.178);
+IntervalsSet intervalsSet0 = new IntervalsSet(double2, double1);
+SubOrientedPoint subOrientedPoint1 = new SubOrientedPoint(hyperplane0, intervalsSet0);
+BSPTree<Euclidean2D> bSPTree0 = new BSPTree<Euclidean2D>(vector0);
+PolygonsSet polygonsSet2 = polygonsSet1.buildNew(bSPTree0);
+polygonsSet2.computeGeometricalProperties();
+polygonsSet1.isEmpty(bSPTree0);
+Transform<Euclidean1D, Euclidean1D> transform0 = null;
+subOrientedPoint1.applyTransform(transform0);
+polygonsSet2.isEmpty(bSPTree0);
+polygonsSet2.copySelf();
+Object.registerNatives();
+PolygonsSet polygonsSet3 = polygonsSet2.buildNew(bSPTree0);
+polygonsSet3.getVertices();
+polygonsSet0.copySelf();
+polygonsSet0.buildNew(bSPTree0);
+polygonsSet2.getVertices();
+
+15:08:13.986 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:08:13.986 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.apache.commons.math3.geometry.euclidean.twod.Vector2D cannot be cast to java.lang.Boolean
+15:08:13.986 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties(PolygonsSet.java:136)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor23.invoke(Unknown Source)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:08:13.987 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:08:13.988 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:08:13.992 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:08:13.992 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:08:13.993 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:08:15.066 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'PolygonsSet_ESTest' to results/MATH-32b-1-5-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:08:15.090 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

@@ -1,0 +1,69 @@
+11:00:46.366 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+11:00:46.369 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference:68)
+11:00:46.369 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.model.reference.AttachmentReference
+11:00:46.370 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+11:00:47.132 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 583.
+11:00:57.480 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+11:00:57.493 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+11:00:57.502 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+11:00:57.508 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+11:00:57.823 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+11:00:59.472 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 11 fitness evolutions and 1 second: 0.5535307517084282
+11:01:00.044 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.5535307517084282
+11:01:00.044 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.5535307517084282. PT: 2 seconds
+11:01:00.044 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+11:01:00.173 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 61 fitness evolutions and 2 second: 0.42857142857142855
+11:01:00.529 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 100
+11:01:00.529 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.42857142857142855. PT: 3 seconds
+11:01:00.786 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 150
+11:01:01.186 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 200
+11:01:01.606 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 250
+11:01:01.971 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.42857142857142855 | 300
+11:01:02.071 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 339 fitness evolutions and 4 second: 0.0
+11:01:02.269 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+11:01:02.270 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+11:01:02.270 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+11:01:02.270 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+11:01:02.270 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = "Y)74g4L)!\"UG-k9";
+DocumentReference documentReference0 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+AttachmentReference attachmentReference0 = new AttachmentReference(string0, documentReference0);
+EntityType entityType0 = attachmentReference0.getType();
+EntityType entityType1 = EntityType.BLOCK;
+String string1 = null;
+DocumentReference documentReference1 = null;
+AttachmentReference attachmentReference1 = new AttachmentReference(string1, documentReference1);
+attachmentReference1.getType();
+EntityType entityType2 = EntityType.BLOCK;
+String string2 = null;
+String string3 = "U3djOBFm7";
+String string4 = "Minimum abbreviation width with offset is 7";
+DocumentReference documentReference2 = new DocumentReference(string2, string4, string1);
+EntityType entityType3 = EntityType.OBJECT_PROPERTY;
+EntityType entityType4 = EntityType.ATTACHMENT;
+attachmentReference1.equals((EntityReference) documentReference1, entityType4, entityType0);
+
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:185)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:153)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.AttachmentReference.<init>(AttachmentReference.java:68)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+11:01:02.271 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement$1.execute(ConstructorStatement.java:233)
+11:01:02.278 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.ConstructorStatement.execute(ConstructorStatement.java:188)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+11:01:02.279 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+11:01:02.281 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+11:01:02.285 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+11:01:02.285 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+11:01:02.285 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+11:01:04.595 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AttachmentReference_ESTest' to results/XWIKI-12667-3-12-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+11:01:04.603 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

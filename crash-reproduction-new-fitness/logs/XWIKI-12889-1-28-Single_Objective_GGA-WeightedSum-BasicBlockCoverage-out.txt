@@ -1,0 +1,101 @@
+07:21:44.895 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+07:21:44.900 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory:294)
+07:21:44.900 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.rest.internal.DomainObjectFactory
+07:21:44.901 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+07:21:46.002 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 576.
+07:22:10.671 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+07:22:10.683 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+07:22:10.692 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+07:22:10.701 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+07:22:30.217 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 19 second: 4.5
+07:22:31.400 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:31.650 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+07:22:31.651 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 20 seconds
+07:22:31.651 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+07:22:35.356 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:35.466 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:35.499 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 100
+07:22:38.517 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 150
+07:22:41.262 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 200
+07:22:42.300 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 250
+07:22:42.886 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 300
+07:22:43.302 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:44.255 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 350
+07:22:51.666 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 400
+07:22:53.707 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 450
+07:22:54.891 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:54.910 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:54.962 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 500
+07:22:55.298 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:55.330 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 550
+07:22:57.841 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:57.841 [main] INFO  e.s.b.s.BasicBlockCoverage - *C1*
+07:22:57.868 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 600
+07:22:57.973 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 618 fitness evolutions and 47 second: 0.0
+07:22:59.617 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 650
+07:22:59.618 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 48 seconds
+07:22:59.618 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+07:22:59.619 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+07:22:59.619 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 48 seconds
+07:22:59.619 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DomainObjectFactory domainObjectFactory0 = new DomainObjectFactory();
+URI uRI0 = null;
+JobStatus jobStatus0 = null;
+DomainObjectFactory domainObjectFactory1 = new DomainObjectFactory();
+DomainObjectFactory domainObjectFactory2 = new DomainObjectFactory();
+DefaultRequest defaultRequest0 = new DefaultRequest();
+DefaultRequest defaultRequest1 = new DefaultRequest(defaultRequest0);
+ObservationManager observationManager0 = null;
+LoggerManager loggerManager0 = null;
+DefaultObservationManager defaultObservationManager0 = new DefaultObservationManager();
+ComponentManager componentManager0 = mock(ComponentManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "componentManager", (Object) componentManager0);
+DefaultJobStatus<DefaultRequest> defaultJobStatus0 = new DefaultJobStatus<DefaultRequest>(defaultRequest1, jobStatus0, defaultObservationManager0, loggerManager0);
+LogQueue logQueue0 = defaultJobStatus0.getLog();
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "logger", (Object) logQueue0);
+Injector.validateBean(defaultObservationManager0, (Class<?>) DefaultObservationManager.class);
+DefaultJobStatus<DefaultRequest> defaultJobStatus1 = new DefaultJobStatus<DefaultRequest>(defaultRequest1, jobStatus0, defaultObservationManager0, loggerManager0);
+DefaultJobStatus<DefaultRequest> defaultJobStatus2 = new DefaultJobStatus<DefaultRequest>(defaultRequest1, defaultJobStatus1, observationManager0, loggerManager0);
+DefaultJobProgress defaultJobProgress0 = (DefaultJobProgress)defaultJobStatus2.getProgress();
+ObjectFactory objectFactory0 = new ObjectFactory();
+DomainObjectFactory.createJobProgress(objectFactory0, defaultJobProgress0);
+URI uRI1 = null;
+DomainObjectFactory.createJobStatus(objectFactory0, uRI0, defaultJobStatus1);
+String string0 = "y n";
+String string1 = null;
+DocumentReference documentReference0 = new DocumentReference(string0, string0, string1);
+XWikiContext xWikiContext0 = new XWikiContext();
+BaseObject baseObject0 = BaseClass.newCustomClassInstance(documentReference0, xWikiContext0);
+BaseObject baseObject1 = baseObject0.duplicate(documentReference0);
+XWikiDocument xWikiDocument0 = baseObject1.getOwnerDocument();
+Document document0 = new Document(xWikiDocument0, xWikiContext0);
+Document document1 = document0.getDocumentRevision(string0);
+String string2 = "";
+Document document2 = document1.getTranslatedDocument(string2);
+Document document3 = document2.getTranslatedDocument();
+Document document4 = document3.getPreviousDocument();
+DomainObjectFactory.createTranslations(objectFactory0, uRI0, document4);
+DomainObjectFactory.createJobProgress(objectFactory0, defaultJobProgress0);
+
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.Calendar.setTime(Calendar.java:1770)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.rest.internal.DomainObjectFactory.createJobStatus(DomainObjectFactory.java:294)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+07:22:59.620 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+07:22:59.621 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+07:22:59.627 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+07:22:59.627 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+07:22:59.627 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+07:23:02.385 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DomainObjectFactory_ESTest' to results/XWIKI-12889-1-28-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+07:23:02.447 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

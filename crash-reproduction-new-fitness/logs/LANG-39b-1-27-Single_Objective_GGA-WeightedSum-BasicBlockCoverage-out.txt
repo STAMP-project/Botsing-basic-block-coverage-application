@@ -1,0 +1,80 @@
+20:10:04.698 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+20:10:04.701 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.lang3.StringUtils.replaceEach(StringUtils:3676)
+20:10:04.701 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.lang3.StringUtils
+20:10:04.701 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+20:10:07.174 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 4.
+20:10:09.203 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+20:10:09.252 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+20:10:09.379 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+20:10:09.388 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+20:10:10.486 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 5.684210526315789
+20:10:10.535 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 1 second: 3.0
+20:10:12.747 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+20:10:12.748 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 3 seconds
+20:10:12.748 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+20:10:13.505 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+20:10:13.702 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 117 fitness evolutions and 4 second: 0.0
+20:10:14.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+20:10:14.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+20:10:14.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+20:10:14.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+20:10:14.206 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 4 seconds
+20:10:14.207 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: String string0 = " vs ";
+String[] stringArray0 = new String[6];
+stringArray0[0] = string0;
+stringArray0[2] = string0;
+stringArray0[3] = string0;
+stringArray0[5] = string0;
+String string1 = StringUtils.replaceEach(string0, stringArray0, stringArray0);
+String string2 = "";
+StringUtils.isNumericSpace(string2);
+StringUtils.isNumeric(string2);
+String string3 = "";
+int int0 = 3295;
+int int1 = 2941;
+StringUtils.overlay(string3, stringArray0[4], int0, int1);
+String string4 = "DM(N`,JRSI";
+char[] charArray0 = new char[9];
+char char0 = '<';
+charArray0[0] = char0;
+char char1 = '@';
+charArray0[1] = char1;
+char char2 = '*';
+charArray0[2] = char2;
+char char3 = 'v';
+charArray0[3] = char3;
+char char4 = '.';
+charArray0[4] = char4;
+char char5 = 'q';
+charArray0[5] = char5;
+char char6 = 'N';
+StringUtils.removeStart(string3, stringArray0[0]);
+String string5 = "ClassNotFoundException occurred during 1.6 backcompat code";
+String string6 = "xW8v~z iLTMb{8v(~?";
+StringUtils.stripEnd(string6, string1);
+String string7 = "";
+StringUtils.removeStartIgnoreCase(stringArray0[5], string0);
+
+20:10:14.207 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+20:10:14.207 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+20:10:14.207 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.StringUtils.replaceEach(StringUtils.java:3676)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.lang3.StringUtils.replaceEach(StringUtils.java:3502)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+20:10:14.208 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+20:10:14.209 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+20:10:14.236 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+20:10:14.237 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+20:10:14.237 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+20:10:15.488 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'StringUtils_ESTest' to results/LANG-39b-1-27-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+20:10:15.512 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

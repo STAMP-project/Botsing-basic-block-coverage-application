@@ -1,0 +1,91 @@
+21:26:44.045 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.optimization.OptimizationException
+21:26:44.061 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.optimization.direct.DirectSearchOptimizer.optimize(DirectSearchOptimizer:307)
+21:26:44.061 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.optimization.direct.DirectSearchOptimizer
+21:26:44.061 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:26:45.051 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:26:46.657 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:26:46.667 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:26:46.681 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:26:46.687 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:26:47.005 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.833333333333333
+21:26:47.553 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.833333333333333
+21:26:47.554 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.833333333333333. PT: 0 seconds
+21:26:47.554 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:26:48.117 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 56 fitness evolutions and 1 second: 4.5
+21:26:48.460 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 63 fitness evolutions and 1 second: 3.0
+21:26:49.075 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+21:26:49.077 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 2 seconds
+21:26:50.217 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+21:26:51.295 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 200
+21:26:52.445 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 250
+21:26:53.678 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 300
+21:26:54.946 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 345 fitness evolutions and 8 second: 0.0
+21:26:55.509 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 350
+21:26:55.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+21:26:55.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:26:55.510 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:26:55.511 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: MultivariateRealFunction multivariateRealFunction0 = mock(MultivariateRealFunction.class, new ViolatedAssumptionAnswer());
+doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(multivariateRealFunction0).value(any(double[].class));
+GoalType goalType0 = GoalType.MINIMIZE;
+double[] doubleArray0 = new double[5];
+double double0 = (-1689.588332347);
+doubleArray0[0] = double0;
+double double1 = (-2254.4);
+doubleArray0[1] = double1;
+double double2 = 1530.9125;
+doubleArray0[2] = double2;
+double double3 = (-1.0);
+doubleArray0[1] = double3;
+double double4 = 0.0;
+doubleArray0[4] = double4;
+MultiDirectional multiDirectional0 = new MultiDirectional();
+RealPointValuePair[] realPointValuePairArray0 = new RealPointValuePair[6];
+double double5 = (-0.25);
+double double6 = 2300.25;
+double double7 = 92.444;
+double double8 = 0.0;
+double double9 = (-396.167037325202);
+GoalType goalType1 = GoalType.MINIMIZE;
+double[] doubleArray1 = new double[7];
+int int0 = (-3901);
+multiDirectional0.setMaxIterations(int0);
+doubleArray1[0] = double7;
+doubleArray1[1] = double4;
+doubleArray1[2] = double3;
+doubleArray1[3] = double8;
+doubleArray1[4] = double7;
+doubleArray1[5] = double9;
+doubleArray1[6] = double4;
+multiDirectional0.optimize(multivariateRealFunction0, goalType1, doubleArray1);
+double double10 = 1721.74728519;
+double double11 = 2320.18676776;
+NelderMead nelderMead0 = new NelderMead(double0, doubleArray1[2], double10, double11);
+nelderMead0.getIterations();
+nelderMead0.evaluate(doubleArray1);
+nelderMead0.getMaxIterations();
+
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.OptimizationException: org.apache.commons.math.MaxIterationsExceededException: Maximal number of iterations (-3,901) exceeded
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.DirectSearchOptimizer.incrementIterationsCounter(DirectSearchOptimizer.java:320)
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.MultiDirectional.iterateSimplex(MultiDirectional.java:66)
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.optimization.direct.DirectSearchOptimizer.optimize(DirectSearchOptimizer.java:307)
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+21:26:55.511 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:26:55.512 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:26:55.513 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:26:55.521 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:26:55.521 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:26:55.521 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:26:57.603 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DirectSearchOptimizer_ESTest' to results/MATH-84b-3-3-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:26:57.618 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

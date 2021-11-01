@@ -1,0 +1,32 @@
+java.lang.TypeNotPresentException: Type org.hamcrest.Matcher not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.ConstructorRepository.getParameterTypes(ConstructorRepository.java:94)
+	at java.lang.reflect.Executable.getGenericParameterTypes(Executable.java:283)
+	at java.lang.reflect.Constructor.getGenericParameterTypes(Constructor.java:234)
+	at org.evosuite.utils.generic.GenericConstructor.getGenericParameterTypes(GenericConstructor.java:169)
+	at org.evosuite.setup.TestCluster.removeDirectCycle(TestCluster.java:216)
+	at org.evosuite.setup.TestCluster.removeUnusableGenerators(TestCluster.java:164)
+	at org.evosuite.setup.TestClusterGenerator.generateCluster(TestClusterGenerator.java:146)
+	at org.evosuite.setup.DependencyAnalysis.analyze(DependencyAnalysis.java:118)
+	at org.evosuite.setup.DependencyAnalysis.analyzeClass(DependencyAnalysis.java:132)
+	at eu.stamp.botsing.commons.SetupUtility.analyzeClassDependencies(SetupUtility.java:108)
+	at eu.stamp.botsing.reproduction.CrashReproduction.initializeTargetClass(CrashReproduction.java:150)
+	at eu.stamp.botsing.reproduction.CrashReproduction.generateCrashReproductionTests(CrashReproduction.java:91)
+	at eu.stamp.botsing.reproduction.CrashReproduction.execute(CrashReproduction.java:60)
+	at eu.stamp.botsing.Botsing.parseCommandLine(Botsing.java:105)
+	at eu.stamp.botsing.Botsing.main(Botsing.java:189)
+Caused by: java.lang.ClassNotFoundException: Class 'org/hamcrest/Matcher.class' should be in target project, but could not be found!
+	at org.evosuite.instrumentation.InstrumentingClassLoader.instrumentClass(InstrumentingClassLoader.java:203)
+	at org.evosuite.instrumentation.InstrumentingClassLoader.loadClass(InstrumentingClassLoader.java:168)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: Class 'org/hamcrest/Matcher.class' should be in target project, but could not be found!
+	at org.evosuite.instrumentation.InstrumentingClassLoader.instrumentClass(InstrumentingClassLoader.java:190)
+	... 24 more

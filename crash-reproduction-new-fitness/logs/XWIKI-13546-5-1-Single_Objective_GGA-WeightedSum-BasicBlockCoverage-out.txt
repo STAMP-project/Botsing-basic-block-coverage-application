@@ -1,0 +1,188 @@
+15:49:59.414 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+15:49:59.417 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.configuration.internal.AbstractDocumentConfigurationSource.getCurrentWikiReference(AbstractDocumentConfigurationSource:185)
+15:49:59.418 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.configuration.internal.AbstractDocumentConfigurationSource
+15:49:59.418 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:50:00.937 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 585.
+15:50:26.884 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:50:26.894 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:50:26.901 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:50:26.907 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:50:28.367 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 4.5
+15:50:29.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+15:50:29.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 2 seconds
+15:50:29.154 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:50:31.380 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 69 fitness evolutions and 4 second: 0.0
+15:50:33.521 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+15:50:33.522 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+15:50:33.522 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:50:33.522 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:50:33.522 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 6 seconds
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: WikiPreferencesConfigurationSource wikiPreferencesConfigurationSource0 = new WikiPreferencesConfigurationSource();
+CacheManager cacheManager0 = mock(CacheManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "cacheManager", (Object) cacheManager0);
+ConverterManager converterManager0 = mock(ConverterManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "converter", (Object) converterManager0);
+Logger logger0 = mock(Logger.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "logger", (Object) logger0);
+ObservationManager observationManager0 = mock(ObservationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "observation", (Object) observationManager0);
+EntityReferenceSerializer<ApplicationStartedEvent> entityReferenceSerializer0 = (EntityReferenceSerializer<ApplicationStartedEvent>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "referenceSerializer", (Object) entityReferenceSerializer0);
+WikiDescriptorManager wikiDescriptorManager0 = mock(WikiDescriptorManager.class, new ViolatedAssumptionAnswer());
+doReturn((String) null).when(wikiDescriptorManager0).getCurrentWikiId();
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "wikiManager", (Object) wikiDescriptorManager0);
+Provider<String> provider0 = (Provider<String>) mock(Provider.class, new ViolatedAssumptionAnswer());
+doReturn((Object) null, (Object) null).when(provider0).get();
+Injector.inject(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class, "xcontextProvider", (Object) provider0);
+Injector.validateBean(wikiPreferencesConfigurationSource0, (Class<?>) AbstractDocumentConfigurationSource.class);
+wikiPreferencesConfigurationSource0.dispose();
+wikiPreferencesConfigurationSource0.isEmpty();
+wikiPreferencesConfigurationSource0.getBaseObject();
+wikiPreferencesConfigurationSource0.getCurrentWikiReference();
+Object.registerNatives();
+String string0 = "";
+Class<HijrahDate> class0 = HijrahDate.class;
+wikiPreferencesConfigurationSource0.getProperty(string0, (Class<?>) class0);
+String string1 = "";
+wikiPreferencesConfigurationSource0.getPropertyValue(string1, (Class<?>) class0);
+Class<AllEvent> class1 = AllEvent.class;
+wikiPreferencesConfigurationSource0.getProperty(string0, (Class<?>) class1);
+WikiPreferencesConfigurationSource wikiPreferencesConfigurationSource1 = new WikiPreferencesConfigurationSource();
+DefaultCacheManager defaultCacheManager0 = new DefaultCacheManager();
+ContextComponentManagerProvider contextComponentManagerProvider0 = new ContextComponentManagerProvider();
+NOPLogger nOPLogger0 = NOPLogger.NOP_LOGGER;
+Injector.inject(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class, "logger", (Object) nOPLogger0);
+ContextComponentManager contextComponentManager0 = new ContextComponentManager();
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "execution", (Object) execution0);
+WikiComponentManager wikiComponentManager0 = new WikiComponentManager();
+EmbeddableComponentManager embeddableComponentManager0 = new EmbeddableComponentManager(string1);
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "rootComponentManager", (Object) embeddableComponentManager0);
+WikiDescriptorManager wikiDescriptorManager1 = wikiPreferencesConfigurationSource0.wikiManager;
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "wikis", (Object) wikiDescriptorManager1);
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution1);
+EntityReferenceSerializer<HijrahDate> entityReferenceSerializer1 = (EntityReferenceSerializer<HijrahDate>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer1);
+ComponentManagerManager componentManagerManager0 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager0);
+Injector.validateBean(wikiComponentManager0, (Class<?>) WikiComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "rootComponentManager", (Object) wikiComponentManager0);
+SpaceComponentManager spaceComponentManager0 = new SpaceComponentManager();
+Class<ApplicationStoppedEvent> class2 = ApplicationStoppedEvent.class;
+LoadedClass<ApplicationStoppedEvent> loadedClass0 = new LoadedClass<ApplicationStoppedEvent>(class2);
+com.google.inject.Injector injector0 = mock(com.google.inject.Injector.class, new ViolatedAssumptionAnswer());
+Injector.inject(loadedClass0, (Class<?>) AbstractDeferredClass.class, "injector", (Object) injector0);
+Injector.validateBean(loadedClass0, (Class<?>) LoadedClass.class);
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "referenceProvider", (Object) loadedClass0);
+ComponentManager componentManager0 = contextComponentManager0.getComponentManager();
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "wikiComponentManager", (Object) componentManager0);
+Execution execution2 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution2);
+EntityReferenceSerializer<JMXPrincipal> entityReferenceSerializer2 = (EntityReferenceSerializer<JMXPrincipal>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer2);
+ComponentManagerManager componentManagerManager1 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager1);
+Injector.validateBean(spaceComponentManager0, (Class<?>) SpaceComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "userComponentManager", (Object) spaceComponentManager0);
+Injector.validateBean(contextComponentManager0, (Class<?>) ContextComponentManager.class);
+Injector.inject(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class, "rootComponentManager", (Object) contextComponentManager0);
+Injector.validateBean(contextComponentManagerProvider0, (Class<?>) ContextComponentManagerProvider.class);
+ComponentManager componentManager1 = contextComponentManagerProvider0.get();
+Injector.inject(defaultCacheManager0, (Class<?>) DefaultCacheManager.class, "componentManager", (Object) componentManager1);
+CacheManagerConfiguration cacheManagerConfiguration0 = mock(CacheManagerConfiguration.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultCacheManager0, (Class<?>) DefaultCacheManager.class, "configuration", (Object) cacheManagerConfiguration0);
+Injector.validateBean(defaultCacheManager0, (Class<?>) DefaultCacheManager.class);
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "cacheManager", (Object) defaultCacheManager0);
+DefaultConverterManager defaultConverterManager0 = new DefaultConverterManager();
+RoleHint<Integer> roleHint0 = new RoleHint<Integer>(class2);
+GenericProvider<Integer> genericProvider0 = new GenericProvider<Integer>(contextComponentManager0, roleHint0);
+Injector.inject(defaultConverterManager0, (Class<?>) DefaultConverterManager.class, "componentManagerProvider", (Object) genericProvider0);
+Converter<SubstituteLoggingEvent> converter0 = (Converter<SubstituteLoggingEvent>) mock(Converter.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultConverterManager0, (Class<?>) DefaultConverterManager.class, "defaultConverter", (Object) converter0);
+Converter<NewLineBlock> converter1 = (Converter<NewLineBlock>) mock(Converter.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultConverterManager0, (Class<?>) DefaultConverterManager.class, "enumConverter", (Object) converter1);
+SessionImplementor sessionImplementor0 = mock(SessionImplementor.class, new ViolatedAssumptionAnswer());
+PersistentList persistentList0 = new PersistentList(sessionImplementor0);
+PriorityBlockingQueue<SubstituteLoggingEvent> priorityBlockingQueue0 = new PriorityBlockingQueue<SubstituteLoggingEvent>(persistentList0);
+boolean boolean0 = false;
+SubstituteLogger substituteLogger0 = new SubstituteLogger(string1, priorityBlockingQueue0, boolean0);
+Injector.inject(defaultConverterManager0, (Class<?>) DefaultConverterManager.class, "logger", (Object) substituteLogger0);
+Injector.validateBean(defaultConverterManager0, (Class<?>) DefaultConverterManager.class);
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "converter", (Object) defaultConverterManager0);
+Logger logger1 = SQLCustomQuery.log;
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "logger", (Object) logger1);
+DefaultObservationManager defaultObservationManager0 = new DefaultObservationManager();
+DocumentComponentManager documentComponentManager0 = new DocumentComponentManager();
+Provider<AllEvent> provider1 = (Provider<AllEvent>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) DocumentComponentManager.class, "referenceProvider", (Object) provider1);
+ContextRootComponentManager contextRootComponentManager0 = new ContextRootComponentManager();
+EmbeddableComponentManager embeddableComponentManager1 = new EmbeddableComponentManager();
+ComponentManager componentManager2 = embeddableComponentManager1.getParent();
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "rootComponentManager", (Object) componentManager2);
+ComponentManager componentManager3 = contextComponentManager0.getParent();
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "userComponentManager", (Object) componentManager3);
+Injector.validateBean(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class);
+ComponentManager componentManager4 = contextRootComponentManager0.getComponentManager();
+Injector.inject(documentComponentManager0, (Class<?>) DocumentComponentManager.class, "spaceComponentManager", (Object) componentManager4);
+Execution execution3 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution3);
+EntityReferenceSerializer<XWikiContext> entityReferenceSerializer3 = (EntityReferenceSerializer<XWikiContext>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer3);
+ComponentManagerManager componentManagerManager2 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager2);
+Injector.validateBean(documentComponentManager0, (Class<?>) DocumentComponentManager.class);
+ComponentManager componentManager5 = documentComponentManager0.getComponentManager();
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "componentManager", (Object) componentManager5);
+Logger logger2 = URLStreamHandlerFactory.log;
+Injector.inject(defaultObservationManager0, (Class<?>) DefaultObservationManager.class, "logger", (Object) logger2);
+Injector.validateBean(defaultObservationManager0, (Class<?>) DefaultObservationManager.class);
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "observation", (Object) defaultObservationManager0);
+EntityReferenceSerializer<AllEvent> entityReferenceSerializer4 = (EntityReferenceSerializer<AllEvent>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "referenceSerializer", (Object) entityReferenceSerializer4);
+DefaultWikiDescriptorManager defaultWikiDescriptorManager0 = new DefaultWikiDescriptorManager();
+WikiDescriptorCache wikiDescriptorCache0 = new WikiDescriptorCache();
+CacheManager cacheManager1 = wikiPreferencesConfigurationSource0.cacheManager;
+Injector.inject(wikiDescriptorCache0, (Class<?>) WikiDescriptorCache.class, "cacheManager", (Object) cacheManager1);
+Injector.validateBean(wikiDescriptorCache0, (Class<?>) WikiDescriptorCache.class);
+Injector.inject(defaultWikiDescriptorManager0, (Class<?>) DefaultWikiDescriptorManager.class, "cache", (Object) wikiDescriptorCache0);
+Provider<ApplicationStoppedEvent> provider2 = (Provider<ApplicationStoppedEvent>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultWikiDescriptorManager0, (Class<?>) DefaultWikiDescriptorManager.class, "descriptorDocumentHelperProvider", (Object) provider2);
+Provider<ApplicationStoppedEvent> provider3 = (Provider<ApplicationStoppedEvent>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultWikiDescriptorManager0, (Class<?>) DefaultWikiDescriptorManager.class, "wikiDescriptorBuilderProvider", (Object) provider3);
+Provider<ApplicationStartedEvent> provider4 = (Provider<ApplicationStartedEvent>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultWikiDescriptorManager0, (Class<?>) DefaultWikiDescriptorManager.class, "xcontextProvider", (Object) provider4);
+Injector.validateBean(defaultWikiDescriptorManager0, (Class<?>) DefaultWikiDescriptorManager.class);
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "wikiManager", (Object) defaultWikiDescriptorManager0);
+Provider<ApplicationStoppedEvent> provider5 = (Provider<ApplicationStoppedEvent>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiPreferencesConfigurationSource1, (Class<?>) AbstractDocumentConfigurationSource.class, "xcontextProvider", (Object) provider5);
+Injector.validateBean(wikiPreferencesConfigurationSource1, (Class<?>) WikiPreferencesConfigurationSource.class);
+wikiPreferencesConfigurationSource1.getDocumentReference();
+
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: An Entity Reference name cannot be null or empty
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.setName(EntityReference.java:186)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:171)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.EntityReference.<init>(EntityReference.java:142)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.model.reference.WikiReference.<init>(WikiReference.java:61)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.configuration.internal.AbstractDocumentConfigurationSource.getCurrentWikiReference(AbstractDocumentConfigurationSource.java:185)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:50:33.528 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:50:33.529 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:50:33.530 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:50:33.551 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:50:33.551 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:50:33.551 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:50:34.588 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractDocumentConfigurationSource_ESTest' to results/XWIKI-13546-5-1-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:50:34.592 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

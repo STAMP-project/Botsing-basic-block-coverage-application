@@ -1,0 +1,88 @@
+00:07:54.738 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.joda.time.IllegalFieldValueException
+00:07:54.741 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.chrono.BaseChronology.set(BaseChronology:240)
+00:07:54.741 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.chrono.BaseChronology
+00:07:54.742 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+00:07:55.094 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+00:07:57.029 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+00:07:57.039 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+00:07:57.053 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+00:07:57.060 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+00:07:57.665 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 0.665158371040724
+00:07:58.264 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.665158371040724
+00:07:58.265 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.665158371040724. PT: 1 seconds
+00:07:58.265 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+00:07:59.024 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.665158371040724 | 100
+00:07:59.615 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.665158371040724 | 150
+00:07:59.630 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 161 fitness evolutions and 2 second: 0.5862068965517241
+00:08:00.037 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.5862068965517241 | 200
+00:08:00.038 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.5862068965517241. PT: 2 seconds
+00:08:00.160 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 242 fitness evolutions and 3 second: 0.0
+00:08:00.256 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 250
+00:08:00.256 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+00:08:00.257 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+00:08:00.257 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+00:08:00.257 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BuddhistChronology buddhistChronology0 = BuddhistChronology.getInstanceUTC();
+FixedDateTimeZone fixedDateTimeZone0 = (FixedDateTimeZone)DateTimeZone.UTC;
+long long0 = (-2507L);
+LocalDateTime localDateTime0 = new LocalDateTime(long0, (DateTimeZone) fixedDateTimeZone0);
+long long1 = 100000000000000000L;
+buddhistChronology0.get((ReadablePartial) localDateTime0, long1);
+GJChronology gJChronology0 = GJChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
+buddhistChronology0.secondOfMinute();
+long long2 = (-1383L);
+long long3 = buddhistChronology0.set(localDateTime0, long2);
+CopticChronology copticChronology0 = CopticChronology.getInstanceUTC();
+buddhistChronology0.hourOfDay();
+copticChronology0.dayOfWeek();
+buddhistChronology0.weekOfWeekyear();
+long long4 = 0L;
+long long5 = (-1001L);
+copticChronology0.set(localDateTime0, long5);
+int int0 = copticChronology0.getYear(long3);
+int int1 = (-2875);
+int int2 = 1347;
+buddhistChronology0.getDateTimeMillis(int1, int0, int2, int0);
+JulianChronology julianChronology0 = JulianChronology.getInstance((DateTimeZone) fixedDateTimeZone0, int0);
+long long6 = 0L;
+ISOChronology iSOChronology0 = ISOChronology.getInstanceUTC();
+Chronology chronology0 = iSOChronology0.withUTC();
+LocalDate localDate0 = new LocalDate(chronology0);
+long long7 = (-895L);
+gJChronology0.get((ReadablePartial) localDate0, long7);
+iSOChronology0.weekyearOfCentury();
+DateTimeZone dateTimeZone0 = null;
+JulianChronology.getInstance(dateTimeZone0);
+gJChronology0.minuteOfDay();
+julianChronology0.secondOfDay();
+AssembledChronology.Fields assembledChronology_Fields0 = new AssembledChronology.Fields();
+buddhistChronology0.assemble(assembledChronology_Fields0);
+buddhistChronology0.assemble(assembledChronology_Fields0);
+IslamicChronology islamicChronology0 = IslamicChronology.getInstance((DateTimeZone) fixedDateTimeZone0);
+islamicChronology0.setYear(long1, int1);
+
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.IllegalFieldValueException: Value 31 for dayOfMonth must be in the range [1,30]
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.FieldUtils.verifyValueBounds(FieldUtils.java:220)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.field.PreciseDurationDateTimeField.set(PreciseDurationDateTimeField.java:78)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.chrono.LimitChronology$LimitDateTimeField.set(LimitChronology.java:510)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.chrono.BaseChronology.set(BaseChronology.java:240)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+00:08:00.258 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+00:08:00.259 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+00:08:00.260 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+00:08:00.263 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+00:08:00.263 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+00:08:00.264 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+00:08:01.040 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseChronology_ESTest' to results/TIME-10b-3-15-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+00:08:01.064 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

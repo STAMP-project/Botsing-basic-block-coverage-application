@@ -1,0 +1,74 @@
+21:10:32.340 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.exception.NotStrictlyPositiveException
+21:10:32.342 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.function.Gaussian$Parametric.validateParameters(Gaussian$Parametric:183)
+21:10:32.342 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.function.Gaussian$Parametric
+21:10:32.342 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+21:10:32.582 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+21:10:34.118 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+21:10:34.141 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+21:10:34.155 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+21:10:34.162 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+21:10:34.548 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.785714285714286
+21:10:34.584 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 8 fitness evolutions and 0 second: 4.95
+21:10:34.588 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 10 fitness evolutions and 0 second: 4.875
+21:10:34.593 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 15 fitness evolutions and 0 second: 4.8
+21:10:34.655 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 34 fitness evolutions and 0 second: 0.0
+21:10:35.249 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+21:10:35.249 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+21:10:35.249 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+21:10:35.250 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+21:10:35.250 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+21:10:35.250 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+21:10:35.251 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Gaussian.Parametric gaussian_Parametric0 = new Gaussian.Parametric();
+double double0 = (-2400.1737427731373);
+double[] doubleArray0 = new double[3];
+doubleArray0[0] = double0;
+doubleArray0[1] = double0;
+doubleArray0[2] = double0;
+double[] doubleArray1 = gaussian_Parametric0.gradient(double0, doubleArray0);
+double double1 = 0.0;
+double double2 = gaussian_Parametric0.value(double1, doubleArray0);
+double double3 = 2000.65608;
+gaussian_Parametric0.value(double3, doubleArray1);
+double double4 = (-2149.8);
+double[] doubleArray2 = new double[2];
+doubleArray2[0] = double1;
+doubleArray2[1] = double2;
+double[] doubleArray3 = gaussian_Parametric0.gradient(double4, doubleArray2);
+double double5 = 655.979988039;
+gaussian_Parametric0.value(double5, doubleArray2);
+gaussian_Parametric0.value(doubleArray2[0], doubleArray3);
+Object.registerNatives();
+Object.registerNatives();
+double[] doubleArray4 = gaussian_Parametric0.gradient(double0, doubleArray1);
+Object.registerNatives();
+Gaussian.Parametric gaussian_Parametric1 = new Gaussian.Parametric();
+Gaussian.Parametric gaussian_Parametric2 = new Gaussian.Parametric();
+Gaussian.Parametric gaussian_Parametric3 = new Gaussian.Parametric();
+Object.registerNatives();
+double double6 = (-1199.1210023040449);
+gaussian_Parametric3.value(double6, doubleArray4);
+
+21:10:35.251 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+21:10:35.255 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.exception.NotStrictlyPositiveException: -2,400.174 is smaller than, or equal to, the minimum (0)
+21:10:35.255 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.function.Gaussian$Parametric.validateParameters(Gaussian.java:183)
+21:10:35.255 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.function.Gaussian$Parametric.gradient(Gaussian.java:150)
+21:10:35.255 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+21:10:35.256 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+21:10:35.257 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+21:10:35.260 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+21:10:35.260 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+21:10:35.260 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+21:10:36.650 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Gaussian$Parametric_ESTest' to results/MATH-58b-1-5-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+21:10:36.664 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

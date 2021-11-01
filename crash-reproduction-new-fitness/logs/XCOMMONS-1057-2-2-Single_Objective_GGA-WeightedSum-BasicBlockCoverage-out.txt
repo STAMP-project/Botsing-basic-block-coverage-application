@@ -1,0 +1,149 @@
+22:37:34.673 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+22:37:34.676 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.extension.job.internal.UpgradePlanJob.tryInstallExtension(UpgradePlanJob:152)
+22:37:34.677 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.extension.job.internal.UpgradePlanJob
+22:37:34.677 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:37:35.766 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 577.
+22:37:50.489 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:37:50.498 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:37:50.506 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:37:50.512 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:37:52.802 [main] ERROR e.s.b.f.t.f.StackTraceChromosomeFactory - Guided initialization failed. Please revise the target class and method!
+22:37:52.803 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating the initial population. cause: Guided initialization failed. Please revise the target class and method!
+22:37:53.082 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 3.0
+22:37:53.996 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 3.0
+22:37:53.996 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 3 seconds
+22:37:53.996 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:37:56.607 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 100
+22:37:57.632 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 150
+22:37:58.153 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 134 fitness evolutions and 7 second: 0.0
+22:37:58.667 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 200
+22:37:58.667 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+22:37:58.668 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:37:58.668 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:37:58.668 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 8 seconds
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: UpgradePlanJob upgradePlanJob0 = new UpgradePlanJob();
+CoreExtensionRepository coreExtensionRepository0 = mock(CoreExtensionRepository.class, new ViolatedAssumptionAnswer());
+Injector.inject(upgradePlanJob0, (Class<?>) AbstractInstallPlanJob.class, "coreExtensionRepository", (Object) coreExtensionRepository0);
+AbstractInstallPlanJob.ModifableExtensionPlanTree abstractInstallPlanJob_ModifableExtensionPlanTree0 = new AbstractInstallPlanJob.ModifableExtensionPlanTree();
+upgradePlanJob0.extensionTree = abstractInstallPlanJob_ModifableExtensionPlanTree0;
+String string0 = "HP[Mi4[Y9X,9^:OK";
+ExtensionId extensionId0 = new ExtensionId(string0);
+ExtensionPlanNode extensionPlanNode0 = mock(ExtensionPlanNode.class, new ViolatedAssumptionAnswer());
+boolean boolean0 = abstractInstallPlanJob_ModifableExtensionPlanTree0.add(extensionPlanNode0);
+String string1 = "";
+upgradePlanJob0.tryInstallExtension(extensionId0, string1);
+Request request0 = null;
+UninstallRequest uninstallRequest0 = new UninstallRequest(request0);
+upgradePlanJob0.initialize(uninstallRequest0);
+DefaultInstalledExtensionRepository defaultInstalledExtensionRepository0 = new DefaultInstalledExtensionRepository();
+DefaultCoreExtensionRepository defaultCoreExtensionRepository0 = new DefaultCoreExtensionRepository();
+LinkedTransferQueue<SubstituteLoggingEvent> linkedTransferQueue0 = new LinkedTransferQueue<SubstituteLoggingEvent>();
+SubstituteLogger substituteLogger0 = new SubstituteLogger(string0, linkedTransferQueue0, boolean0);
+Injector.inject(defaultCoreExtensionRepository0, (Class<?>) DefaultCoreExtensionRepository.class, "logger", (Object) substituteLogger0);
+DefaultExtensionRepositoryManager defaultExtensionRepositoryManager0 = new DefaultExtensionRepositoryManager();
+ContextComponentManager contextComponentManager0 = new ContextComponentManager();
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "execution", (Object) execution0);
+ContextRootComponentManager contextRootComponentManager0 = new ContextRootComponentManager();
+DocumentComponentManager documentComponentManager0 = new DocumentComponentManager();
+Class<Level> class0 = Level.class;
+LoadedClass<Level> loadedClass0 = new LoadedClass<Level>(class0);
+DefaultPlexusContainer defaultPlexusContainer0 = new DefaultPlexusContainer();
+LinkedList<PlexusBeanModule> linkedList0 = new LinkedList<PlexusBeanModule>();
+Module[] moduleArray0 = null;
+com.google.inject.Injector injector0 = defaultPlexusContainer0.addPlexusInjector(linkedList0, moduleArray0);
+Injector.inject(loadedClass0, (Class<?>) AbstractDeferredClass.class, "injector", (Object) injector0);
+Injector.validateBean(loadedClass0, (Class<?>) LoadedClass.class);
+Injector.inject(documentComponentManager0, (Class<?>) DocumentComponentManager.class, "referenceProvider", (Object) loadedClass0);
+EmbeddableComponentManager embeddableComponentManager0 = new EmbeddableComponentManager(string0);
+ComponentManager componentManager0 = embeddableComponentManager0.getParent();
+Injector.inject(documentComponentManager0, (Class<?>) DocumentComponentManager.class, "spaceComponentManager", (Object) componentManager0);
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution1);
+EntityReferenceSerializer<Level> entityReferenceSerializer0 = (EntityReferenceSerializer<Level>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer0);
+ComponentManagerManager componentManagerManager0 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager0);
+Injector.validateBean(documentComponentManager0, (Class<?>) DocumentComponentManager.class);
+ComponentManager componentManager1 = documentComponentManager0.getComponentManager();
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "rootComponentManager", (Object) componentManager1);
+WikiComponentManager wikiComponentManager0 = new WikiComponentManager();
+SpaceComponentManager spaceComponentManager0 = new SpaceComponentManager();
+Provider<TimeScheduler3.Task> provider0 = (Provider<TimeScheduler3.Task>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "referenceProvider", (Object) provider0);
+ComponentManager componentManager2 = contextComponentManager0.getParent();
+Injector.inject(spaceComponentManager0, (Class<?>) SpaceComponentManager.class, "wikiComponentManager", (Object) componentManager2);
+Execution execution2 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution2);
+EntityReferenceSerializer<InstallRequest> entityReferenceSerializer1 = (EntityReferenceSerializer<InstallRequest>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer1);
+ComponentManagerManager componentManagerManager1 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(spaceComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager1);
+Injector.validateBean(spaceComponentManager0, (Class<?>) SpaceComponentManager.class);
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "rootComponentManager", (Object) spaceComponentManager0);
+WikiDescriptorManager wikiDescriptorManager0 = mock(WikiDescriptorManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) WikiComponentManager.class, "wikis", (Object) wikiDescriptorManager0);
+Execution execution3 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "execution", (Object) execution3);
+EntityReferenceSerializer<Integer> entityReferenceSerializer2 = (EntityReferenceSerializer<Integer>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractEntityComponentManager.class, "serializer", (Object) entityReferenceSerializer2);
+ComponentManagerManager componentManagerManager2 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(wikiComponentManager0, (Class<?>) AbstractGenericComponentManager.class, "componentManagerManager", (Object) componentManagerManager2);
+Injector.validateBean(wikiComponentManager0, (Class<?>) WikiComponentManager.class);
+Injector.inject(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class, "userComponentManager", (Object) wikiComponentManager0);
+Injector.validateBean(contextRootComponentManager0, (Class<?>) ContextRootComponentManager.class);
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "rootComponentManager", (Object) contextRootComponentManager0);
+ComponentManager componentManager3 = contextRootComponentManager0.getComponentManager();
+Injector.inject(contextComponentManager0, (Class<?>) ContextComponentManager.class, "userComponentManager", (Object) componentManager3);
+Injector.validateBean(contextComponentManager0, (Class<?>) ContextComponentManager.class);
+Injector.inject(defaultExtensionRepositoryManager0, (Class<?>) DefaultExtensionRepositoryManager.class, "componentManager", (Object) contextComponentManager0);
+Logger logger0 = URLStreamHandlerFactory.log;
+Injector.inject(defaultExtensionRepositoryManager0, (Class<?>) DefaultExtensionRepositoryManager.class, "logger", (Object) logger0);
+LinkedList<PoolableConnection> linkedList1 = new LinkedList<PoolableConnection>();
+Injector.inject(defaultExtensionRepositoryManager0, (Class<?>) DefaultExtensionRepositoryManager.class, "repositoriesSources", (Object) linkedList1);
+Injector.validateBean(defaultExtensionRepositoryManager0, (Class<?>) DefaultExtensionRepositoryManager.class);
+Injector.inject(defaultCoreExtensionRepository0, (Class<?>) DefaultCoreExtensionRepository.class, "repositoryManager", (Object) defaultExtensionRepositoryManager0);
+CoreExtensionScanner coreExtensionScanner0 = mock(CoreExtensionScanner.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultCoreExtensionRepository0, (Class<?>) DefaultCoreExtensionRepository.class, "scanner", (Object) coreExtensionScanner0);
+Injector.validateBean(defaultCoreExtensionRepository0, (Class<?>) DefaultCoreExtensionRepository.class);
+Injector.inject(defaultInstalledExtensionRepository0, (Class<?>) DefaultInstalledExtensionRepository.class, "coreExtensionRepository", (Object) defaultCoreExtensionRepository0);
+DefaultLocalExtensionRepository defaultLocalExtensionRepository0 = new DefaultLocalExtensionRepository();
+EmbeddableComponentManager embeddableComponentManager1 = new EmbeddableComponentManager();
+Injector.inject(defaultLocalExtensionRepository0, (Class<?>) DefaultLocalExtensionRepository.class, "componentManager", (Object) embeddableComponentManager1);
+ExtensionManagerConfiguration extensionManagerConfiguration0 = mock(ExtensionManagerConfiguration.class, new ViolatedAssumptionAnswer());
+Injector.inject(defaultLocalExtensionRepository0, (Class<?>) DefaultLocalExtensionRepository.class, "configuration", (Object) extensionManagerConfiguration0);
+SubstituteLoggingEvent substituteLoggingEvent0 = new SubstituteLoggingEvent();
+SubstituteLogger substituteLogger1 = substituteLoggingEvent0.getLogger();
+Injector.inject(defaultLocalExtensionRepository0, (Class<?>) DefaultLocalExtensionRepository.class, "logger", (Object) substituteLogger1);
+Injector.validateBean(defaultLocalExtensionRepository0, (Class<?>) DefaultLocalExtensionRepository.class);
+Injector.inject(defaultInstalledExtensionRepository0, (Class<?>) DefaultInstalledExtensionRepository.class, "localRepository", (Object) defaultLocalExtensionRepository0);
+EventRecodingLogger eventRecodingLogger0 = new EventRecodingLogger(substituteLogger1, linkedTransferQueue0);
+Injector.inject(defaultInstalledExtensionRepository0, (Class<?>) DefaultInstalledExtensionRepository.class, "logger", (Object) eventRecodingLogger0);
+Injector.validateBean(defaultInstalledExtensionRepository0, (Class<?>) DefaultInstalledExtensionRepository.class);
+InstalledExtension installedExtension0 = defaultInstalledExtensionRepository0.getInstalledExtension(extensionId0);
+String string2 = "/";
+upgradePlanJob0.upgradeExtension(installedExtension0, string2, boolean0);
+
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: org.xwiki.extension.job.plan.ExtensionPlanNode$MockitoMock$1811500128 cannot be cast to org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanNode
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree.clone(AbstractInstallPlanJob.java:84)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.xwiki.extension.job.internal.UpgradePlanJob.tryInstallExtension(UpgradePlanJob.java:152)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor33.invoke(Unknown Source)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:37:58.671 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:37:58.673 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:37:58.677 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:37:58.677 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:37:58.677 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:37:59.573 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'UpgradePlanJob_ESTest' to results/XCOMMONS-1057-2-2-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:37:59.578 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

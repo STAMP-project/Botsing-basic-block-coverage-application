@@ -1,0 +1,76 @@
+12:31:56.192 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ClassCastException
+12:31:56.195 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.objects.classes.BaseClass.addTextAreaField(BaseClass:890)
+12:31:56.195 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.objects.classes.BaseClass
+12:31:56.195 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+12:31:58.209 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 586.
+12:32:24.164 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+12:32:24.174 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+12:32:24.187 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+12:32:24.195 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+12:32:50.479 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 26 second: 4.5
+12:32:50.635 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 26 second: 3.0
+12:32:52.285 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 22 fitness evolutions and 28 second: 0.0
+12:32:53.313 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+12:32:53.314 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 29 seconds
+12:32:53.314 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+12:32:53.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+12:32:53.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+12:32:53.315 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 29 seconds
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BaseClass baseClass0 = new BaseClass();
+String string0 = "DSA";
+String string1 = "   <column name=\"";
+int int0 = 4492;
+baseClass0.addUsersField(string0, string1, int0);
+boolean boolean0 = false;
+baseClass0.setDirty(boolean0);
+String string2 = "classType";
+baseClass0.getLongValue(string2);
+String string3 = "";
+baseClass0.addGroupsField(string3, string2);
+baseClass0.addTextAreaField(string0, string0, int0, int0, string1, string2);
+int int1 = (-2680);
+baseClass0.addTimezoneField(string0, string3, int1);
+String string4 = "defaultEditSheet";
+int int2 = 1090;
+baseClass0.getIntValue(string4, int2);
+baseClass0.getDefaultWeb();
+String string5 = "=~z+ua|y6{|m";
+boolean boolean1 = true;
+String string6 = "JxHWU+ RX.O?4";
+String string7 = "v=";
+String string8 = "";
+boolean boolean2 = baseClass0.addStaticListField(string5, string0, int1, boolean1, string6, string7, string8);
+GlobalConfiguration globalConfiguration0 = mock(GlobalConfiguration.class, new ViolatedAssumptionAnswer());
+boolean boolean3 = true;
+DefaultCacheManager defaultCacheManager0 = new DefaultCacheManager(globalConfiguration0, boolean3);
+defaultCacheManager0.getCache(string0, string7, boolean2);
+baseClass0.getName();
+DocumentFactory documentFactory0 = new DocumentFactory();
+NamespaceStack namespaceStack0 = new NamespaceStack(documentFactory0);
+Namespace namespace0 = namespaceStack0.pop(string6);
+NonLazyElement nonLazyElement0 = new NonLazyElement(string7, namespace0);
+baseClass0.fromXML((Element) nonLazyElement0);
+
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ClassCastException: com.xpn.xwiki.objects.classes.UsersClass cannot be cast to com.xpn.xwiki.objects.classes.TextAreaClass
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.objects.classes.BaseClass.addTextAreaField(BaseClass.java:890)
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+12:32:53.316 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+12:32:53.317 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+12:32:53.319 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+12:32:53.329 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+12:32:53.329 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+12:32:53.334 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+12:32:56.179 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BaseClass_ESTest' to results/XWIKI-13916-1-30-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+12:32:56.195 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

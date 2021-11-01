@@ -1,0 +1,67 @@
+19:55:15.582 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+19:55:15.586 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.doc.XWikiDocument.getTranslationList(XWikiDocument:5983)
+19:55:15.586 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.doc.XWikiDocument
+19:55:15.586 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+19:55:23.374 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing com.xpn.xwiki.doc.XWikiDocument
+19:55:23.381 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 580.
+19:55:49.399 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+19:55:49.410 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+19:55:49.442 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+19:55:49.448 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+19:56:10.507 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 21 second: 1.5
+19:56:12.579 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.5
+19:56:12.579 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.5. PT: 23 seconds
+19:56:12.579 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+19:56:22.245 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.5 | 100
+19:56:28.928 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 150
+19:56:28.928 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 39 seconds
+19:56:28.928 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+19:56:28.929 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+19:56:28.929 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 39 seconds
+19:56:28.929 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DocumentReference documentReference0 = mock(DocumentReference.class, new ViolatedAssumptionAnswer());
+doReturn((Locale) null).when(documentReference0).getLocale();
+XWikiDocument xWikiDocument0 = new XWikiDocument(documentReference0);
+String string0 = xWikiDocument0.getContent();
+xWikiDocument0.mergeXObjects(xWikiDocument0);
+XWikiContext xWikiContext0 = new XWikiContext();
+xWikiDocument0.getTranslationList(xWikiContext0);
+MockServletContext mockServletContext0 = new MockServletContext();
+XWikiServletContext xWikiServletContext0 = new XWikiServletContext(mockServletContext0);
+boolean boolean0 = false;
+XWiki xWiki0 = new XWiki(xWikiContext0, xWikiServletContext0, boolean0);
+String string1 = null;
+XWikiContext xWikiContext1 = xWikiContext0.clone();
+XWikiContext xWikiContext2 = xWikiContext1.clone();
+XWikiDocument xWikiDocument1 = xWiki0.getDocument(xWikiDocument0, string1, xWikiContext2);
+xWikiDocument0.mergexWikiClass(xWikiDocument1);
+xWikiDocument1.setAuthor(string0);
+String string2 = null;
+String string3 = " in copy is ";
+String string4 = "a236";
+XWikiContext xWikiContext3 = new XWikiContext();
+XWikiContext xWikiContext4 = new XWikiContext();
+xWikiDocument1.display(string4, string3, string0, xWikiContext4);
+
+19:56:28.929 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+19:56:28.929 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+19:56:28.929 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.doc.XWikiDocument.getTranslationList(XWikiDocument.java:5983)
+19:56:28.929 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+19:56:28.930 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+19:56:28.931 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+19:56:28.932 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+19:56:28.953 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+19:56:28.954 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+19:56:28.954 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+19:56:31.825 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'XWikiDocument_ESTest' to results/XWIKI-14319-1-21-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+19:56:31.858 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

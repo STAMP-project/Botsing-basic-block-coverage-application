@@ -1,0 +1,79 @@
+09:46:22.610 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.ArrayIndexOutOfBoundsException
+09:46:22.613 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.estimation.AbstractEstimator.getCovariances(AbstractEstimator:173)
+09:46:22.613 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.estimation.AbstractEstimator
+09:46:22.614 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+09:46:23.123 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.apache.commons.math.estimation.AbstractEstimator
+09:46:23.142 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+09:46:24.092 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+09:46:24.103 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+09:46:24.115 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+09:46:24.122 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+09:46:24.288 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.75
+09:46:24.765 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 1.75
+09:46:24.765 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.75. PT: 0 seconds
+09:46:24.765 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+09:46:25.470 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 89 fitness evolutions and 1 second: 1.0
+09:46:25.702 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 100
+09:46:25.702 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 1.0. PT: 1 seconds
+09:46:26.166 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 150
+09:46:26.546 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 200
+09:46:26.866 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 1.0 | 250
+09:46:27.138 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 300
+09:46:27.138 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+09:46:27.139 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+09:46:27.139 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+09:46:27.139 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 3 seconds
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: LevenbergMarquardtEstimator levenbergMarquardtEstimator0 = new LevenbergMarquardtEstimator();
+String string0 = "org.apache.commons.math.MathException";
+LevenbergMarquardtEstimatorTest levenbergMarquardtEstimatorTest0 = new LevenbergMarquardtEstimatorTest(string0);
+LevenbergMarquardtEstimatorTest.QuadraticProblem levenbergMarquardtEstimatorTest_QuadraticProblem0 = levenbergMarquardtEstimatorTest0.new QuadraticProblem();
+levenbergMarquardtEstimator0.estimate(levenbergMarquardtEstimatorTest_QuadraticProblem0);
+levenbergMarquardtEstimator0.getJacobianEvaluations();
+int int0 = 0;
+levenbergMarquardtEstimator0.getJacobianEvaluations();
+double double0 = 0.0;
+double double1 = 0.0;
+TestCase.assertEquals(double0, (double) int0, double1);
+double double2 = 0.066518;
+EstimatedParameter[] estimatedParameterArray0 = new EstimatedParameter[6];
+String string1 = "'A2Pu";
+double double3 = 0.0;
+boolean boolean0 = true;
+EstimatedParameter estimatedParameter0 = new EstimatedParameter(string1, double3, boolean0);
+String string2 = "#8ZYn7q8NwEjTkgPo";
+WeightedMeasurement weightedMeasurement0 = mock(WeightedMeasurement.class, new ViolatedAssumptionAnswer());
+doReturn(0.0, 0.0, 0.0).when(weightedMeasurement0).getPartial(any(org.apache.commons.math.estimation.EstimatedParameter.class));
+doReturn(0.0, 0.0, 0.0).when(weightedMeasurement0).getResidual();
+doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(weightedMeasurement0).getWeight();
+levenbergMarquardtEstimatorTest_QuadraticProblem0.addMeasurement(weightedMeasurement0);
+double double4 = (-158.875915);
+levenbergMarquardtEstimator0.initializeEstimate(levenbergMarquardtEstimatorTest_QuadraticProblem0);
+levenbergMarquardtEstimator0.updateResidualsAndCost();
+levenbergMarquardtEstimatorTest_QuadraticProblem0.addParameter(estimatedParameter0);
+levenbergMarquardtEstimator0.getChiSquare(levenbergMarquardtEstimatorTest_QuadraticProblem0);
+levenbergMarquardtEstimator0.incrementJacobianEvaluationsCounter();
+levenbergMarquardtEstimator0.updateResidualsAndCost();
+levenbergMarquardtEstimator0.getCovariances(levenbergMarquardtEstimatorTest_QuadraticProblem0);
+
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.ArrayIndexOutOfBoundsException: 3
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.estimation.AbstractEstimator.getCovariances(AbstractEstimator.java:173)
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor21.invoke(Unknown Source)
+09:46:27.139 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+09:46:27.140 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+09:46:27.142 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+09:46:27.148 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+09:46:27.148 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+09:46:27.148 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+09:46:27.926 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'AbstractEstimator_ESTest' to results/MATH-100b-1-22-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+09:46:27.939 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

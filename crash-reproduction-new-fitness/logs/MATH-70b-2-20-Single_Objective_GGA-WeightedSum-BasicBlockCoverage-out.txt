@@ -1,0 +1,73 @@
+10:19:11.167 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.NullPointerException
+10:19:11.169 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver:66)
+10:19:11.169 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.solvers.BisectionSolver
+10:19:11.170 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:19:11.421 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+10:19:12.288 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:19:12.296 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:19:12.306 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:19:12.311 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:19:12.522 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 3.0
+10:19:12.965 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 9 fitness evolutions and 0 second: 0.0
+10:19:13.243 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+10:19:13.243 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+10:19:13.244 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:19:13.244 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:19:13.244 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:19:13.244 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 0 seconds
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BisectionSolver bisectionSolver0 = new BisectionSolver();
+UnivariateRealFunction univariateRealFunction0 = mock(UnivariateRealFunction.class, new ViolatedAssumptionAnswer());
+doReturn(0.0, 0.0, 0.0, 0.0, 0.0).when(univariateRealFunction0).value(anyDouble());
+double double0 = (-1.0);
+double double1 = 1238.967387627;
+double double2 = bisectionSolver0.solve(univariateRealFunction0, double0, double1);
+bisectionSolver0.getFunctionValueAccuracy();
+bisectionSolver0.setFunctionValueAccuracy(double1);
+bisectionSolver0.getMaximalIterationCount();
+double double3 = (-3365.990501);
+double double4 = bisectionSolver0.solve(double3, double0);
+bisectionSolver0.resetMaximalIterationCount();
+double double5 = 464.022208552;
+double double6 = 1.0;
+bisectionSolver0.verifySequence(double3, double5, double6);
+bisectionSolver0.checkResultComputed();
+double double7 = 0.0;
+bisectionSolver0.verifySequence(double4, double7, double2);
+bisectionSolver0.getRelativeAccuracy();
+double double8 = (-3046.6);
+bisectionSolver0.setRelativeAccuracy(double8);
+double double9 = 552.21503223;
+bisectionSolver0.solve(double5, double9);
+bisectionSolver0.getFunctionValueAccuracy();
+double double10 = 0.0;
+bisectionSolver0.solve(double8, double10, double0);
+bisectionSolver0.checkResultComputed();
+double double11 = 0.0;
+double double12 = 894.0431113145446;
+UnivariateRealFunction univariateRealFunction1 = mock(UnivariateRealFunction.class, new ViolatedAssumptionAnswer());
+bisectionSolver0.isBracketing(double11, double12, univariateRealFunction1);
+
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.NullPointerException
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:88)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BisectionSolver.solve(BisectionSolver.java:66)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:19:13.245 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:19:13.246 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:19:13.247 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:19:13.258 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:19:13.258 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:19:13.258 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:19:13.958 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BisectionSolver_ESTest' to results/MATH-70b-2-20-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+10:19:13.969 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

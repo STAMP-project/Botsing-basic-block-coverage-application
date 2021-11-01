@@ -1,0 +1,72 @@
+10:12:33.759 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.IllegalArgumentException
+10:12:33.761 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter:866)
+10:12:33.761 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.format.DateTimeFormatter
+10:12:33.761 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+10:12:34.228 [main] INFO  e.s.botsing.graphs.cfg.CFGGenerator - Analyzing org.joda.time.format.DateTimeFormatter
+10:12:34.248 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+10:12:36.368 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+10:12:36.382 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+10:12:36.693 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+10:12:36.712 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+10:12:37.297 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 1.5
+10:12:37.769 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 25 fitness evolutions and 1 second: 1.3333333333333333
+10:12:38.151 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+10:12:38.152 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+10:12:38.152 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+10:12:38.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+10:12:38.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+10:12:38.153 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: DateTimePrinter dateTimePrinter0 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
+DateTimeParser dateTimeParser0 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
+DateTimeFormatter dateTimeFormatter0 = new DateTimeFormatter(dateTimePrinter0, dateTimeParser0);
+int int0 = dateTimeFormatter0.getDefaultYear();
+DateTimeZone dateTimeZone0 = dateTimeFormatter0.getZone();
+String string0 = "\\Sfby$";
+DateTime dateTime0 = DateTime.parse(string0);
+dateTimeFormatter0.print((ReadableInstant) dateTime0);
+Writer writer0 = null;
+long long0 = 1501L;
+dateTimeFormatter0.printTo(writer0, long0);
+dateTimeFormatter0.isOffsetParsed();
+DateTimeFormatter dateTimeFormatter1 = dateTimeFormatter0.withDefaultYear(int0);
+dateTimeFormatter1.withZone(dateTimeZone0);
+Object.registerNatives();
+DateTimePrinter dateTimePrinter1 = mock(DateTimePrinter.class, new ViolatedAssumptionAnswer());
+DateTimeParser dateTimeParser1 = mock(DateTimeParser.class, new ViolatedAssumptionAnswer());
+Locale locale0 = null;
+boolean boolean0 = false;
+Chronology chronology0 = mock(Chronology.class, new ViolatedAssumptionAnswer());
+int int1 = 2006;
+Integer integer0 = new Integer(int1);
+DateTimeFormatter dateTimeFormatter2 = new DateTimeFormatter(dateTimePrinter1, dateTimeParser1, locale0, boolean0, chronology0, dateTimeZone0, integer0, int0);
+String string1 = "nr{'Pt'I.:hV4.tdUQ$";
+DateTime dateTime1 = dateTimeFormatter1.parseDateTime(string1);
+dateTimeFormatter0.print((ReadableInstant) dateTime1);
+LocalTime localTime0 = LocalTime.now();
+dateTimeFormatter1.printTo(writer0, (ReadablePartial) localTime0);
+
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.IllegalArgumentException: Invalid format: "\Sfby$"
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:866)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.DateTime.parse(DateTime.java:144)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.DateTime.parse(DateTime.java:133)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10:12:38.154 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+10:12:38.155 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+10:12:38.155 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+10:12:38.155 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+10:12:38.161 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+10:12:38.161 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+10:12:38.161 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+10:12:38.846 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'DateTimeFormatter_ESTest' to results/TIME-20b-1-20-Single_Objective_GGA-IntegrationSingleObjective-BasicBlockCoverage-opt
+10:12:38.865 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

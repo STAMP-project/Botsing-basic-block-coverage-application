@@ -1,0 +1,70 @@
+22:24:49.979 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.apache.commons.math.MathRuntimeException$4
+22:24:49.982 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.apache.commons.math.analysis.solvers.BrentSolver.solve(BrentSolver:178)
+22:24:49.982 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.apache.commons.math.analysis.solvers.BrentSolver
+22:24:49.983 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+22:24:50.994 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 3.
+22:24:52.347 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+22:24:52.355 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+22:24:52.364 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+22:24:52.369 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+22:24:52.585 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 5.857142857142857
+22:24:53.651 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 17 fitness evolutions and 1 second: 5.25
+22:24:53.671 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 22 fitness evolutions and 1 second: 5.142857142857142
+22:24:54.215 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 5.142857142857142
+22:24:54.216 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 5.142857142857142. PT: 1 seconds
+22:24:54.216 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+22:24:54.768 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 101 fitness evolutions and 2 second: 0.0
+22:24:54.945 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 100
+22:24:54.945 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+22:24:54.945 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+22:24:54.946 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+22:24:54.946 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 2 seconds
+22:24:54.946 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: BrentSolver brentSolver0 = new BrentSolver();
+double double0 = 0.0;
+double double1 = (-1083.856071);
+SinFunction sinFunction0 = new SinFunction();
+UnivariateRealFunction univariateRealFunction0 = sinFunction0.derivative();
+MonitoredFunction monitoredFunction0 = new MonitoredFunction(univariateRealFunction0);
+double double2 = 1198.7084823561;
+brentSolver0.solve((UnivariateRealFunction) monitoredFunction0, double0, double2);
+double double3 = 0.0;
+double double4 = 0.0;
+double double5 = -0.0;
+brentSolver0.verifyInterval(double3, double5);
+double double6 = (-3377.3838578478);
+brentSolver0.solve(univariateRealFunction0, double2, double3, double6);
+double double7 = (-1281.77);
+double double8 = (-1974.1);
+double double9 = 3927.69832391;
+double double10 = 1.0E-15;
+double double11 = (-27.85469);
+brentSolver0.solve(double6, double10, double11);
+BrentSolver brentSolver1 = new BrentSolver(univariateRealFunction0);
+brentSolver1.getFunctionValueAccuracy();
+double double12 = (-2505.7596);
+double double13 = 0.0;
+brentSolver1.solve(double8, double12, double13);
+
+22:24:54.946 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+22:24:54.946 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException$4: function values at endpoints do not have different signs.  Endpoints: [0, 1,198.708], Values: [1, 0.19]
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(MathRuntimeException.java:305)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.apache.commons.math.analysis.solvers.BrentSolver.solve(BrentSolver.java:178)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+22:24:54.947 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+22:24:54.948 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+22:24:54.952 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+22:24:54.952 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+22:24:54.952 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+22:24:55.917 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'BrentSolver_ESTest' to results/MATH-78b-2-16-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+22:24:55.929 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

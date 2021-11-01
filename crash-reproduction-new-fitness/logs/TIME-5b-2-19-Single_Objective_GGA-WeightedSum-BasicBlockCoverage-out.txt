@@ -1,0 +1,74 @@
+16:34:13.296 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: java.lang.UnsupportedOperationException
+16:34:13.298 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.joda.time.Period.withYears(Period:896)
+16:34:13.298 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.joda.time.Period
+16:34:13.298 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+16:34:13.901 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 5.
+16:34:15.511 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+16:34:15.520 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+16:34:15.529 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+16:34:15.643 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+16:34:15.928 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 0 second: 4.5
+16:34:15.932 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 4 fitness evolutions and 0 second: 3.0
+16:34:15.934 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 5 fitness evolutions and 0 second: 0.0
+16:34:16.831 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 0.0
+16:34:16.831 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:16.832 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+16:34:16.832 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+16:34:16.832 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+16:34:16.832 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 1 seconds
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: Period period0 = new Period();
+int int0 = 0;
+Period period1 = period0.minusSeconds(int0);
+Period period2 = period0.toPeriod();
+period1.minusSeconds(int0);
+int int1 = period2.getMinutes();
+period2.minusHours(int1);
+DurationFieldType durationFieldType0 = DurationFieldType.MONTHS_TYPE;
+period0.get(durationFieldType0);
+Minutes minutes0 = Minutes.THREE;
+Duration duration0 = minutes0.toStandardDuration();
+Seconds seconds0 = duration0.toStandardSeconds();
+Hours hours0 = seconds0.toStandardHours();
+PeriodType periodType0 = hours0.getPeriodType();
+Period period3 = period0.withPeriodType(periodType0);
+long long0 = 86400L;
+Period period4 = new Period(int1, long0);
+int int2 = 2358;
+Period period5 = period1.withFieldAdded(durationFieldType0, int2);
+period5.withYears(int0);
+Period period6 = Period.millis(int2);
+int int3 = 0;
+Period period7 = period3.withYears(int3);
+int int4 = period6.get(durationFieldType0);
+Period period8 = period3.minus(minutes0);
+period8.withFieldAdded(durationFieldType0, int4);
+int int5 = 2963;
+int int6 = 2369;
+int int7 = 0;
+int int8 = 1150;
+period7.plusMinutes(int4);
+
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.UnsupportedOperationException: Field is not supported
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.PeriodType.setIndexedField(PeriodType.java:690)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.joda.time.Period.withYears(Period.java:896)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+16:34:16.833 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+16:34:16.834 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+16:34:16.840 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+16:34:16.840 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+16:34:16.840 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+16:34:17.655 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'Period_ESTest' to results/TIME-5b-2-19-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+16:34:17.669 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

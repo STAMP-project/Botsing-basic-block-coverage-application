@@ -1,0 +1,95 @@
+15:28:48.067 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.hibernate.QueryParameterException
+15:28:48.071 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.populateParameters(HqlQueryExecutor:384)
+15:28:48.071 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor
+15:28:48.071 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+15:28:49.366 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 553.
+15:29:12.766 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+15:29:12.776 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+15:29:12.783 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+15:29:12.790 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+15:29:13.896 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 1 second: 5.892857142857142
+15:29:14.116 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 6 fitness evolutions and 1 second: 4.0
+15:29:16.011 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.0
+15:29:16.012 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.0. PT: 3 seconds
+15:29:16.012 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+15:29:20.063 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 100
+15:29:25.403 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 150
+15:29:32.988 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 200
+15:29:38.181 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 250
+15:29:39.228 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 300
+15:29:43.338 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.0 | 350
+15:29:43.366 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 362 fitness evolutions and 30 second: 0.0
+15:29:46.743 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 0.0 | 400
+15:29:46.744 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 33 seconds
+15:29:46.744 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - ZeroFitness :                      0 / 0            Finished!
+15:29:46.744 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - The search process is finished.
+15:29:46.745 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 0.0. PT: 33 seconds
+15:29:46.745 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - * The target crash is covered. The generated test is: HqlQueryExecutor hqlQueryExecutor0 = new HqlQueryExecutor();
+ContextualAuthorizationManager contextualAuthorizationManager0 = mock(ContextualAuthorizationManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "authorization", (Object) contextualAuthorizationManager0);
+Provider<DefaultQuery> provider0 = (Provider<DefaultQuery>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "componentManagerProvider", (Object) provider0);
+Execution execution0 = mock(Execution.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "execution", (Object) execution0);
+JobProgressManager jobProgressManager0 = mock(JobProgressManager.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "progress", (Object) jobProgressManager0);
+HibernateSessionFactory hibernateSessionFactory0 = mock(HibernateSessionFactory.class, new ViolatedAssumptionAnswer());
+Injector.inject(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class, "sessionFactory", (Object) hibernateSessionFactory0);
+Injector.validateBean(hqlQueryExecutor0, (Class<?>) HqlQueryExecutor.class);
+DocumentAccessBridge documentAccessBridge0 = mock(DocumentAccessBridge.class, new ViolatedAssumptionAnswer());
+Execution execution1 = mock(Execution.class, new ViolatedAssumptionAnswer());
+EntityReferenceSerializer<EscapeLikeParametersFilter> entityReferenceSerializer0 = (EntityReferenceSerializer<EscapeLikeParametersFilter>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+ComponentManagerManager componentManagerManager0 = mock(ComponentManagerManager.class, new ViolatedAssumptionAnswer());
+EntityReferenceSerializer<LanguageQueryFilter> entityReferenceSerializer1 = (EntityReferenceSerializer<LanguageQueryFilter>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+Execution execution2 = mock(Execution.class, new ViolatedAssumptionAnswer());
+EntityReferenceSerializer<DefaultQueryParameter> entityReferenceSerializer2 = (EntityReferenceSerializer<DefaultQueryParameter>) mock(EntityReferenceSerializer.class, new ViolatedAssumptionAnswer());
+DocumentComponentManager documentComponentManager0 = new DocumentComponentManager();
+Provider<RootComponentManager> provider1 = (Provider<RootComponentManager>) mock(Provider.class, new ViolatedAssumptionAnswer());
+Injector.inject(documentComponentManager0, (Class<?>) DocumentComponentManager.class, "referenceProvider", (Object) provider1);
+EmbeddableComponentManager embeddableComponentManager0 = new EmbeddableComponentManager();
+String string0 = "PVX\\k$T0";
+DefaultQuery defaultQuery0 = new DefaultQuery(string0, string0, hqlQueryExecutor0);
+DefaultQuery defaultQuery1 = (DefaultQuery)defaultQuery0.setWiki(string0);
+hqlQueryExecutor0.checkAllowed(defaultQuery1);
+SessionImplementor sessionImplementor0 = mock(SessionImplementor.class, new ViolatedAssumptionAnswer());
+String string1 = "M#E@0e&J)w";
+defaultQuery0.bindValue(string1, (Object) string0);
+OrdinalParameterDescriptor[] ordinalParameterDescriptorArray0 = new OrdinalParameterDescriptor[0];
+RuntimeInstance runtimeInstance0 = new RuntimeInstance();
+ExtendedProperties extendedProperties0 = runtimeInstance0.getConfiguration();
+ExtendedProperties extendedProperties1 = extendedProperties0.subset(string0);
+ParameterMetadata parameterMetadata0 = new ParameterMetadata(ordinalParameterDescriptorArray0, extendedProperties1);
+CollectionFilterImpl collectionFilterImpl0 = new CollectionFilterImpl(string0, documentComponentManager0, sessionImplementor0, parameterMetadata0);
+LanguageQueryFilter languageQueryFilter0 = new LanguageQueryFilter();
+CollectionFilterImpl collectionFilterImpl1 = (CollectionFilterImpl)collectionFilterImpl0.setProperties((Object) languageQueryFilter0);
+hqlQueryExecutor0.populateParameters(collectionFilterImpl1, defaultQuery0);
+String string2 = "J";
+hqlQueryExecutor0.setNamedParameter(collectionFilterImpl1, string2, collectionFilterImpl0);
+
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - 1 thrown exception(s) are detected in the solution: 
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.QueryParameterException: could not locate named parameter [M#E@0e&J)w]
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.engine.query.ParameterMetadata.getNamedParameterDescriptor(ParameterMetadata.java:101)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.engine.query.ParameterMetadata.getNamedParameterExpectedType(ParameterMetadata.java:107)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.impl.AbstractQueryImpl.determineType(AbstractQueryImpl.java:460)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.hibernate.impl.AbstractQueryImpl.setParameter(AbstractQueryImpl.java:430)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.setNamedParameter(HqlQueryExecutor.java:417)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - com.xpn.xwiki.store.hibernate.query.HqlQueryExecutor.populateParameters(HqlQueryExecutor.java:384)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.reflect.Method.invoke(Method.java:498)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.FutureTask.run(FutureTask.java:266)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+15:29:46.746 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+15:29:46.747 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - java.lang.Thread.run(Thread.java:748)
+15:29:46.748 [main] INFO  e.s.b.commons.PostProcessUtility - test size before post-process: 1
+15:29:46.757 [main] INFO  e.s.b.commons.PostProcessUtility - * Minimizing test suite
+15:29:46.757 [main] INFO  e.s.b.commons.PostProcessUtility - test size after post-process: 1
+15:29:46.757 [main] INFO  e.s.b.commons.PostProcessUtility - * Compiling and checking tests
+15:29:48.782 [main] INFO  e.s.b.commons.PostProcessUtility - * Writing JUnit test case 'HqlQueryExecutor_ESTest' to results/XWIKI-14556-6-16-Single_Objective_GGA-WeightedSum-BasicBlockCoverage-opt
+15:29:48.798 [main] INFO  e.s.b.reproduction.CrashReproduction - The solution test is saved!

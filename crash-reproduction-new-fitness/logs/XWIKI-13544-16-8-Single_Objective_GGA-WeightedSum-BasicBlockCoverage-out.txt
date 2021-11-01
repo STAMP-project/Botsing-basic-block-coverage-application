@@ -1,0 +1,54 @@
+02:36:14.856 [main] INFO  eu.stamp.botsing.StackTrace - Exception type is detected: org.xwiki.rendering.macro.MacroExecutionException
+02:36:14.862 [main] INFO  eu.stamp.botsing.StackTrace - Target frame is set to: org.xwiki.velocity.internal.DefaultVelocityEngine.evaluateInternal(DefaultVelocityEngine:256)
+02:36:14.862 [main] INFO  eu.stamp.botsing.StackTrace - Target Class is set to: org.xwiki.velocity.internal.DefaultVelocityEngine
+02:36:14.862 [main] INFO  eu.stamp.botsing.Botsing - Single_Objective_GGA
+02:36:17.138 [main] INFO  e.stamp.botsing.commons.SetupUtility - Starting the dependency analysis. The number of detected jar files is 588.
+02:36:44.204 [main] INFO  e.stamp.botsing.commons.SetupUtility - Analysing dependencies done!
+02:36:45.574 [main] INFO  e.s.b.t.s.BotsingIndividualStrategy - test generation strategy: Botsing individual
+02:36:45.598 [main] INFO  e.s.b.s.TestCaseSecondaryObjective - Secondary Objectives: BasicBlockCoverage
+02:36:45.606 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Initializing the first population with size of 50 individuals
+02:36:48.079 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 1 fitness evolutions and 2 second: 5.9734513274336285
+02:36:49.741 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 32 fitness evolutions and 4 second: 4.5
+02:36:51.049 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the initial population is: 4.5
+02:36:51.049 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 4.5. PT: 5 seconds
+02:36:51.050 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Starting evolution
+02:36:53.658 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 100
+02:36:56.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 150
+02:36:59.556 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 200
+02:37:01.144 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 250
+02:37:03.274 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 4.5 | 300
+02:37:04.186 [main] INFO  e.s.b.f.utils.CrashDistanceEvolution - New value for Crash Distance after 327 fitness evolutions and 18 second: 3.0
+02:37:05.949 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 350
+02:37:05.950 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the final population is: 3.0. PT: 20 seconds
+02:37:15.554 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 400
+02:37:36.854 [TEST_EXECUTION_THREAD_5] ERROR ucar.httpservices.HTTPSession - Parser Error: 47: -!4\.
+java.lang.NullPointerException: null
+	at org.apache.velocity.runtime.parser.VelocityCharStream.FillBuff(VelocityCharStream.java:151) ~[na:na]
+	at org.apache.velocity.runtime.parser.VelocityCharStream.readChar(VelocityCharStream.java:246) ~[na:na]
+	at org.apache.velocity.runtime.parser.VelocityCharStream.BeginToken(VelocityCharStream.java:181) ~[na:na]
+	at org.apache.velocity.runtime.parser.ParserTokenManager.getNextToken(ParserTokenManager.java:5254) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.getToken(Parser.java:3599) ~[na:na]
+	at org.apache.velocity.runtime.parser.node.SimpleNode.jjtOpen(SimpleNode.java:109) ~[na:na]
+	at org.apache.velocity.runtime.parser.JJTParserState.openNodeScope(JJTParserState.java:81) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.process(Parser.java:284) ~[na:na]
+	at org.apache.velocity.runtime.parser.Parser.parse(Parser.java:117) ~[na:na]
+	at org.apache.velocity.runtime.RuntimeInstance.parse(RuntimeInstance.java:1226) [na:1.7]
+	at org.xwiki.velocity.internal.DefaultVelocityEngine.evaluateInternal(DefaultVelocityEngine.java:239) [na:7.4.4]
+	at org.xwiki.velocity.internal.DefaultVelocityEngine.evaluate(DefaultVelocityEngine.java:222) [na:7.4.4]
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_272]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_272]
+	at org.evosuite.testcase.statements.MethodStatement$1.execute(MethodStatement.java:257) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.statements.AbstractStatement.exceptionHandler(AbstractStatement.java:169) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.statements.MethodStatement.execute(MethodStatement.java:220) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.executeStatements(TestRunnable.java:307) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:213) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at org.evosuite.testcase.execution.TestRunnable.call(TestRunnable.java:55) [botsing-reproduction.jar:1.0.8-SNAPSHOT]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_272]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_272]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_272]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_272]
+02:37:47.736 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 450
+02:38:39.683 [main] WARN  e.s.b.g.s.GuidedSingleObjectiveGA - Botsing was unsuccessful in generating new generation. cause: java.util.NoSuchElementException
+02:39:06.494 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 500
+02:40:03.670 [main] INFO  e.s.b.g.s.GuidedSingleObjectiveGA - Best fitness in the current population: 3.0 | 550
