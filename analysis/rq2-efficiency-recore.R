@@ -9,21 +9,39 @@ VD_MAGNITUDE_LEVELS = c("large","medium","small")
 CONSIDERABLE_VD_MAGNITUDES = c("large","medium")
 
 # For integ
-timeEffectSize <- getTimeEffectSizes("IntegrationSingleObjective")%>%
-  mutate(winner = ifelse(VD.estimate.category == "< 0.5","RecoreSTDistance+BBC","RecoreSTDistance"))
+timeEffectSize <- getTimeEffectSizes("IntegrationSingleObjective")
 
 
-efficiency_abstract <- data.frame('Winner'=NA, 'count'=NA,"VD_magnitude"=NA)
+timeEffectSize$cat.alg1 <- ifelse(timeEffectSize$cat.alg1 == "IntegrationSingleObjective", "RecoreSTDistance",
+                                              ifelse(timeEffectSize$cat.alg1 == "IntegrationSingleObjective-bb", "RecoreSTDistance+BBC","RecoreSTDistance+OPTBBC"))
+
+
+timeEffectSize$cat.alg2 <- ifelse(timeEffectSize$cat.alg2 == "IntegrationSingleObjective", "RecoreSTDistance",
+                                              ifelse(timeEffectSize$cat.alg2 == "IntegrationSingleObjective-bb", "RecoreSTDistance+BBC","RecoreSTDistance+OPTBBC"))
+
+
+
+efficiency_abstract <- data.frame('Winner'=NA, 'RecoreSTDistance.large'=NA,'RecoreSTDistance.medium'=NA,
+                                  'RecoreSTDistance+BBC.large'=NA,'RecoreSTDistance+BBC.medium'=NA,
+                                  'RecoreSTDistance+OPTBBC.large'=NA, 'RecoreSTDistance+OPTBBC.medium'=NA)
 efficiency_abstract <- efficiency_abstract[0,]
 
-for (ca in c("RecoreSTDistance","RecoreSTDistance+BBC")){
-  for (mag in VD_MAGNITUDE_LEVELS){
-    tempdf <- timeEffectSize %>%
-      filter(winner == ca & VD.magnitude == mag)
-    row =c(ca,nrow(tempdf),mag)
-    efficiency_abstract[nrow(efficiency_abstract) + 1,] = row
+
+configurations <- c("RecoreSTDistance","RecoreSTDistance+BBC","RecoreSTDistance+OPTBBC")
+
+
+for (ca1 in configurations){
+  row = c(ca1)
+  for(ca2 in configurations){
+    for (mag in CONSIDERABLE_VD_MAGNITUDES){
+      tempdf <- timeEffectSize %>%
+        filter(cat.alg1 == ca1 & cat.alg2 == ca2 & VD.magnitude == mag & VD.estimate.category=="< 0.5")
+      row <- c(row,nrow(tempdf))
+    }
   }
+  efficiency_abstract[nrow(efficiency_abstract) + 1,] = row
 }
+
 
 
 delta <- timeEffectSize%>% 
@@ -32,24 +50,23 @@ delta <- timeEffectSize%>%
   summarise(avg_delta = mean(delta))
   
 
-efficiency_abstract$count <- as.numeric(as.vector(efficiency_abstract$count))
 
-p <- ggplot(data=efficiency_abstract, aes(x=Winner, y=count, fill=VD_magnitude)) +
-  geom_bar(stat="identity", position=position_dodge()) +
-  geom_text(aes(label=count), vjust=-1.0, color="black",
-            position = position_dodge(0.9), size=5.5)+
-  theme(text = element_text(size=14),axis.text.x = element_text(size=11)) +
-  scale_y_discrete(expand = c(0, 0)) +
-   expand_limits( y=c(0, 20))+
-  scale_fill_manual(values=c('black','gray','lightgray')) +
-  ylab("# of crashes") + xlab("Configurations") +
-  theme(legend.position = "top", legend.text=element_text(size=14), axis.text.x=element_text(size=14))
-ggsave("figures/significant-efficiency-recore.pdf", width = 5.5, height = 4)
+# p <- ggplot(data=efficiency_abstract, aes(x=Winner, y=count, fill=VD_magnitude)) +
+#   geom_bar(stat="identity", position=position_dodge()) +
+#   geom_text(aes(label=count), vjust=-1.0, color="black",
+#             position = position_dodge(0.9), size=5.5)+
+#   theme(text = element_text(size=14),axis.text.x = element_text(size=11)) +
+#   scale_y_discrete(expand = c(0, 0)) +
+#    expand_limits( y=c(0, 20))+
+#   scale_fill_manual(values=c('black','gray','lightgray')) +
+#   ylab("# of crashes") + xlab("Configurations") +
+#   theme(legend.position = "top", legend.text=element_text(size=14), axis.text.x=element_text(size=14))
+# ggsave("figures/significant-efficiency-recore.pdf", width = 5.5, height = 4)
+
 mutateTimeEffectSize <- timeEffectSize %>%
   mutate(improvement = ifelse(avg.alg2>avg.alg1,1- (avg.alg1/avg.alg2),(avg.alg2/avg.alg1)-1))
 
 
-mutateTimeEffectSize$cat.alg1 <- "RecoreSTDistance+BBC"
 
 improvementSummary <- mutateTimeEffectSize %>%
   group_by(cat.alg1) %>%
@@ -58,17 +75,60 @@ improvementSummary <- mutateTimeEffectSize %>%
             max_improvement = max(improvement), max_es = max(VD.estimate))
 
 
-plot1 <- ggplot(mutateTimeEffectSize, aes(x = paste(cat.alg1), y = VD.estimate)) +
+plot1 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+BBC" & cat.alg2 == "RecoreSTDistance"), aes(x = paste(cat.alg1), y = VD.estimate)) +
   theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
   geom_boxplot() +
   stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
   ylab("effect size") + xlab("")
 
-plot2 <- ggplot(mutateTimeEffectSize, aes(x = paste(cat.alg1), y = improvement)) +
+plot2 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+BBC" & cat.alg2 == "RecoreSTDistance"), aes(x = paste(cat.alg1), y = improvement)) +
   theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
   geom_boxplot() +
   stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
   ylab("Improvement (perc)") + xlab("")
 
 p  <- grid.arrange(plot1, plot2, ncol=2)
-ggsave("figures/improvement-efficiency-recore.pdf", p, width = 7, height = 4)
+ggsave("figures/improvement-efficiency-recore-bbcvsnone.pdf", p, width = 7, height = 4)
+
+
+###########
+
+plot1 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+OPTBBC" & cat.alg2 == "RecoreSTDistance"), aes(x = paste(cat.alg1), y = VD.estimate)) +
+  theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
+  geom_boxplot() +
+  stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
+  ylab("effect size") + xlab("")
+
+plot2 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+OPTBBC" & cat.alg2 == "RecoreSTDistance"), aes(x = paste(cat.alg1), y = improvement)) +
+  theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
+  geom_boxplot() +
+  stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
+  ylab("Improvement (perc)") + xlab("")
+
+p  <- grid.arrange(plot1, plot2, ncol=2)
+ggsave("figures/improvement-efficiency-recore-optvsnone.pdf", p, width = 7, height = 4)
+
+
+########
+
+
+plot1 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+OPTBBC" & cat.alg2 == "RecoreSTDistance+BBC"), aes(x = paste(cat.alg1), y = VD.estimate)) +
+  theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
+  geom_boxplot() +
+  stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
+  ylab("effect size") + xlab("")
+
+plot2 <- ggplot(mutateTimeEffectSize %>% 
+                  filter(cat.alg1== "RecoreSTDistance+OPTBBC" & cat.alg2 == "RecoreSTDistance+BBC"), aes(x = paste(cat.alg1), y = improvement)) +
+  theme(text = element_text(size=18),axis.text.x = element_text(size=15)) +
+  geom_boxplot() +
+  stat_summary(fun.y=mean,pch=22, size = 3, geom='point') +
+  ylab("Improvement (perc)") + xlab("")
+
+p  <- grid.arrange(plot1, plot2, ncol=2)
+ggsave("figures/improvement-efficiency-recore-optvsbbc.pdf", p, width = 7, height = 4)

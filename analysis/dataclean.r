@@ -6,13 +6,15 @@ library(dplyr)
 
 TOTAL_RUNS = 30
 STATUS_LEVELS = c("not reproduced", "reproduced")
-CONFIGS <- c("WeightedSum","WeightedSum-bb","IntegrationSingleObjective","IntegrationSingleObjective-bb")
+CONFIGS <- c("WeightedSum","WeightedSum-bb","WeightedSum-bb-opt","IntegrationSingleObjective","IntegrationSingleObjective-bb")
 
 getWS <- function(){
   csvFile='../crash-reproduction-ws/results/results.csv'
   df <- read.csv(csvFile, stringsAsFactors = FALSE)
   df$fitness_function_value[df$fitness_function_value<0] <- 6
   df$basic_block <- 0
+  df$bbc_opt <- 0
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
 
   return(df)
 }
@@ -24,7 +26,9 @@ getInteg <- function(){
     filter(objectives == "IntegrationSingleObjective" & secondary_objective == "")
   df$fitness_function_value[df$fitness_function_value<0] <- 6
   df$basic_block <- 0
+  df$bbc_opt <- 0
   df$secondary_objective <- NULL
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
   
   return(df)
 }
@@ -36,7 +40,24 @@ getWSBB <- function(){
     filter(objectives == "WeightedSum" & secondary_objective == "BasicBlockCoverage")
   df$fitness_function_value[df$fitness_function_value<0] <- 6
   df$basic_block <- 1
+  df$bbc_opt <- 0
   df$secondary_objective <- NULL
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
+  
+  return(df)
+}
+
+
+getWSBBOPT <- function(){
+  csvFile='../crash-reproduction-new-fitness/results/results.csv'
+  df <- read.csv(csvFile, stringsAsFactors = FALSE)
+  df <- df %>%
+    filter(objectives == "WeightedSum" & secondary_objective == "BasicBlockCoverage-opt")
+  df$fitness_function_value[df$fitness_function_value<0] <- 6
+  df$basic_block <- 1
+  df$bbc_opt <- 1
+  df$secondary_objective <- NULL
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
   
   return(df)
 }
@@ -48,7 +69,24 @@ getIntegBB <- function(){
     filter(objectives == "IntegrationSingleObjective" & secondary_objective == "BasicBlockCoverage")
   df$fitness_function_value[df$fitness_function_value<0] <- 6
   df$basic_block <- 1
+  df$bbc_opt <- 0
   df$secondary_objective <- NULL
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
+  
+  return(df)
+}
+
+
+getIntegBBOPT <- function(){
+  csvFile='../crash-reproduction-new-fitness/results/results.csv'
+  df <- read.csv(csvFile, stringsAsFactors = FALSE)
+  df <- df %>%
+    filter(objectives == "IntegrationSingleObjective" & secondary_objective == "BasicBlockCoverage-opt")
+  df$fitness_function_value[df$fitness_function_value<0] <- 6
+  df$basic_block <- 1
+  df$bbc_opt <- 1
+  df$secondary_objective <- NULL
+  df <- df %>% filter(execution_idx <= TOTAL_RUNS)
   
   return(df)
 }
@@ -58,12 +96,14 @@ getAllResults <- function(){
   df <- union( getWS(), getInteg())
   df <- union(df, getWSBB())
   df <- union(df, getIntegBB())
+  df <- union(df,getWSBBOPT())
+  df <- union(df,getIntegBBOPT())
   # Clean data
   df$time_spent[df$fitness_function_evolution ==""] <- 300
   df$number_of_fitness_evaluations[df$fitness_function_evolution==""] <- 250000
   df$fitness_function_value <- ifelse(df$fitness_function_evolution=="" & df$objectives == "IntegrationSingleObjective",df$frame_level+1,df$fitness_function_value)
   df <- df %>%
-    mutate(cat=paste(objectives,ifelse(basic_block,"-bb",""),sep = ""))
+    mutate(cat=paste(objectives,ifelse(basic_block,"-bb",""),ifelse(bbc_opt,"-opt",""),sep = ""))
   
   df <- df %>%
     filter(execution_idx <= TOTAL_RUNS)

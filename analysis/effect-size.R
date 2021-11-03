@@ -41,8 +41,7 @@ getOddsRatioReproduction <- function(fitnessFunction){
     mutate(pValue = getPValue(count.alg1, count.alg2)) %>%
     select(case, cat.alg1, highest.alg1, cat.alg2, count.alg1, count.alg2, oddsratio, pValue)%>%
     filter(pValue < SIGNIFICANCE_LEVEL) %>%
-    rename(highest_reproduced_frame = highest.alg1) %>%
-    filter(cat.alg2 == fitnessFunction)
+    rename(highest_reproduced_frame = highest.alg1)
 
   return(df2)
 }
@@ -120,8 +119,7 @@ getTimeEffectSizes <- function(fitnessFunction){
       VD.estimate < 0.5 ~ '< 0.5',
       VD.estimate > 0.5 ~ '> 0.5',
       TRUE ~ '= 0.5'
-    )) %>%
-    filter(cat.alg2 == fitnessFunction)
+    ))
   
   return(timeES)
 }
