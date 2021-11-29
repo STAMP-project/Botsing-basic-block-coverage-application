@@ -235,12 +235,18 @@ resultsForReproductionCount$cat <- ifelse(resultsForReproductionCount$cat == "We
 
 ReproductionratioSummary <- resultsForReproductionCount %>%
   group_by(cat) %>%
-  summarise(avg = mean(count), med = median(count),avg_perc = mean(reproduction_perc), med_perc = median(reproduction_perc), InterProcedural_quantile = IQR(reproduction_perc), count = n())
+  summarise(avg = mean(count), med = median(count),avg_perc = mean(reproduction_perc), med_perc = median(reproduction_perc), InterProcedural_quantile = IQR(reproduction_perc), count = n(), sd = sd(reproduction_perc))
 
 
 onlyByBBC <- resultsForReproductionCount %>%
   inner_join(resultsForReproductionCount,by=c("application","case","exception_name","highest"), suffix = c('.alg1', '.alg2')) %>%
-  filter((cat.alg1 == "WeightedSum" | cat.alg1 == "WeightedSum+old-BBC") & cat.alg2 == "WeightedSum+BBC" & count.alg1 == 0 & count.alg2 > 0)
+  filter((cat.alg1 == "WeightedSum") & cat.alg2 == "WeightedSum+BBC" & count.alg1 == 0 & count.alg2 > 0)
+
+
+notByBBC <- resultsForReproductionCount %>%
+  inner_join(resultsForReproductionCount,by=c("application","case","exception_name","highest"), suffix = c('.alg1', '.alg2')) %>%
+  filter((cat.alg1 == "WeightedSum") & cat.alg2 == "WeightedSum+BBC" & count.alg1 > 0 & count.alg2 == 0)
+
 
 print(onlyByBBC)
 

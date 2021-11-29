@@ -81,7 +81,8 @@ improvementSummary <- mutateTimeEffectSize %>%
   group_by(cat.alg1) %>%
   summarise(avg_improvement = mean(improvement), avg_es = mean(VD.estimate),
             min_improvement = min(improvement), min_es = min(VD.estimate),
-            max_improvement = max(improvement), max_es = max(VD.estimate))
+            max_improvement = max(improvement), max_es = max(VD.estimate),
+            sd_improvement = sd(improvement))
 
 
 
