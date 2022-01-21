@@ -54,6 +54,32 @@ ggsave("figures/significant-reproduction-recore.pdf", width = 5, height = 3)
 
 
 
+reproductionRateEffectSize <- getOddsRatioReproductionAll("IntegrationSingleObjective") 
+
+
+reproductionRateEffectSize$cat.alg1 <- ifelse(reproductionRateEffectSize$cat.alg1 == "IntegrationSingleObjective", "RecoreSTDistance",
+                                              ifelse(reproductionRateEffectSize$cat.alg1 == "IntegrationSingleObjective-bb", "RecoreSTDistance+BBC","RecoreSTDistance+OP-BBC"))
+
+
+reproductionRateEffectSize$cat.alg2 <- ifelse(reproductionRateEffectSize$cat.alg2 == "IntegrationSingleObjective", "RecoreSTDistance",
+                                              ifelse(reproductionRateEffectSize$cat.alg2 == "IntegrationSingleObjective-bb", "RecoreSTDistance+BBC","RecoreSTDistance+OP-BBC"))
+
+
+reproductionRateEffectSize <- reproductionRateEffectSize %>%
+  filter(cat.alg1 == "RecoreSTDistance" & cat.alg2 == "RecoreSTDistance+OP-BBC")
+
+
+reproductionRateEffectSize$cat.alg2 = "RecoreSTDistance+BBC"
+
+
+write.csv(reproductionRateEffectSize, file = "tables/appendix-statistical-test-all-recore.csv")
+
+
+
+
+
+
+
 effectiveness <- data.frame('Winner'=NA, 'RecoreSTDistance'=NA, 'RecoreSTDistance+old-BBC'=NA,'RecoreSTDistance+BBC'=NA )
 effectiveness <- effectiveness[0,]
 

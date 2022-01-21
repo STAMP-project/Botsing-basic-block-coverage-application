@@ -46,6 +46,44 @@ getOddsRatioReproduction <- function(fitnessFunction){
   return(df2)
 }
 
+
+getOddsRatioReproductionAll <- function(fitnessFunction){
+  computeReproductionOddsRatio <- Vectorize(function(count1, count2){
+    m <- matrix(c(count1, TOTAL_RUNS - count1,
+                  count2, TOTAL_RUNS - count2), ncol = 2, byrow = TRUE)
+    dimnames(m) <- list('Algorithm' = c('alg1', 'alg2'),
+                        'Reproduced' = c('yes', 'no'))
+    or <- odds.ratio(m)
+    return(or$OR)
+    # if(or$p <= SIGNIFICANCE_LEVEL){
+    #   return(or$OR)
+    # } else {
+    #   return(NA)
+    # }
+  })
+  
+  getPValue <- Vectorize(function(count1, count2){
+    m <- matrix(c(count1, TOTAL_RUNS - count1,
+                  count2, TOTAL_RUNS - count2), ncol = 2, byrow = TRUE)
+    dimnames(m) <- list('Algorithm' = c('alg1', 'alg2'),
+                        'Reproduced' = c('yes', 'no'))
+    or <- odds.ratio(m)
+    return(or$p)
+  })
+  
+  
+  df <- getReproductionRate(fitnessFunction)
+  df2 <- df %>%
+    inner_join(df, by=c('case'), suffix = c('.alg1', '.alg2')) %>%
+    filter(cat.alg1 != cat.alg2) %>%
+    mutate(oddsratio = computeReproductionOddsRatio(count.alg1, count.alg2)) %>%
+  mutate(pValue = getPValue(count.alg1, count.alg2)) %>%
+  select(case, cat.alg1, highest.alg1, cat.alg2, count.alg1, count.alg2, oddsratio, pValue)%>%
+  rename(highest_reproduced_frame = highest.alg1)
+     
+  return(df2)
+}
+
 getLineCoverageEffectSizesForWS <- function(){
   lineCoverageRate <- getLineCoverageRateForWS()
   df <- lineCoverageRate %>%

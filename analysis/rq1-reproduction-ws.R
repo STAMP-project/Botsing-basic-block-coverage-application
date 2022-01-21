@@ -58,7 +58,32 @@ ggsave("figures/significant-reproduction-ws.pdf", width = 5, height = 3)
 
 ##### Appendix #####
 
+reproductionRateEffectSize <- getOddsRatioReproductionAll("WeightedSum") 
 
+
+reproductionRateEffectSize$cat.alg1 <- ifelse(reproductionRateEffectSize$cat.alg1 == "WeightedSum", "WeightedSum",
+                                              ifelse(reproductionRateEffectSize$cat.alg1 == "WeightedSum-bb", "WeightedSum+BBC","WeightedSum+OP-BBC"))
+
+
+reproductionRateEffectSize$cat.alg2 <- ifelse(reproductionRateEffectSize$cat.alg2 == "WeightedSum", "WeightedSum",
+                                              ifelse(reproductionRateEffectSize$cat.alg2 == "WeightedSum-bb", "WeightedSum+BBC","WeightedSum+OP-BBC"))
+
+
+reproductionRateEffectSize <- reproductionRateEffectSize %>%
+  filter(cat.alg1 == "WeightedSum" & cat.alg2 == "WeightedSum+OP-BBC")
+
+
+reproductionRateEffectSize$cat.alg2 = "WeightedSum+BBC"
+
+
+
+write.csv(reproductionRateEffectSize, file = "tables/appendix-statistical-test-all-ws.csv")
+
+
+########
+
+
+##### Appendix #####
 
 effectiveness <- data.frame('Winner'=NA, 'WeightedSum'=NA, 'WeightedSum+old-BBC'=NA,'WeightedSum+BBC'=NA )
 effectiveness <- effectiveness[0,]
