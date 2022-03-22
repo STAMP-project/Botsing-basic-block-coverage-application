@@ -11,6 +11,7 @@
   - [Analysis](#analysis)
   - [RQ1: Crash Reproduction Effectiveness](#rq1-crash-reproduction-effectiveness)
   - [RQ2: Crash Reproduction Efficiency](#rq2-crash-reproduction-efficiency)
+  - [License & Copyright](#license--copyright)
 # ExRunner-bash
 
 Exrunner-bash contains multiple python and bash scripts to evaluate the newly developed features of botsing.
@@ -184,3 +185,16 @@ Rscript rq2-efficiency-recore.R
 ```
 
 All of the figures will be ssaved in the `analysis/figures` directory.
+
+# License & Copyright
+
+The materials herein are all copyright of Pouria Derakhshanfar and Xavier Devroey. The material was produced while working at Delft University of Technology and the University of Namur.
+
+All the source code in this repository is released under [MIT License](LICENSE).
+
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<img alt="Creative Commons License" style="border-width:0;width:100px" 
+src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" /></a>
+<br />
+
+The documentation and data are licensed under a [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
