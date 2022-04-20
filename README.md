@@ -4,6 +4,7 @@
 - [ExRunner-bash](#exrunner-bash)
 - [Replication](#replication)
   - [Crash Reproduction](#crash-reproduction)
+    - [Prepare input generator container](#prepare-input-generator-container)
     - [Run `WS`:](#run-ws)
     - [Run `WS+BBC`:](#run-wsbbc)
     - [Run `STD`:](#run-std)
@@ -11,7 +12,7 @@
   - [Analysis](#analysis)
   - [RQ1: Crash Reproduction Effectiveness](#rq1-crash-reproduction-effectiveness)
   - [RQ2: Crash Reproduction Efficiency](#rq2-crash-reproduction-efficiency)
-  - [License & Copyright](#license--copyright)
+- [License & Copyright](#license--copyright)
 # ExRunner-bash
 
 Exrunner-bash contains multiple python and bash scripts to evaluate the newly developed features of botsing.
@@ -55,13 +56,23 @@ In this study, we run crash reproduction with 4 different configurations:
 
 4- Botsing with `STDistance` as the primary search objective and `Basic Block Coverage` as the second objective (called `STD+BBC` hereafter).
 
+### Prepare input generator container
+
+For generating the proper inputs for each of the experiment runs, we need to run a seperate docker container. To run this container, you just need to run the following script:
+
+```bash
+bash docker-inputs.sh      
+```
+This script will make a docker container called `exrunner-input-container`. 
 ### Run `WS`:
 
 **(I) Prepare Input:**
+__!__ Before running the input generator, you should create `exrunner-input-container`. See [here](#prepare-input-generator-container).
+
 Run input generator with the following parameters:
 
-```
-python input-generator/__init__.py crash-reproduction-ws/inputs.csv WeightedSum <number_of_runs>
+```docker
+docker exec -it exrunner-input-container bash -c "python input-generator/__init__.py crash-reproduction-ws/inputs.csv WeightedSum <number_of_runs>"
 ```
 Since we repeated each execution for 30 times, in our study, we set the `<number_of_runs>` to 30.
 
@@ -79,10 +90,12 @@ The important data about the executions and the search process will be saved in 
 ### Run `WS+BBC`:
 
 **(I) Prepare Input:**
+__!__ Before running the input generator, you should create `exrunner-input-container`. See [here](#prepare-input-generator-container).
+
 Run input generator with the following parameters:
 
-```
-python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv WeightedSum <number_of_runs> BasicBlockCoverage
+```docker
+docker exec -it exrunner-input-container bash -c "python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv WeightedSum <number_of_runs> BasicBlockCoverage"
 ```
 Since we repeated each execution for 30 times, in our study, we set the `<number_of_runs>` to 30.
 
@@ -101,10 +114,12 @@ The important data about the executions and the search process will be saved in 
 ### Run `STD`:
 
 **(I) Prepare Input:**
+__!__ Before running the input generator, you should create `exrunner-input-container`. See [here](#prepare-input-generator-container).
+
 Run input generator with the following parameters:
 
-```
-python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv IntegrationSingleObjective <number_of_runs>
+```docker
+docker exec -it exrunner-input-container bash -c "python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv IntegrationSingleObjective <number_of_runs>"
 ```
 Since we repeated each execution for 30 times, in our study, we set the `<number_of_runs>` to 30.
 
@@ -124,10 +139,12 @@ The important data about the executions and the search process will be saved in 
 ### Run `STD+BBC`:
 
 **(I) Prepare Input:**
+__!__ Before running the input generator, you should create `exrunner-input-container`. See [here](#prepare-input-generator-container).
+
 Run input generator with the following parameters:
 
-```
-python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv IntegrationSingleObjective <number_of_runs> BasicBlockCoverage
+```docker
+docker exec -it exrunner-input-container bash -c "python input-generator/__init__.py crash-reproduction-new-fitness/inputs.csv IntegrationSingleObjective <number_of_runs> BasicBlockCoverage"
 ```
 Since we repeated each execution for 30 times, in our study, we set the `<number_of_runs>` to 30.
 
